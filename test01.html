@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+<script type="text/javascript" src="jquery.json2html/json2html.js"></script>
+<script type="text/javascript" src="jquery.json2html/jquery.json2html.js"></script>
+
+<style>
+	.indent {margin-left:10px;}
+	.pass {color:green;}
+	.fail {color:red;}
+	h2 {border-top:thin solid black;font-size:13pt;}
+	h3 {border-top: thin dotted gray;font-size:11pt;}
+</style>
+
+<script>
+	function status(pass, obj)
+	{
+		if( pass ) {
+			$(obj).html('Passed');
+			$(obj).removeClass('fail');
+			$(obj).addClass('pass');
+		} else 
+		{
+			$(obj).html('Failed');
+			$(obj).removeClass('pass');
+			$(obj).addClass('fail');
+		}
+	}
+</script>
+
+<h1>Bernese funal Simmary</h1>
+
+<button onclick="javascript:$('.run').click();">Expand all cards</button>
+
+<!------------------------------------ JSON Tests -------------------------------------->
+<h2>1. command script</h2>
+<div class='indent'>
+	<div id='command'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSONcommand' class='run'>Run Test</button>
+</div>
+
+<script>
+var transform = 
+			{tag:'tr',children:[
+				{tag:'td',html:'${switch}'},
+				{tag:'td',html:'${arg}'}
+			]};
+	$(document).ready(function(){
+		$.getJSON('koko2.json', function(koko2) {
+		var command = koko2.command;
+
+
+		$('#runJSONcommand').click(function() {
+
+			$('#command ul').html('');
+			$('#command ul').json2html(command, transform);
+
+		});
+	});
+});
+</script>
+
+<!------------------------------------ Transform Tests -------------------------------------->
+<h2>2. command script</h2>
+<div class='indent'>
+	<div id='multiObj'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSONTest' class='run'>Run Test</button>
+</div>
+
+<script>
+	var transform = 
+			{tag:'tr',children:[
+				{tag:'td',html:'${info}'},
+				{tag:'td',html:'${ac}'},
+				{tag:'td',html:'${format}'}
+			]};
+	$(document).ready(function(){
+		$.getJSON('koko2.json', function(koko2) {
+		var products = koko2.products;
+
+
+		$('#runJSONTest').click(function() {
+
+			$('#multiObj ul').html('');
+			$('#multiObj ul').json2html(products, transform);
+
+		});
+	});
+});
+</script>
+<!------------------------------------ Transform Tests -------------------------------------->
+<h2>3. command script</h2>
+<div class='indent'>
+	<div id='multiObj1'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSONTest1' class='run'>Run Test</button>
+</div>
+
+<script>
+	var transform = 
+			{tag:'tr',children:[
+				{tag:'td',html:'${var_name}'},
+				{tag:'td',html:'${description}'},
+				{tag:'td',html:'${value}'}
+			]};
+	$(document).ready(function(){
+		$.getJSON('koko2.json', function(koko2) {
+		var pcf_variables = koko2.pcf_variables;
+
+
+		$('#runJSONTest1').click(function() {
+
+			$('#multiObj1 ul').html('');
+			$('#multiObj1 ul').json2html(pcf_variables, transform);
+
+		});
+	});
+});
+</script>
+

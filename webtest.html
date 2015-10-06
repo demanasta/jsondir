@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Sample</title>
+</head>
+<body>
+    <div id="placeholder"></div>
+    <div id="id2"></div>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+  $.getJSON('koko2.json', function(koko2) {
+        var output=JSON.parse(command);
+
+        document.getElementById("placeholder").innerHTML=output;
+
+        var output="<ul>";
+        for (var i in koko2.products) {
+            output+="<li>" + koko2.products[i].info + " " + koko2.products[i].ac +"</li>";
+        }
+
+        output+="</ul>";
+        document.getElementById("id2").innerHTML=output;
+
+
+  });
+    </script>
+</body>
+</html>
