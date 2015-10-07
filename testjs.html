@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
 <script type="text/javascript" src="jquery.json2html/json2html.js"></script>
 <script type="text/javascript" src="jquery.json2html/jquery.json2html.js"></script>
+<link rel="stylesheet" type="text/css" href="/beta2/css/main.css" />
 
 <style>
 	.indent {margin-left:10px;}
@@ -12,7 +14,7 @@
 	h3 {border-top: thin dotted gray;font-size:11pt;}
 </style>
 
-<script>
+<!--<script>
 	function status(pass, obj)
 	{
 		if( pass ) {
@@ -26,268 +28,222 @@
 			$(obj).addClass('fail');
 		}
 	}
-</script>
+</script>-->
 
-<h1>jquery.json2html Tests</h1>
+<h1>Bernese funal Simmary</h1>
 
-<button onclick="javascript:$('.run').click();">Run ALL Tests</button>
+<button onclick="javascript:$('.run').click();">Expand all cards</button>
 
-<!------------------------------------ JSON Tests -------------------------------------->
-<h2>1. Input JSON Test</h2>
+<!------------------------------------ 1. command arguments -------------------------------------->
+<h2>1. command arguments</h2>
 <div class='indent'>
-	<div id='singleObj'>
-		<h3>Single Object <span class='status'></span></h3> 
-		<ul></ul>
-	</div>
-
-	<div id='multiObj'>
+	<div id='command'>
 		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
 
-	<button id='runJSONTest' class='run'>Run Test</button>
+	<button id='runJSON1' class='run'>expand</button>
 </div>
 
-<script>
-	var movies = [
-		{ Name: "The Red Violin", ReleaseYear: "1998" },
-		{ Name: "The blueViolin", ReleaseYear: "1998" },
-		{ Name: "The yellow Violin", ReleaseYear: "1998" },
-		{ Name: "The purple Violin", ReleaseYear: "1998" },
-		{ Name: "The orange Violin", ReleaseYear: "1998" }
-	];
-
-	var movie = { Name: "The Red Violin", ReleaseYear: "1998" };
-		
-	var transform = 
-			{tag:'li',children:[
-				{tag:'b',html:'${Name}'},
-				{tag:'span',html:'${ReleaseYear}'}
-			]};
-	$(document).ready(function(){
-
-		$('#runJSONTest').click(function() {
-
-			status( false, $('#singleObj .status'));
-			status( false, $('#singleObj .status'));
-
-			$('#singleObj ul').html('');
-			$('#multiObj ul').html('');
-			$('#singleObj ul').json2html(movie, transform);
-			$('#multiObj ul').json2html(movies, transform);
-
-			//Validate the test
-			status( $('#singleObj ul').children().length === 1, $('#singleObj .status'));
-			status( $('#multiObj ul').children().length === 5, $('#multiObj .status'));
-		});
-	});
-</script>
-
-
-<!------------------------------------ Transform Tests -------------------------------------->
-<h2>2. Transform Test</h2>
+<!------------------------------------ 2. General Informations -------------------------------------->
+<h2>2. General Informations </h2>
 <div class='indent'>
-	<div id='singleTrans'>
-		<h3>Single Transform Object <span class='status'></span></h3> 
+	<div id='geninf'>
+		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
 
-	<div id='multiTrans'>
-		<h3>Array of Transform Objects <span class='status'></span></h3> 
-		<ul></ul>
-	</div>
-
-	<button id='runTransformTest' class='run'>Run Test</button>
+	<button id='runJSON2' class='run'>expand</button>
 </div>
 
-<script>
-	var transform_single = 
-			{tag:'li',children:[
-				{tag:'b',html:'${Name}'},
-				{tag:'span',html:'${ReleaseYear}'}
-			]};
-
-	var transform_multi = [
-				{tag:'b',html:'${Name}'},
-				{tag:'span',html:'${ReleaseYear}'}
-		];
-
-	$(document).ready(function(){
-
-		$('#runTransformTest').click(function() {
-
-			status( false, $('#singleTrans .status'));
-			status( false, $('#multiTrans .status'));
-
-			$('#singleTrans ul').html('');
-			$('#multiTrans ul').html('');
-
-			$('#singleTrans ul').json2html(movie, transform_single);
-			$('#multiTrans ul').json2html(movie, transform_multi);
-
-			//Validate the test
-			status( $('#singleTrans ul').children().length === 1, $('#singleTrans .status'));
-			status( $('#multiTrans ul').children().length === 2, $('#multiTrans .status'));
-		});
-	});
-</script>
-
-<!------------------------------------ ShortHand Tests -------------------------------------->
-<h2>3. ShortHand Test</h2>
+<!------------------------------------ 3. products -------------------------------------->
+<h2>3. Products</h2>
 <div class='indent'>
-	<div id='shortHand'>
-		<h3>ShortHand Transform Object <span class='status'></span></h3> 
+	<div id='products'>
+		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
 
-	<div id='longHand'>
-		<h3>LongHand (function) Transform Object <span class='status'></span></h3> 
-		<ul></ul>
-	</div>
-
-	<button id='runShortHandTest' class='run'>Run Test</button>
+	<button id='runJSON3' class='run'>expand</button>
 </div>
 
-<script>
-	var transform_shortHand = [
-				{tag:'b',html:'${Name}'},
-				{tag:'span',html:'${ReleaseYear}'}
-			];
-
-	var transform_longHand = [
-				{tag:'b',html:function(obj){return(obj.Name);}},
-				{tag:'span',html:function(obj){return(obj.ReleaseYear);}}
-		];
-
-	$(document).ready(function(){
-
-		$('#runShortHandTest').click(function() {
-
-			status( false, $('#shortHand .status'));
-			status( false, $('#longHand .status'));
-
-			$('#shortHand ul').html('');
-			$('#longHand ul').html('');
-			$('#shortHand ul').json2html(movie, transform_shortHand);
-			$('#longHand ul').json2html(movie, transform_longHand);
-
-			//Validate the test
-			status( $('#shortHand ul b').html() == "The Red Violin", $('#shortHand .status'));
-			status( $('#longHand ul span').html() == "1998", $('#longHand .status'));
-		});
-	});
-</script>
-
-<!------------------------------------ Events Tests -------------------------------------->
-<h2>4. Event Test</h2>
+<!------------------------------------ 4. Solution Indetifiers -------------------------------------->
+<h2>4. Solution Indetifiers</h2>
 <div class='indent'>
-	<div id='onclick'>
-		<h3>Attach OnClick Event <span class='status'></span></h3> 
+	<div id='solind'>
+		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
-
-		<button class='run'>Run Test</button>
 	</div>
+
+	<button id='runJSON4' class='run'>expand</button>
 </div>
 
-<script>
-	var transform_onclick = 
-			{tag:'li',children:[
-				{tag:'b',html:'${Name}',onclick:function(e){status( true, $('#onclick .status'));}},
-				{tag:'span',html:'${ReleaseYear}'}
-			]};
-
-	$(document).ready(function(){
-
-		$('#onclick button').click(function() {
-			status( false, $('#onclick .status'));
-			
-			$('#onclick ul').html('');
-			$('#onclick ul').json2html(movie, transform_onclick);
-
-			//Validate the test by simulating a button click
-			$('#onclick ul b').click();
-			
-		});
-	});
-</script>
-
-<!------------------------------------ Nested Children Tests -------------------------------------->
-<h2>5. Nested Children Test</h2>
+<!------------------------------------ 5. PCF Variables -------------------------------------->
+<h2>5. PCF Variables</h2>
 <div class='indent'>
-	<div id='nestedChildren'>
-		<h3>Nested Children <span class='status'></span></h3> 
-		<div></div>
-
-		<button class='run'>Run Test</button>
+	<div id='pcfvar'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
 	</div>
+
+	<button id='runJSON5' class='run'>expand</button>
+</div>
+
+<!------------------------------------ 6. Saved products -------------------------------------->
+<h2>6. Saved products</h2>
+<div class='indent'>
+	<div id='saveproducts'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSON6' class='run'>Run Test</button>
+</div>
+
+<!------------------------------------ 7. Warnings -------------------------------------->
+<h2>7. Warnings</h2>
+<div class='indent'>
+	<div id='warnings'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+<!-- 	<button id='runJSON7' class='run'>expand</button> -->
+</div>
+
+<!------------------------------------ 8. Ambiguity Resolution SUmmary -------------------------------------->
+<h2>8. Ambiguity Resolution SUmmary</h2>
+<div class='indent'>
+	<div id='ambsum'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSON8' class='run'>expand</button>
+</div>
+
+<!------------------------------------ 9. addneq summary -------------------------------------->
+<h2>9. AddNEQ Summary</h2>
+<div class='indent'>
+	<div id='addneqsum'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSON9' class='run'>expand</button>
 </div>
 
 <script>
-	var nested = {Name:'Master', Children:[ {Name:'Child1'},{Name:'Child1'} ]};
-
-	var transform_master = [
-			{tag:'span',html:'${Name}'},
-			{tag:'ul',children:function(obj){return(json2html.transform(obj.Children, transform_child));}}
-		];
-
-	var transform_child = {tag:'li',children:[
-			{tag:'b',html:'${Name}'}
+var transform1 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${switch}'},
+			{tag:'td',html:'${arg}'}
 		]};
-
-	$(document).ready(function(){
-		
-		$('#nestedChildren button').click(function() {
-			status( false, $('#nestedChildren .status'));
-			
-			$('#nestedChildren div').html('');
-			$('#nestedChildren div').json2html(nested, transform_master);
-
-			//Test that the nested children were added
-			status( $('#nestedChildren div ul').children().length == 2, $('#nestedChildren .status'));
-		});
-	});
-</script>
-
-
-<!------------------------------------ HTML Attribute Tests -------------------------------------->
-<h2>6. HTML attribute Test</h2>
-<div class='indent'>
-	<div id='attrTest'>
-		<h3>HTML attributes <span class='status'></span></h3> 
-		<ul></ul>
-	</div>
-
-	<button id='runAttrTest' class='run'>Run Test</button>
-</div>
-
-<script>
-	var movies = [
-		{ Name: "The Red Violin", ReleaseYear: "1998" },
-		{ Name: "The blueViolin", ReleaseYear: "1998" },
-		{ Name: "The yellow Violin", ReleaseYear: "1998" },
-		{ Name: "The purple Violin", ReleaseYear: "1998" },
-		{ Name: "The orange Violin", ReleaseYear: "1998" }
-	];
-
-	var transform = {tag:'li','class':'liststyle','data-idx':42,children:[
-			{tag:'b',html:'${Name}'},
-			{tag:'span','class':'spanstyle',html:'${ReleaseYear}'}
+var transform2 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${info}'},
+			{tag:'td',html:'${ac}'},
+			{tag:'td',html:'${format}'}
 		]};
-
+var transform3 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${info}'},
+			{tag:'td',html:'${ac}'},
+			{tag:'td',html:'${format}'},
+			{tag:'td',html:'${filename}'},
+			{tag:'td',html:'${satsys}'},
+			{tag:'td',html:'${host}'},
+			{tag:'td',html:'${type}'}
+		]};
+var transform4 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${description}'},
+			{tag:'td',html:'${id}'}
+		]};
+var transform5 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${var_name}'},
+			{tag:'td',html:'${description}'},
+			{tag:'td',html:'${value}'}
+		]};
+var transform6 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${prod_type}'},
+			{tag:'td',html:'${extension}'},
+			{tag:'td',html:'${local_dir}'},
+			{tag:'td',html:'${sol_type}'},
+			{tag:'td',html:'${filename}'},
+			{tag:'td',html:'${savedas}'},
+			{tag:'td',html:'${host}'},
+			{tag:'td',html:'${host_dir}'}
+		]};
+	
+var transform8 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${baseline}'},
+			{tag:'td',html:'${station1}'},
+			{tag:'td',html:'${station2}'},
+			{tag:'td',html:'${length}'},
+			{tag:'td',html:'${method}'},
+			{tag:'td',html:'${num_of_ambs}'},
+			{tag:'td',html:'${percent}'},
+			{tag:'td',html:'${satsys}'}
+		]};
+var transform9= 
+		{tag:'tr',children:[
+			{tag:'td',html:'${xest}'},
+			{tag:'td',html:'${yest}'},
+			{tag:'td',html:'${zest}'},
+			{tag:'td',html:'${xapr}'},
+			{tag:'td',html:'${yapr}'},
+			{tag:'td',html:'${zapr}'},
+			{tag:'td',html:'${hgtest}'},
+			{tag:'td',html:'${adj}'}
+		]};
+			
 	$(document).ready(function(){
+		$.getJSON('koko2.json', function(koko2) {
+		var command = koko2.command;
+		var products = koko2.products;
+		var solution_indetifiers = koko2.solution_indetifiers;
+		var pcf_variables = koko2.pcf_variables;
+		var saved_products = koko2.saved_products;
+		var amb_res_summary = koko2.amb_res_summary;
+		var addneq_summary = koko2.addneq_summary;
 
-		$('#runAttrTest').click(function() {
+		
+		$('#runJSON1').click(function() {
 
-			status( false, $('#attrTest .status'));
+			$('#command ul').html('');
+			$('#command ul').json2html(command, transform1);
 
-			$('#attrTest ul').html('');
-			$('#attrTest ul').json2html(movies, transform);
-
-			//Validate the test
-			status( $('#attrTest ul li:first').attr('class') === 'liststyle' &&
-				$('#attrTest ul li:first').attr('data-idx') === '42' &&
-				$('#attrTest ul li span:first').attr('class') === 'spanstyle', 
-				$('#attrTest .status'));
 		});
+		$('#runJSON3').click(function() {
+			$('#products ul').html('');
+			$('#products ul').json2html(products, transform3);
+
+		});
+		$('#runJSON4').click(function() {
+			$('#solind ul').html('');
+			$('#solind ul').json2html(solution_indetifiers, transform4);
+		});
+		$('#runJSON5').click(function() {
+			$('#pcfvar ul').html('');
+			$('#pcfvar ul').json2html(pcf_variables, transform5);
+		});
+		$('#runJSON6').click(function() {
+			$('#saveproducts ul').html('');
+			$('#saveproducts ul').json2html(saved_products, transform6);
+		});
+		$('#runJSON8').click(function() {
+			$('#ambsum ul').html('');
+			$('#ambsum ul').json2html(amb_res_summary, transform8);
+		});
+		$('#runJSON9').click(function() {
+			$('#addneqsum ul').html('');
+			$('#addneqsum ul').json2html(addneq_summary, transform9);
+		});
+		
 	});
+});
 </script>

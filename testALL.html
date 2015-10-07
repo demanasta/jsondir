@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+<script type="text/javascript" src="jquery.json2html/json2html.js"></script>
+<script type="text/javascript" src="jquery.json2html/jquery.json2html.js"></script>
+<link rel="stylesheet" type="text/css" href="/beta2/css/main.css" />
+
+<style>
+	.indent {margin-left:10px;}
+	.pass {color:green;}
+	.fail {color:red;}
+	h2 {border-top:thin solid black;font-size:13pt;}
+	h3 {border-top: thin dotted gray;font-size:11pt;}
+</style>
+
+<!--<script>
+	function status(pass, obj)
+	{
+		if( pass ) {
+			$(obj).html('Passed');
+			$(obj).removeClass('fail');
+			$(obj).addClass('pass');
+		} else 
+		{
+			$(obj).html('Failed');
+			$(obj).removeClass('pass');
+			$(obj).addClass('fail');
+		}
+	}
+</script>-->
+
+<h1>Bernese funal Simmary</h1>
+
+<button onclick="javascript:$('.run').click();">Expand all cards</button>
+
+<!------------------------------------ 1. command arguments -------------------------------------->
+<h2>1. command arguments</h2>
+<div class='indent'>
+	<div id='command'>
+		<h3>Array of Objects <span class='status'></span></h3> 
+		<ul></ul>
+	</div>
+
+	<button id='runJSON1' class='run'>expand</button>
+</div>
+
+<script>
+var transform4 = 
+		var transform4 = 
+			{tag:'tr',children:[
+				{tag:'td',html:'${description}'},
+				{tag:'td',html:'${id}'}
+			]};
+	$(document).ready(function(){
+		$.getJSON('koko2.json', function(koko2) {
+		var command = koko2.command;
+		var solution_indetifiers = koko2.solution_indetifiers;
+
+
+		$('#runJSON1').click(function() {
+
+			$('#solind ul').html('');
+			$('#solind ul').json2html(solution_indetifiers, transform4);
+
+		});
+	});
+});
+</script>
+
+
+

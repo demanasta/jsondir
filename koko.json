@@ -1,0 +1,446 @@
+{command:[{"switch":"--year", "arg": "2015"}{"switch":"--doy", "arg": "1"}{"switch":"--bern-loadgps", "arg": "/home/bpe2/bern52/BERN52/GPS/EXE/LOADGPS.setvar"}{"switch":"--campaign", "arg": "greece"}{"switch":"-s", "arg": "mixed"}{"switch":"-i", "arg": "FFG"}{"switch":"-r", "arg": "/media/Seagate/solutions52/euref/"}{"switch":"--analysis-center", "arg": "cod"}{"switch":"--use-ntua-products", "arg": "FFG"}{"switch":"--append-suffix", "arg": "_foo"}]}
+{general_info:"campaign": "GREECE","user": "bpe2","host":"vincenty",{"program": {"name":"ddprocess","version":"52","revision":"-10","last_upd":"Oct 2015"},"day_processed": "2015-001",{"interval": {"from":"2015-01-01 00:00:00", "to":"2015-01-01 23:59:30"}}
+
+{products:[{"info": "GPS/GNSS Orbit and Clock Information", "ac": "cod", "format": "sp3", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18254.EPH.Z", "satsys": "gps+glo", "host": "ftp.unibe.ch", "type": "final"}
+{"info": "Earth Rotation Parameters", "ac": "cod", "format": "erp", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18257.ERP.Z", "satsys": "", "host": "ftp.unibe.ch", "type": "final"}
+{"info": "Differential Code Bias", "ac": "cod", "format": "DCB", "filename": "", "satsys": "", "host": "ftp.unibe.ch", "type": "final (c1_rnx)"}
+{"info": "Ionospheric correction file.", "ac": "COD", "format": "ION", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18254.ION.Z", "satsys": "", "host": "ftp.unibe.ch", "type": "final"}
+{"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20150101.H00", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""}
+{"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20150101.H06", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""}
+{"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20150101.H12", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""}
+{"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20150101.H18", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""}
+]}
+{solution_identifiers:[
+{"description":"Final Solution", "id":"FFG"}
+{"description":"Size-Reduced", "id":"FFR"}
+{"description":"Preliminary Solution", "id":"FFP"}]}
+{pcf_variables:[
+{"var_name":"A", "description": "A priori information", "value": "APR" }
+{"var_name":"B", "description": "Orbit/ERP, DCB, CLK information", "value": "COD" }
+{"var_name":"C", "description": "Preliminary (ambiguity-float) results", "value": "FFP" }
+{"var_name":"E", "description": "Final (ambiguity-fixed) results", "value": "FFG" }
+{"var_name":"F", "description": "Size-reduced NEQ information", "value": "FFR" }
+{"var_name":"I", "description": "NEQ iformation for ION estimation", "value": "DDI" }
+{"var_name":"RNXDIR", "description": "Directory with the RINEX files", "value": "RINEX" }
+{"var_name":"OBSSEL", "description": "Station selection file (blank: all)", "value": "" }
+{"var_name":"REFDIR", "description": "Directory with basic Bernese files", "value": "REF52" }
+{"var_name":"REFINF", "description": "Master/reference CRD/VEL filename", "value": "IGB08" }
+{"var_name":"CRDINF", "description": "Merged CRD/VEL filename", "value": "GREECE" }
+{"var_name":"CRXINF", "description": "Accepted station inform. inconsistencies", "value": "" }
+{"var_name":"BLQINF", "description": "BLQ FILE NAME, CMC CORRECTIONS", "value": "GREECE" }
+{"var_name":"ATLINF", "description": "ATL FILE NAME, CMC CORRECTIONS", "value": "GREECE" }
+{"var_name":"HOIFIL", "description": "Ionosphere model for higher order iono", "value": "HOI$YSS+0" }
+{"var_name":"RESULT", "description": "Directory name for the RNX2SNX results", "value": "RNX2SNX" }
+{"var_name":"SATSYS", "description": "Select the GNSS (GPS, GPS/GLO)", "value": "GPS/GLO" }
+{"var_name":"SAMPL", "description": "Sampling of the solutions", "value": "180" }
+{"var_name":"GNSSAR", "description": "GNSS to be used for ambiguity resolution", "value": "ALL" }
+{"var_name":"BL_AMB", "description": "Maximum baseline length for MW/L3 AR", "value": "6000" }
+{"var_name":"BL_QIF", "description": "Maximum baseline length for QIF AR", "value": "2000" }
+{"var_name":"BL_L53", "description": "Maximum baseline length for L5/L3 AR", "value": "200" }
+{"var_name":"BL_L12", "description": "Maximum baseline length for L1&L2 AR", "value": "10" }
+{"var_name":"HOURLY", "description": "Number of hourly sessions proc. together", "value": "8" }
+{"var_name":"MYATX", "description": "ANTEX file for update (name incl. ext)", "value": "" }
+{"var_name":"PCV", "description": "Absolute/relative PCV model", "value": "I08" }
+{"var_name":"SATINF", "description": "Satellite information file", "value": "SATELLIT" }
+{"var_name":"PCVINF", "description": "PCV information file", "value": "PCV_GRE" }
+{"var_name":"SATCRX", "description": "Satellite problem file", "value": "SAT_$Y+0" }
+{"var_name":"ELANG", "description": "Elevation angle (mask) in degrees", "value": "3" }
+{"var_name":"CLU", "description": "Maximum number of files per cluster", "value": "7" }
+{"var_name":"CLUEDT", "description": "Same as V_CLU but for GPSEDT", "value": "5" }
+{"var_name":"CLUFIN", "description": "N: to skip clustering in GPSCLU", "value": "Y" }
+{"var_name":"MINUS", "description": "Session range begin (for COMPAR)", "value": "-6" }
+{"var_name":"PLUS", "description": "Session range end", "value": "+0" }
+{"var_name":"SAV", "description": "Save results?", "value": "N" }
+{"var_name":"DEL", "description": "Delete results?", "value": "N" }
+]}
+{saved_products:[{"prod_type":"TRO_SNX","extension":"TRO","local_dir":"ATM","sol_type":"FFG","filename":"FFG150010.TRO","savedas":"FFG150010_foo.TRO.Z","host":"147.102.110.69","host_dir":"/2015/001/"},{"prod_type":"SINEX","extension":"SNX","local_dir":"SOL","sol_type":"FFG","filename":"FFG150010.SNX","savedas":"FFG150010_foo.SNX.Z","host":"147.102.110.69","host_dir":"/2015/001/"},{"prod_type":"NQ","extension":"NQ0","local_dir":"SOL","sol_type":"FFG","filename":"FFG150010.NQ0","savedas":"FFG150010_foo.NQ0.Z","host":"147.102.110.69","host_dir":"/2015/001/"},{"prod_type":"NQ","extension":"NQ0","local_dir":"SOL","sol_type":"FFR","filename":"FFR150010.NQ0","savedas":"FFR150010_foo.NQ0.Z","host":"147.102.110.69","host_dir":"/2015/001/"},{"prod_type":"CRD_FILE","extension":"CRD","local_dir":"STA","sol_type":"FFG","filename":"FFG150010.CRD","savedas":"FFG150010_foo.CRD.Z","host":"147.102.110.69","host_dir":"/2015/001/"}]}{warnings:[
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTATML", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.ATL", "RETURN CODE":"2", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTATML", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.ATL", "RETURN CODE":"2", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTATML", { "STATION NAME":"DYNG", "FILE NAME":"${P}/GREECE/STA/GREECE.ATL", "RETURN CODE":"2", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"27", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"28", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"29", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"30", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"31", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"32", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"33", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"34", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"35", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"36", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"37", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"38", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"39", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-4.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-4.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-3.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-4.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-4.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-3.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-1.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-3.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-2.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-0.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"-0.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-3.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-2.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-0.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-0.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-3.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-2.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-0.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"-0.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-3.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-2.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-0.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.4 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"-0.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL", { "STATION NAME":"TILO", "FILE NAME":"${P}/GREECE/STA/GREECE.BLQ", "RETURN CODE":"2", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-3.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-1.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-0.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-0.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"0.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-3.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-0.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"0.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"14", "ZENITH DELAY":"-3.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"15", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"16", "ZENITH DELAY":"-3.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"17", "ZENITH DELAY":"-2.5 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"18", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"19", "ZENITH DELAY":"-2.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"20", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"21", "ZENITH DELAY":"-1.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"22", "ZENITH DELAY":"-1.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"23", "ZENITH DELAY":"-0.9 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"24", "ZENITH DELAY":"-0.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"25", "ZENITH DELAY":"-0.2 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"26", "ZENITH DELAY":"0.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"53", "ZENITH DELAY":"-3.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"54", "ZENITH DELAY":"-3.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"55", "ZENITH DELAY":"-3.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"56", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"57", "ZENITH DELAY":"-2.6 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"58", "ZENITH DELAY":"-2.1 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"59", "ZENITH DELAY":"-1.8 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"60", "ZENITH DELAY":"-1.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"61", "ZENITH DELAY":"-1.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"62", "ZENITH DELAY":"-1.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"63", "ZENITH DELAY":"-0.7 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"64", "ZENITH DELAY":"-0.3 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+{ "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", "id":"SR", "routine":"TRPVEC", { "REQUEST NUMBER":"65", "ZENITH DELAY":"0.0 M", "MINIMUM ZENITH DELAY TOLERATED":"1.0 M", } },
+]}
+{amb_res_summary:[
+{"baseline":"AUKL", "station1":"AUT1", "station1":"KLOK", "length":  139.7, "method": "pbnl", "num_of_ambs":    74, "precent": 54.1, "satsys": "GPS" }
+{"baseline":"AULE", "station1":"AUT1", "station1":"LEMN", "length":  199.6, "method": "pbnl", "num_of_ambs":    60, "precent": 55.0, "satsys": "GPS" }
+{"baseline":"KCTL", "station1":"KATC", "station1":"TILO", "length":   59.0, "method": "pbnl", "num_of_ambs":    50, "precent": 90.0, "satsys": "GPS" }
+{"baseline":"KLRL", "station1":"KLOK", "station1":"RLSO", "length":  174.2, "method": "pbnl", "num_of_ambs":    74, "precent": 41.9, "satsys": "GPS" }
+{"baseline":"RLVL", "station1":"RLSO", "station1":"VLSM", "length":   78.0, "method": "pbnl", "num_of_ambs":    51, "precent": 58.8, "satsys": "GPS" }
+{"baseline":"AUBU", "station1":"AUT1", "station1":"BUCU", "length":  503.0, "method": "qif", "num_of_ambs":   176, "precent": 34.1, "satsys": "GPS" }
+{"baseline":"BOGL", "station1":"BOR1", "station1":"GLSV", "length":  957.3, "method": "qif", "num_of_ambs":   140, "precent": 45.7, "satsys": "GPS" }
+{"baseline":"BOWT", "station1":"BOR1", "station1":"WTZR", "length":  457.2, "method": "qif", "num_of_ambs":   122, "precent": 52.5, "satsys": "GPS" }
+{"baseline":"BUGL", "station1":"BUCU", "station1":"GLSV", "length":  733.5, "method": "qif", "num_of_ambs":   164, "precent": 39.0, "satsys": "GPS" }
+{"baseline":"BUGL", "station1":"BUCU", "station1":"GLSV", "length":  733.5, "method": "qif", "num_of_ambs":   128, "precent": 54.7, "satsys": "GLONASS" }
+{"baseline":"BUGL", "station1":"BUCU", "station1":"GLSV", "length":  733.5, "method": "qif", "num_of_ambs":   292, "precent": 45.9, "satsys": "MIXED" }
+{"baseline":"DYRL", "station1":"DYNG", "station1":"RLSO", "length":  216.6, "method": "qif", "num_of_ambs":    54, "precent": 48.1, "satsys": "GPS" }
+{"baseline":"DYTU", "station1":"DYNG", "station1":"TUC2", "length":  282.7, "method": "qif", "num_of_ambs":    84, "precent": 31.0, "satsys": "GPS" }
+{"baseline":"DYTU", "station1":"DYNG", "station1":"TUC2", "length":  282.7, "method": "qif", "num_of_ambs":    76, "precent": 13.2, "satsys": "GLONASS" }
+{"baseline":"DYTU", "station1":"DYNG", "station1":"TUC2", "length":  282.7, "method": "qif", "num_of_ambs":   160, "precent": 22.5, "satsys": "MIXED" }
+{"baseline":"GLPO", "station1":"GLSV", "station1":"POLV", "length":  302.2, "method": "qif", "num_of_ambs":   152, "precent": 52.6, "satsys": "GPS" }
+{"baseline":"GLPO", "station1":"GLSV", "station1":"POLV", "length":  302.2, "method": "qif", "num_of_ambs":   134, "precent": 61.2, "satsys": "GLONASS" }
+{"baseline":"GLPO", "station1":"GLSV", "station1":"POLV", "length":  302.2, "method": "qif", "num_of_ambs":   286, "precent": 56.6, "satsys": "MIXED" }
+{"baseline":"HOTR", "station1":"HOFN", "station1":"TRO1", "length": 1577.8, "method": "qif", "num_of_ambs":   198, "precent": 47.5, "satsys": "GPS" }
+{"baseline":"HOTR", "station1":"HOFN", "station1":"TRO1", "length": 1577.8, "method": "qif", "num_of_ambs":   154, "precent": 48.1, "satsys": "GLONASS" }
+{"baseline":"HOTR", "station1":"HOFN", "station1":"TRO1", "length": 1577.8, "method": "qif", "num_of_ambs":   352, "precent": 47.7, "satsys": "MIXED" }
+{"baseline":"KCNI", "station1":"KATC", "station1":"NICO", "length":  516.9, "method": "qif", "num_of_ambs":   100, "precent": 38.0, "satsys": "GPS" }
+{"baseline":"M1VL", "station1":"MAT1", "station1":"VLSM", "length":  432.6, "method": "qif", "num_of_ambs":   102, "precent": 58.8, "satsys": "GPS" }
+{"baseline":"MDPO", "station1":"MDVJ", "station1":"POLV", "length":  736.1, "method": "qif", "num_of_ambs":   158, "precent": 46.8, "satsys": "GPS" }
+{"baseline":"MDPO", "station1":"MDVJ", "station1":"POLV", "length":  736.1, "method": "qif", "num_of_ambs":   146, "precent": 50.7, "satsys": "GLONASS" }
+{"baseline":"MDPO", "station1":"MDVJ", "station1":"POLV", "length":  736.1, "method": "qif", "num_of_ambs":   304, "precent": 48.7, "satsys": "MIXED" }
+{"baseline":"ONTR", "station1":"ONSA", "station1":"TRO1", "length": 1406.2, "method": "qif", "num_of_ambs":   172, "precent": 69.8, "satsys": "GPS" }
+{"baseline":"ONTR", "station1":"ONSA", "station1":"TRO1", "length": 1406.2, "method": "qif", "num_of_ambs":   138, "precent": 50.7, "satsys": "GLONASS" }
+{"baseline":"ONTR", "station1":"ONSA", "station1":"TRO1", "length": 1406.2, "method": "qif", "num_of_ambs":   310, "precent": 61.3, "satsys": "MIXED" }
+{"baseline":"ONWS", "station1":"ONSA", "station1":"WSRT", "length":  602.6, "method": "qif", "num_of_ambs":   162, "precent": 72.8, "satsys": "GPS" }
+{"baseline":"TLTU", "station1":"TILO", "station1":"TUC2", "length":  314.1, "method": "qif", "num_of_ambs":   140, "precent": 31.4, "satsys": "GPS" }
+{"baseline":"WSWT", "station1":"WSRT", "station1":"WTZR", "length":  607.4, "method": "qif", "num_of_ambs":   156, "precent": 43.6, "satsys": "GPS" }
+{"baseline":"PDWS", "station1":"PDEL", "station1":"WSRT", "length": 2972.6, "method": "cbnl", "num_of_ambs":    58, "precent": 44.8, "satsys": "GPS" }
+{"baseline":"PDWS", "station1":"PDEL", "station1":"WSRT", "length": 2972.6, "method": "cbwl", "num_of_ambs":    58, "precent": 56.9, "satsys": "GPS" }
+{"baseline":"AUKL", "station1":"AUT1", "station1":"KLOK", "length":  139.7, "method": "pbwl", "num_of_ambs":    74, "precent": 55.4, "satsys": "GPS" }
+{"baseline":"AULE", "station1":"AUT1", "station1":"LEMN", "length":  199.6, "method": "pbwl", "num_of_ambs":    60, "precent": 56.7, "satsys": "GPS" }
+{"baseline":"KCTL", "station1":"KATC", "station1":"TILO", "length":   59.0, "method": "pbwl", "num_of_ambs":    50, "precent": 96.0, "satsys": "GPS" }
+{"baseline":"KLRL", "station1":"KLOK", "station1":"RLSO", "length":  174.2, "method": "pbwl", "num_of_ambs":    74, "precent": 41.9, "satsys": "GPS" }
+{"baseline":"RLVL", "station1":"RLSO", "station1":"VLSM", "length":   78.0, "method": "pbwl", "num_of_ambs":    51, "precent": 66.7, "satsys": "GPS" }
+]}
+<h2>ADDNEQ Summary</h2>{addneq_summary:[
+{ "xest":   4434466.0938, "yest":   2084864.4036,"zest":   4069305.4154,"xapr":   4434466.1019,"yapr":   2084864.4143,"zapr":   4069305.4163,"xcor":        -0.0081,"ycor":        -0.0107,"zcor":        -0.0009,"xrms":         0.0015,"yrms":         0.0008,"zrms":         0.0014,"latest":        39.8972,"lonest":        25.1806,"hgtest":       106.8641,"latapr":        39.8972,"lonapr":        25.1806,"hgtapr":       106.8738,"latcor":         0.0069,"loncor":        -0.0062,"hgtcor":        -0.0097,"latrms":         0.0006,"lonrms":         0.0005,"hgtrms":         0.0021,"north":         0.0069,"east":        -0.0062,"up":        -0.0097,"adj":"ESTIM" }
+{ "xest":   3411557.1362, "yest":   2348464.1062,"zest":   4834396.9629,"xapr":   3411557.1436,"yapr":   2348464.1163,"zapr":   4834396.9692,"xcor":        -0.0074,"ycor":        -0.0101,"zcor":        -0.0063,"xrms":         0.0009,"yrms":         0.0005,"zrms":         0.0010,"latest":        49.6026,"lonest":        34.5429,"hgtest":       178.3537,"latapr":        49.6026,"lonapr":        34.5429,"hgtapr":       178.3662,"latcor":         0.0049,"loncor":        -0.0041,"hgtcor":        -0.0124,"latrms":         0.0004,"lonrms":         0.0004,"hgtrms":         0.0013,"north":         0.0049,"east":        -0.0042,"up":        -0.0124,"adj":"HELMR" }
+{ "xest":   4551595.9043, "yest":  -2186892.9552,"zest":   3883410.9579,"xapr":   4551595.9095,"yapr":  -2186892.9571,"zapr":   3883410.9631,"xcor":        -0.0053,"ycor":         0.0020,"zcor":        -0.0052,"xrms":         0.0015,"yrms":         0.0008,"zrms":         0.0014,"latest":        37.7478,"lonest":       -25.6628,"hgtest":       110.6053,"latapr":        37.7478,"lonapr":       -25.6628,"hgtapr":       110.6129,"latcor":        -0.0007,"loncor":        -0.0005,"hgtcor":        -0.0076,"latrms":         0.0007,"lonrms":         0.0008,"hgtrms":         0.0020,"north":        -0.0007,"east":        -0.0005,"up":        -0.0076,"adj":"HELMR" }
+{ "xest":   4641951.2802, "yest":   1393053.8550,"zest":   4133281.0241,"xapr":   4641951.2708,"yapr":   1393053.8463,"zapr":   4133281.0125,"xcor":         0.0093,"ycor":         0.0088,"zcor":         0.0116,"xrms":         0.0031,"yrms":         0.0014,"zrms":         0.0025,"latest":        40.6491,"lonest":        16.7045,"hgtest":       534.5460,"latapr":        40.6491,"lonapr":        16.7045,"hgtapr":       534.5297,"latcor":         0.0014,"loncor":         0.0057,"hgtcor":         0.0163,"latrms":         0.0009,"lonrms":         0.0008,"hgtrms":         0.0041,"north":         0.0013,"east":         0.0057,"up":         0.0163,"adj":"HELMR" }
+{ "xest":   4595220.0337, "yest":   2039434.1321,"zest":   3912625.9709,"xapr":   4595220.0258,"yapr":   2039434.1386,"zapr":   3912625.9602,"xcor":         0.0079,"ycor":        -0.0065,"zcor":         0.0107,"xrms":         0.0026,"yrms":         0.0014,"zrms":         0.0022,"latest":        38.0786,"lonest":        23.9324,"hgtest":       510.5808,"latapr":        38.0786,"lonapr":        23.9324,"hgtapr":       510.5706,"latcor":         0.0056,"loncor":        -0.0091,"hgtcor":         0.0102,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0035,"north":         0.0056,"east":        -0.0091,"up":         0.0102,"adj":"ESTIM" }
+{ "xest":   4564746.9580, "yest":   1845610.8660,"zest":   4040935.1422,"xapr":   4564746.9552,"yapr":   1845610.8806,"zapr":   4040935.1469,"xcor":         0.0028,"ycor":        -0.0146,"zcor":        -0.0046,"xrms":         0.0019,"yrms":         0.0010,"zrms":         0.0016,"latest":        39.5647,"lonest":        22.0144,"hgtest":       138.5489,"latapr":        39.5647,"lonapr":        22.0144,"hgtapr":       138.5541,"latcor":        -0.0017,"loncor":        -0.0145,"hgtcor":        -0.0052,"latrms":         0.0006,"lonrms":         0.0006,"hgtrms":         0.0026,"north":        -0.0017,"east":        -0.0146,"up":        -0.0052,"adj":"ESTIM" }
+{ "xest":   3512888.7654, "yest":   2068980.0248,"zest":   4888903.2804,"xapr":   3512888.7546,"yapr":   2068980.0235,"zapr":   4888903.2827,"xcor":         0.0108,"ycor":         0.0013,"zcor":        -0.0023,"xrms":         0.0008,"yrms":         0.0004,"zrms":         0.0008,"latest":        50.3642,"lonest":        30.4967,"hgtest":       226.3167,"latapr":        50.3642,"lonapr":        30.4967,"hgtapr":       226.3121,"latcor":        -0.0091,"loncor":        -0.0043,"hgtcor":         0.0046,"latrms":         0.0004,"lonrms":         0.0003,"hgtrms":         0.0011,"north":        -0.0091,"east":        -0.0043,"up":         0.0046,"adj":"HELMR" }
+{ "xest":   4573403.3769, "yest":   2409322.0973,"zest":   3723878.4731,"xapr":   4573403.4150,"yapr":   2409321.9822,"zapr":   3723878.6152,"xcor":        -0.0381,"ycor":         0.1151,"zcor":        -0.1421,"xrms":         0.0031,"yrms":         0.0017,"zrms":         0.0025,"latest":        35.9515,"lonest":        27.7808,"hgtest":        74.3191,"latapr":        35.9515,"lonapr":        27.7808,"hgtapr":        74.3863,"latcor":        -0.1270,"loncor":         0.1193,"hgtcor":        -0.0673,"latrms":         0.0010,"lonrms":         0.0009,"hgtrms":         0.0041,"north":        -0.1267,"east":         0.1196,"up":        -0.0672,"adj":"ESTIM" }
+{ "xest":   4699991.5707, "yest":   1765547.7593,"zest":   3921162.2071,"xapr":   4699991.5673,"yapr":   1765547.7604,"zapr":   3921162.1978,"xcor":         0.0035,"ycor":        -0.0010,"zcor":         0.0094,"xrms":         0.0025,"yrms":         0.0012,"zrms":         0.0021,"latest":        38.1768,"lonest":        20.5886,"hgtest":       437.1969,"latapr":        38.1768,"lonapr":        20.5886,"hgtapr":       437.1888,"latcor":         0.0056,"loncor":        -0.0022,"hgtcor":         0.0081,"latrms":         0.0008,"lonrms":         0.0007,"hgtrms":         0.0032,"north":         0.0056,"east":        -0.0022,"up":         0.0081,"adj":"ESTIM" }
+{ "xest":   4564714.3420, "yest":   2365481.8499,"zest":   3762366.6348,"xapr":   4564714.3298,"yapr":   2365481.7422,"zapr":   3762366.7402,"xcor":         0.0122,"ycor":         0.1077,"zcor":        -0.1054,"xrms":         0.0028,"yrms":         0.0015,"zrms":         0.0023,"latest":        36.3804,"lonest":        27.3937,"hgtest":       179.5247,"latapr":        36.3804,"lonapr":        27.3937,"hgtapr":       179.5387,"latcor":        -0.1209,"loncor":         0.0898,"hgtcor":        -0.0140,"latrms":         0.0009,"lonrms":         0.0008,"hgtrms":         0.0037,"north":        -0.1207,"east":         0.0900,"up":        -0.0139,"adj":"ESTIM" }
+{ "xest":   2845455.8684, "yest":   2160954.3604,"zest":   5265993.2933,"xapr":   2845455.8626,"yapr":   2160954.3634,"zapr":   5265993.2843,"xcor":         0.0058,"ycor":        -0.0030,"zcor":         0.0091,"xrms":         0.0011,"yrms":         0.0007,"zrms":         0.0013,"latest":        56.0215,"lonest":        37.2145,"hgtest":       257.1162,"latapr":        56.0215,"lonapr":        37.2145,"hgtapr":       257.1071,"latcor":         0.0027,"loncor":        -0.0059,"hgtcor":         0.0091,"latrms":         0.0006,"lonrms":         0.0005,"hgtrms":         0.0017,"north":         0.0027,"east":        -0.0059,"up":         0.0091,"adj":"HELMR" }
+{ "xest":   4466283.2690, "yest":   1896167.0777,"zest":   4126096.8193,"xapr":   4466283.2752,"yapr":   1896167.1018,"zapr":   4126096.8366,"xcor":        -0.0062,"ycor":        -0.0241,"zcor":        -0.0173,"xrms":         0.0014,"yrms":         0.0008,"zrms":         0.0014,"latest":        40.5668,"lonest":        23.0037,"hgtest":       150.0596,"latapr":        40.5668,"lonapr":        23.0037,"hgtapr":       150.0823,"latcor":        -0.0034,"loncor":        -0.0197,"hgtcor":        -0.0227,"latrms":         0.0006,"lonrms":         0.0005,"hgtrms":         0.0020,"north":        -0.0033,"east":        -0.0198,"up":        -0.0227,"adj":"ESTIM" }
+{ "xest":   2102928.3135, "yest":    721619.5572,"zest":   5958196.3537,"xapr":   2102928.3095,"yapr":    721619.5537,"zapr":   5958196.3434,"xcor":         0.0040,"ycor":         0.0035,"zcor":         0.0103,"xrms":         0.0010,"yrms":         0.0005,"zrms":         0.0012,"latest":        69.6627,"lonest":        18.9397,"hgtest":       138.1346,"latapr":        69.6627,"lonapr":        18.9397,"hgtapr":       138.1232,"latcor":        -0.0010,"loncor":         0.0021,"hgtcor":         0.0114,"latrms":         0.0008,"lonrms":         0.0004,"hgtrms":         0.0014,"north":        -0.0010,"east":         0.0021,"up":         0.0114,"adj":"HELMR" }
+{ "xest":   2679689.9575, "yest":   -727951.0605,"zest":   5722789.4869,"xapr":   2679689.9366,"yapr":   -727951.0729,"zapr":   5722789.4842,"xcor":         0.0208,"ycor":         0.0124,"zcor":         0.0028,"xrms":         0.0011,"yrms":         0.0006,"zrms":         0.0016,"latest":        64.2673,"lonest":       -15.1979,"hgtest":        82.8392,"latapr":        64.2673,"lonapr":       -15.1979,"hgtapr":        82.8294,"latcor":        -0.0139,"loncor":         0.0174,"hgtcor":         0.0098,"latrms":         0.0006,"lonrms":         0.0007,"hgtrms":         0.0017,"north":        -0.0140,"east":         0.0175,"up":         0.0098,"adj":"ESTIM" }
+{ "xest":   4744543.8141, "yest":   2119411.9961,"zest":   3686258.7519,"xapr":   4744543.7870,"yapr":   2119411.9923,"zapr":   3686258.7210,"xcor":         0.0271,"ycor":         0.0038,"zcor":         0.0308,"xrms":         0.0025,"yrms":         0.0014,"zrms":         0.0022,"latest":        35.5332,"lonest":        24.0706,"hgtest":       160.9039,"latapr":        35.5332,"lonapr":        24.0706,"hgtapr":       160.8646,"latcor":         0.0098,"loncor":        -0.0076,"hgtcor":         0.0393,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0034,"north":         0.0098,"east":        -0.0076,"up":         0.0393,"adj":"ESTIM" }
+{ "xest":   3828735.7044, "yest":    443305.1174,"zest":   5064884.8016,"xapr":   3828735.7103,"yapr":    443305.1170,"zapr":   5064884.8084,"xcor":        -0.0059,"ycor":         0.0004,"zcor":        -0.0068,"xrms":         0.0009,"yrms":         0.0004,"zrms":         0.0009,"latest":        52.9146,"lonest":         6.6045,"hgtest":        82.2683,"latapr":        52.9146,"lonapr":         6.6045,"hgtapr":        82.2772,"latcor":         0.0006,"loncor":         0.0011,"hgtcor":        -0.0089,"latrms":         0.0004,"lonrms":         0.0004,"hgtrms":         0.0012,"north":         0.0006,"east":         0.0011,"up":        -0.0089,"adj":"HELMR" }
+{ "xest":   3370658.3975, "yest":    711877.2854,"zest":   5349787.0533,"xapr":   3370658.3996,"yapr":    711877.2834,"zapr":   5349787.0554,"xcor":        -0.0021,"ycor":         0.0020,"zcor":        -0.0021,"xrms":         0.0010,"yrms":         0.0005,"zrms":         0.0011,"latest":        57.3953,"lonest":        11.9255,"hgtest":        45.6034,"latapr":        57.3953,"lonapr":        11.9255,"hgtapr":        45.6060,"latcor":         0.0002,"loncor":         0.0024,"hgtcor":        -0.0026,"latrms":         0.0006,"lonrms":         0.0004,"hgtrms":         0.0014,"north":         0.0002,"east":         0.0024,"up":        -0.0026,"adj":"HELMR" }
+{ "xest":   4075580.3725, "yest":    931853.9677,"zest":   4801568.2176,"xapr":   4075580.3873,"yapr":    931853.9686,"zapr":   4801568.2312,"xcor":        -0.0148,"ycor":        -0.0008,"zcor":        -0.0136,"xrms":         0.0008,"yrms":         0.0004,"zrms":         0.0009,"latest":        49.1442,"lonest":        12.8789,"hgtest":       665.9995,"latapr":        49.1442,"lonapr":        12.8789,"hgtapr":       666.0193,"latcor":         0.0021,"loncor":         0.0025,"hgtcor":        -0.0199,"latrms":         0.0004,"lonrms":         0.0003,"hgtrms":         0.0012,"north":         0.0021,"east":         0.0025,"up":        -0.0199,"adj":"HELMR" }
+{ "xest":   3738358.2785, "yest":   1148173.8665,"zest":   5021815.8565,"xapr":   3738358.2807,"yapr":   1148173.8657,"zapr":   5021815.8611,"xcor":        -0.0022,"ycor":         0.0008,"zcor":        -0.0046,"xrms":         0.0010,"yrms":         0.0005,"zrms":         0.0010,"latest":        52.2770,"lonest":        17.0735,"hgtest":       124.3552,"latapr":        52.2770,"lonapr":        17.0735,"hgtapr":       124.3601,"latcor":        -0.0013,"loncor":         0.0014,"hgtcor":        -0.0048,"latrms":         0.0005,"lonrms":         0.0003,"hgtrms":         0.0014,"north":        -0.0013,"east":         0.0014,"up":        -0.0048,"adj":"HELMR" }
+{ "xest":   4359415.5415, "yest":   2874117.1769,"zest":   3650777.9653,"xapr":   4359415.5337,"yapr":   2874117.1817,"zapr":   3650777.9554,"xcor":         0.0078,"ycor":        -0.0048,"zcor":         0.0099,"xrms":         0.0035,"yrms":         0.0019,"zrms":         0.0028,"latest":        35.1410,"lonest":        33.3964,"hgtest":       190.0294,"latapr":        35.1410,"lonapr":        33.3964,"hgtapr":       190.0205,"latcor":         0.0059,"loncor":        -0.0083,"hgtcor":         0.0089,"latrms":         0.0010,"lonrms":         0.0011,"hgtrms":         0.0047,"north":         0.0059,"east":        -0.0083,"up":         0.0089,"adj":"HELMR" }
+{ "xest":   4679938.9996, "yest":   1840151.2221,"zest":   3910407.6825,"xapr":   4679938.9807,"yapr":   1840151.2207,"zapr":   3910407.6579,"xcor":         0.0189,"ycor":         0.0014,"zcor":         0.0246,"xrms":         0.0021,"yrms":         0.0011,"zrms":         0.0018,"latest":        38.0558,"lonest":        21.4647,"hgtest":       132.9245,"latapr":        38.0558,"lonapr":        21.4647,"hgtapr":       132.8951,"latcor":         0.0083,"loncor":        -0.0056,"hgtcor":         0.0294,"latrms":         0.0006,"lonrms":         0.0006,"hgtrms":         0.0029,"north":         0.0083,"east":        -0.0056,"up":         0.0294,"adj":"ESTIM" }
+{ "xest":   4093760.6972, "yest":   2007793.9744,"zest":   4445130.0682,"xapr":   4093760.7017,"yapr":   2007793.9877,"zapr":   4445130.0815,"xcor":        -0.0045,"ycor":        -0.0133,"zcor":        -0.0133,"xrms":         0.0009,"yrms":         0.0005,"zrms":         0.0009,"latest":        44.4639,"lonest":        26.1257,"hgtest":       143.2183,"latapr":        44.4639,"lonapr":        26.1257,"hgtapr":       143.2347,"latcor":        -0.0025,"loncor":        -0.0099,"hgtcor":        -0.0164,"latrms":         0.0004,"lonrms":         0.0003,"hgtrms":         0.0013,"north":        -0.0025,"east":        -0.0099,"up":        -0.0164,"adj":"ESTIM" }
+]}
