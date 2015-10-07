@@ -10,6 +10,25 @@
 {"switch":"--analysis-center", "arg": "cod"},
 {"switch":"--use-ntua-products", "arg": "FFG"},
 {"switch":"--append-suffix", "arg": "_foo"}],
+"general_info":
+  {"campaign" : "GREECE",
+    "user": "bpe2",
+    "host":"vincenty",
+    "program":
+      {"name":"ddprocess",
+        "version":"52",
+        "revision":"-10",
+        "last_upd":"Oct 2015"
+      },
+    "day_processed": "2015-001",
+    "interval":
+      {"from":"2015-01-01 00:00:00",
+        "to":"2015-01-01 23:59:30"
+        
+      }
+    
+  },
+
 "products":
 [{"info": "GPS/GNSS Orbit and Clock Information", "ac": "cod", "format": "sp3", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18254.EPH.Z", "satsys": "gps+glo", "host": "ftp.unibe.ch", "type": "final"},
 {"info": "Earth Rotation Parameters", "ac": "cod", "format": "erp", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18257.ERP.Z", "satsys": "", "host": "ftp.unibe.ch", "type": "final"},
@@ -110,6 +129,29 @@
 {"baseline":"KLRL", "station1":"KLOK", "station2":"RLSO", "length":  174.2, "method": "pbwl", "num_of_ambs":    74, "percent": 41.9, "satsys": "GPS" },
 {"baseline":"RLVL", "station1":"RLSO", "station2":"VLSM", "length":   78.0, "method": "pbwl", "num_of_ambs":    51, "percent": 66.7, "satsys": "GPS" }
 ],
+
+
+"warnings": [{
+    "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND",
+    "id": "SR",
+    "routine": "GTOCNL",
+    "message": {
+      "STATION NAME": "DYNG",
+      "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ",
+      "RETURN CODE": "2"
+    }
+  },
+  { "info":"TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED",
+  "id":"SR", 
+  "routine":"TRPVEC", 
+  "message":
+  { 
+    "REQUEST NUMBER":"27", 
+    "ZENITH DELAY":"-2.1 M", 
+    "MINIMUM ZENITH DELAY TOLERATED":"1.0 M"
+  }
+}],
+
 "addneq_summary":[
 { "xest":   4434466.0938,"yest":   2084864.4036,"zest":   4069305.4154,
 "xapr":   4434466.1019,"yapr":   2084864.4143,"zapr":   4069305.4163,

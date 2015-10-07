@@ -7,7 +7,24 @@
 <link rel="stylesheet" type="text/css" href="/beta2/css/main.css" />
 
 <style>
-	.indent {margin-left:10px;}
+table.tjson1{
+	width:70%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:15%;
+}
+td.main{
+width:30%;
+valign:top; 
+align:center;
+text-align:center;
+}
+
+	.indent {margin-left:100px;}
 	.pass {color:green;}
 	.fail {color:red;}
 	h2 {border-top:thin solid black;font-size:13pt;}
@@ -29,7 +46,6 @@
 		}
 	}
 </script>-->
-
 <h1>Bernese funal Simmary</h1>
 
 <button onclick="javascript:$('.run').click();">Expand all cards</button>
@@ -41,7 +57,6 @@
 		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
-
 	<button id='runJSON1' class='run'>expand</button>
 </div>
 
@@ -49,10 +64,13 @@
 <h2>2. General Informations </h2>
 <div class='indent'>
 	<div id='geninf'>
-		<h3>Array of Objects <span class='status'></span></h3> 
+		<h3>Campaign informations <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
-
+	<div id='geninfpro'>
+		<h3>Program Informations<span class='status'></span></h3> 
+		<ul></ul>
+	</div>
 	<button id='runJSON2' class='run'>expand</button>
 </div>
 
@@ -97,7 +115,7 @@
 		<ul></ul>
 	</div>
 
-	<button id='runJSON6' class='run'>Run Test</button>
+	<button id='runJSON6' class='run'>expand</button>
 </div>
 
 <!------------------------------------ 7. Warnings -------------------------------------->
@@ -108,7 +126,7 @@
 		<ul></ul>
 	</div>
 
-<!-- 	<button id='runJSON7' class='run'>expand</button> -->
+	<button id='runJSON7' class='run'>expand</button>
 </div>
 
 <!------------------------------------ 8. Ambiguity Resolution SUmmary -------------------------------------->
@@ -132,18 +150,41 @@
 
 	<button id='runJSON9' class='run'>expand</button>
 </div>
-
 <script>
 var transform1 = 
-		{tag:'tr',children:[
-			{tag:'td',html:'${switch}'},
-			{tag:'td',html:'${arg}'}
+		{tag:'table',class:'tjson1',children:[
+			{tag:'tr',children:[
+				{tag:'td',class:'main',html:'${switch}'},
+				{tag:'td',html:'${arg}'}
+			]}
 		]};
+var trans1h = {"switch":"<b>Switch</b>", "arg": "<b>Argument</b>"}
 var transform2 = 
+		{tag:'table',children:[
 		{tag:'tr',children:[
-			{tag:'td',html:'${info}'},
-			{tag:'td',html:'${ac}'},
-			{tag:'td',html:'${format}'}
+			{tag:'td',html:'campaign:'},
+			{tag:'td',html:'<b>${campaign}</b>'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'User:'},
+			{tag:'td',html:'${user}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Host:'},
+			{tag:'td',html:'${host}'}]}
+		]};
+var transform21 = 
+		{tag:'table',children:[
+		{tag:'tr',children:[
+			{tag:'td',html:'Program Name:'},
+			{tag:'td',html:'${name}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Version:'},
+			{tag:'td',html:'${version}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Revision:'},
+			{tag:'td',html:'${revision}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Last Update:'},
+			{tag:'td',html:'${last_upd}'}]}
 		]};
 var transform3 = 
 		{tag:'tr',children:[
@@ -161,12 +202,15 @@ var transform4 =
 			{tag:'td',html:'${id}'}
 		]};
 var transform5 = 
+		{tag:'table',class:'tjson1',children:[
 		{tag:'tr',children:[
-			{tag:'td',html:'${var_name}'},
+			{tag:'td',class:'main',html:'${var_name}'},
 			{tag:'td',html:'${description}'},
-			{tag:'td',html:'${value}'}
-		]};
-var transform6 = 
+			{tag:'td',class:'main',html:'${value}'}
+		]}]};
+var trans5h = {"var_name":"<b>Variable Name</b>", "description": "<b>Description</b>", "value": "<b>Value</b>" };
+
+var transform6 = 	
 		{tag:'tr',children:[
 			{tag:'td',html:'${prod_type}'},
 			{tag:'td',html:'${extension}'},
@@ -177,7 +221,14 @@ var transform6 =
 			{tag:'td',html:'${host}'},
 			{tag:'td',html:'${host_dir}'}
 		]};
-	
+		
+var transform7 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${info}'},
+			{tag:'td',html:'${id}'},
+			{tag:'td',html:'${routine}'},
+			{tag:'td',html:'${message}'}
+		]};
 var transform8 = 
 		{tag:'tr',children:[
 			{tag:'td',html:'${baseline}'},
@@ -204,19 +255,30 @@ var transform9=
 	$(document).ready(function(){
 		$.getJSON('koko2.json', function(koko2) {
 		var command = koko2.command;
+		var geninf = koko2.general_info;
+		var geninfpro = koko2.general_info.program;
 		var products = koko2.products;
 		var solution_indetifiers = koko2.solution_indetifiers;
 		var pcf_variables = koko2.pcf_variables;
 		var saved_products = koko2.saved_products;
 		var amb_res_summary = koko2.amb_res_summary;
+		var warnings = koko2.warnings;
 		var addneq_summary = koko2.addneq_summary;
 
 		
 		$('#runJSON1').click(function() {
-
 			$('#command ul').html('');
+			$('#command ul').json2html(trans1h, transform1);
 			$('#command ul').json2html(command, transform1);
 
+		});
+		$('#runJSON2').click(function() {
+
+			$('#geninf ul').html('');
+			$('#geninf ul').json2html(geninf, transform2);
+			
+			$('#geninfpro ul').html('');
+			$('#geninfpro ul').json2html(geninfpro, transform21);
 		});
 		$('#runJSON3').click(function() {
 			$('#products ul').html('');
@@ -229,11 +291,16 @@ var transform9=
 		});
 		$('#runJSON5').click(function() {
 			$('#pcfvar ul').html('');
+				  $('#pcfvar ul').json2html(trans5h, transform5);
 			$('#pcfvar ul').json2html(pcf_variables, transform5);
 		});
 		$('#runJSON6').click(function() {
 			$('#saveproducts ul').html('');
 			$('#saveproducts ul').json2html(saved_products, transform6);
+		});
+		$('#runJSON7').click(function() {
+			$('#warnings ul').html('');
+			$('#warnings ul').json2html(warnings, transform7);
 		});
 		$('#runJSON8').click(function() {
 			$('#ambsum ul').html('');
