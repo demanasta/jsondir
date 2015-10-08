@@ -1,0 +1,73 @@
+table.tjson1{
+	width:70%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:15%;
+}
+table.geninf{
+	width:30%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:15%;
+}
+
+table.products{
+	width:95%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:5%;
+}
+table.sproducts{
+	width:95%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:5%;
+}
+table.ambsum{
+	width:90%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:5%;
+	margin-right:5%;
+}
+table.addneqsum{
+	width:95%;
+	height:15%;
+	border-bottom:thin solid black;
+	line-height:130%;
+	font-size:100%;
+	font-family:Georgia, Serif, "Times New Roman";
+	margin-left:0%;
+	margin-right:5%;
+}
+td.main{
+width:30%;
+valign:top; 
+align:center;
+text-align:center;
+}
+
+	.indent {margin-left:100px;}
+	.pass {color:green;}
+	.fail {color:red;}
+	h2 {border-top:thin solid black;font-size:13pt;}
+	h3 {border-top: thin dotted gray;font-size:11pt;}
