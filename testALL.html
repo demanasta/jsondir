@@ -5,16 +5,17 @@
 <script type="text/javascript" src="jquery.json2html/json2html.js"></script>
 <script type="text/javascript" src="jquery.json2html/jquery.json2html.js"></script>
 <link rel="stylesheet" type="text/css" href="/beta2/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/beta2/src/.login/jsondir/sumjson.css" />
 
-<style>
+<!--<style>
 	.indent {margin-left:10px;}
 	.pass {color:green;}
 	.fail {color:red;}
 	h2 {border-top:thin solid black;font-size:13pt;}
 	h3 {border-top: thin dotted gray;font-size:11pt;}
-</style>
+</style>-->
 
-<!--<script>
+<script>
 	function status(pass, obj)
 	{
 		if( pass ) {
@@ -28,45 +29,266 @@
 			$(obj).addClass('fail');
 		}
 	}
-</script>-->
+</script>
 
 <h1>Bernese funal Simmary</h1>
 
 <button onclick="javascript:$('.run').click();">Expand all cards</button>
 
-<!------------------------------------ 1. command arguments -------------------------------------->
-<h2>1. command arguments</h2>
+<!------------------------------------ 8. Ambiguity Resolution SUmmary -------------------------------------->
+<h2>8. Ambiguity Resolution SUmmary</h2>
 <div class='indent'>
-	<div id='command'>
+	<div id='ambsum'>
 		<h3>Array of Objects <span class='status'></span></h3> 
 		<ul></ul>
 	</div>
 
-	<button id='runJSON1' class='run'>expand</button>
+	<button id='runJSON8' class='run'>expand</button>
 </div>
 
+
+
+
+
+
+<!------------------------------------ JS script bellow -------------------------------------->
+
 <script>
-var transform4 = 
-		var transform4 = 
+var transform1 = 
+		{tag:'table',class:'tjson1',children:[
 			{tag:'tr',children:[
-				{tag:'td',html:'${description}'},
-				{tag:'td',html:'${id}'}
-			]};
+				{tag:'td',class:'main',html:'${switch}'},
+				{tag:'td',html:'${arg}'}
+			]}
+		]};
+var trans1h = {"switch":"<b>Switch</b>", "arg": "<b>Argument</b>"}
+
+var transform2 = 
+		{tag:'table',class:'geninf', children:[
+		{tag:'tr',children:[
+			{tag:'td',html:'campaign:'},
+			{tag:'td',html:'<b>${campaign}</b>'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'User:'},
+			{tag:'td',html:'${user}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Host:'},
+			{tag:'td',html:'${host}'}]}
+		]};
+var transform21 = 
+		{tag:'table',class:'geninf', children:[
+		{tag:'tr',children:[
+			{tag:'td',html:'Program Name:'},
+			{tag:'td',html:'${name}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Version:'},
+			{tag:'td',html:'${version}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Revision:'},
+			{tag:'td',html:'${revision}'}]},
+		{tag:'tr',children:[
+			{tag:'td',html:'Last Update:'},
+			{tag:'td',html:'${last_upd}'}]}
+		]};
+var transform3 = 
+		{tag:'table',class:'products', children:[
+		{tag:'tr',children:[
+			{tag:'td',width:'10%', html:'${info}'},
+			{tag:'td',width:'10%',html:'${ac}'},
+			{tag:'td',width:'10%',html:'${format}'},
+			{tag:'td',width:'30%',html:'${filename}'},
+			{tag:'td',width:'10%',html:'${satsys}'},
+			{tag:'td',width:'10%',html:'${host}'},
+			{tag:'td',width:'10%',html:'${type}'}
+		]}
+		]};
+var trans3h = {"info": "<b>Product</b>", "ac": "<b>AC</b>", "format": "<b>Format</b>", "filename": "<b>filename</b>", "satsys": "<b>Satellite sys</b>", "host": "<b>hostname</b>", "type": "<b>Type</b>"};
+
+var transform4 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${description}'},
+			{tag:'td',html:'${id}'}
+		]};
+var transform5 = 
+		{tag:'table',class:'tjson1',children:[
+		{tag:'tr',children:[
+			{tag:'td',class:'main',html:'${var_name}'},
+			{tag:'td',html:'${description}'},
+			{tag:'td',class:'main',html:'${value}'}
+		]}]};
+var trans5h = {"var_name":"<b>Variable Name</b>", "description": "<b>Description</b>", "value": "<b>Value</b>" };
+
+var transform6 =
+		{tag:'table',class:'sproducts',children:[
+		{tag:'tr',children:[
+			{tag:'td',width:'10%', html:'${prod_type}'},
+			{tag:'td',width:'6%', html:'${extension}'},
+			{tag:'td',width:'7%', html:'${local_dir}'},
+			{tag:'td',width:'7%', html:'${sol_type}'},
+			{tag:'td',width:'20%', html:'${filename}'},
+			{tag:'td',width:'20%', html:'${savedas}'},
+			{tag:'td',width:'15%', html:'${host}'},
+			{tag:'td',width:'15%', html:'${host_dir}'}
+		]}
+		]};
+var trans6h = {"prod_type":"<b>Product Type</b>","extension":"<b>extension</b>","local_dir":"<b>local dir</b>","sol_type":"<b>solution type</b>","filename":"<b>filename</b>","savedas":"<b>saved as</b>","host":"<b>hostname</b>","host_dir":"<b>host directory</b>"};
+		
+var transform7 = 
+		{tag:'tr',children:[
+			{tag:'td',html:'${info}'},
+			{tag:'td',html:'${id}'},
+			{tag:'td',html:'${routine}'},
+			{tag:'td',html:'${message}'}
+		]};
+var transform8 = 
+		{tag:'table',class:'ambsum', children:[
+		{tag:'tr',children:[
+			{tag:'td', width:'10%', html:'${baseline}'},
+			{tag:'td', width:'10%', html:'${station1}'},
+			{tag:'td', width:'10%', html:'${station2}'},
+			{tag:'td', width:'10%', html:'${length}'},
+			{tag:'td', width:'10%', html:'${method}'},
+			{tag:'td', width:'10%', html:'${num_of_ambs}'},
+			{tag:'td', width:'10%', html:'${percent}'},
+			{tag:'td', width:'10%', html:'${satsys}'}
+		]}
+		]};
+var trans8h = {"baseline":"<b>Baseline</b>", "station1":"<b>sta1</b>", "station2":"<b>sta2</b>", "length": "<b>length (km)</b>", "method": "<b>Method</b>", "num_of_ambs": "<b>N. of Amb.</b>", "percent": "<b>Percentance</b>", "satsys": "<b>Satellite system</b>" };
+		
+var transform91= 
+		{tag:'table',class:'addneqsum', children:[
+		{tag:'tr',children:[
+			{tag:'td',width:'10%',html:'${name}'},
+			{tag:'td',width:'10%',html:'${xest}'},
+			{tag:'td',width:'10%',html:'${yest}'},
+			{tag:'td',width:'10%',html:'${zest}'},
+			{tag:'td',width:'8%',html:'${xcor}'},
+			{tag:'td',width:'8%',html:'${ycor}'},
+			{tag:'td',width:'8%',html:'${zcor}'},
+			{tag:'td',width:'8%',html:'${xrms}'},
+			{tag:'td',width:'8%',html:'${yrms}'},
+			{tag:'td',width:'8%',html:'${zrms}'},
+			{tag:'td',width:'10%',html:'${adj}'}
+		]}
+		]};
+var trans91h = {"name":"<b>code</b>","xest":"<b>xest</b>","yest":"<b>yest</b>","zest":"<b>zest</b>","xcor":"<b>xcor</b>","ycor":"<b>ycor</b>","zcor":"<b>zcor</b>","xrms":"<b>xrms</b>","yrms":"<b>yrms</b>","zrms":"<b>zrms</b>","adj":"<b>Adjust</b>"};
+
+var transform92= 
+		{tag:'table',class:'addneqsum', children:[
+		{tag:'tr',children:[
+			{tag:'td',width:'10%',html:'${name}'},
+			{tag:'td',width:'10%',html:'${latest}'},
+			{tag:'td',width:'10%',html:'${lonest}'},
+			{tag:'td',width:'10%',html:'${hgtest}'},
+			{tag:'td',width:'8%',html:'${latcor}'},
+			{tag:'td',width:'8%',html:'${loncor}'},
+			{tag:'td',width:'8%',html:'${hgtcor}'},
+			{tag:'td',width:'8%',html:'${latrms}'},
+			{tag:'td',width:'8%',html:'${lonrms}'},
+			{tag:'td',width:'8%',html:'${hgtrms}'},
+			{tag:'td',width:'10%',html:'${adj}'}
+		]}
+		]};
+var trans92h = {"name":"<b>code</b>","latest":"<b>latest</b>","lonest":"<b>lonest</b>","hgtest":"<b>hgtest</b>","latcor":"<b>latcor</b>","loncor":"<b>loncor</b>","hgtcor":"<b>hgtcor</b>","latrms":"<b>latrms</b>","lonrms":"<b>lonrms</b>","hgtrms":"<b>hgtrms</b>","adj":"<b>Adjust</b>"};
+
+var transform93= 
+		{tag:'table',class:'addneqsum', children:[
+		{tag:'tr',children:[
+			{tag:'td',width:'10%',html:'${name}'},
+			{tag:'td',width:'10%',html:'${latest}'},
+			{tag:'td',width:'10%',html:'${lonest}'},
+			{tag:'td',width:'10%',html:'${hgtest}'},
+			{tag:'td',width:'8%',html:'${north}'},
+			{tag:'td',width:'8%',html:'${east}'},
+			{tag:'td',width:'8%',html:'${up}'},
+			{tag:'td',width:'10%',html:'${adj}'}
+		]}
+		]};
+var trans93h = {"name":"<b>code</b>","latest":"<b>latest</b>","lonest":"<b>lonest</b>","hgtest":"<b>hgtest</b>","north":"<b>north</b>","east":"<b>east</b>","up":"<b>up</b>","adj":"<b>Adjust</b>"};
+
 	$(document).ready(function(){
-		$.getJSON('koko2.json', function(koko2) {
-		var command = koko2.command;
-		var solution_indetifiers = koko2.solution_indetifiers;
+		$.getJSON('koko.json', function(data) {
+		var command = data.command;
+		var geninf = data.general_info;
+		var geninfpro = data.general_info.program;
+		var products = data.products;
+			var p_dcb = data.products.dcb;
+			var p_sp3 = data.products.sp3;
+			var p_erp = data.products.erp;
+			var p_ion = data.products.ion;
+			var p_vmf1 = data.products.vmf1;
+		var solution_identifiers = data.solution_identifiers;
+		var pcf_variables = data.pcf_variables;
+		var saved_products = data.saved_products;
+		var amb_res_summary = data.amb_res_summary;
+		var warnings = data.warnings;
+		var warningsmes = JSON.stringify(data.warnings.warningsmes);
+		var addneq_summary = data.addneq_summary;
 
-
+		
 		$('#runJSON1').click(function() {
-
-			$('#solind ul').html('');
-			$('#solind ul').json2html(solution_indetifiers, transform4);
+			$('#command ul').html('');
+			$('#command ul').json2html(trans1h, transform1);
+			$('#command ul').json2html(command, transform1);
 
 		});
+		$('#runJSON2').click(function() {
+
+			$('#geninf ul').html('');
+			$('#geninf ul').json2html(geninf, transform2);
+			
+			$('#geninfpro ul').html('');
+			$('#geninfpro ul').json2html(geninfpro, transform21);
+		});
+		$('#runJSON3').click(function() {
+			$('#products ul').html('');
+			$('#products ul').json2html(trans3h, transform3);
+			$('#products ul').json2html(p_dcb, transform3);
+			$('#products ul').json2html(p_sp3, transform3);
+			$('#products ul').json2html(p_erp, transform3);
+			$('#products ul').json2html(p_ion, transform3);
+			$('#products ul').json2html(p_vmf1, transform3);
+		});
+		$('#runJSON4').click(function() {
+			$('#solind ul').html('');
+			$('#solind ul').json2html(solution_identifiers, transform4);
+		});
+		$('#runJSON5').click(function() {
+			$('#pcfvar ul').html('');
+				  $('#pcfvar ul').json2html(trans5h, transform5);
+			$('#pcfvar ul').json2html(pcf_variables, transform5);
+		});
+		$('#runJSON6').click(function() {
+			$('#saveproducts ul').html('');
+			$('#saveproducts ul').json2html(trans6h, transform6);
+			$('#saveproducts ul').json2html(saved_products, transform6);
+		});
+		$('#runJSON7').click(function() {
+			$('#warnings ul').html('');
+			$('#warnings ul').json2html(warnings, transform7);
+		});
+		$('#runJSON8').click(function() {
+			$('#ambsum ul').html('');
+			$('#ambsum ul').json2html(trans8h, transform8);
+			$('#ambsum ul').json2html(amb_res_summary, transform8);
+			
+			status( $('#ambsum ul').children().length === 1, $('#ambsum .status'));
+		});
+		$('#runJSON9').click(function() {
+			$('#addneqsum1 ul').html('');
+			$('#addneqsum1 ul').json2html(trans91h, transform91);
+			$('#addneqsum1 ul').json2html(addneq_summary, transform91);
+			$('#addneqsum2 ul').html('');
+			$('#addneqsum2 ul').json2html(trans92h, transform92);
+			$('#addneqsum2 ul').json2html(addneq_summary, transform92);
+			$('#addneqsum3 ul').html('');
+			$('#addneqsum3 ul').json2html(trans93h, transform93);
+			$('#addneqsum3 ul').json2html(addneq_summary, transform93);
+
+		});
+		
+		
 	});
 });
 </script>
-
-
 
