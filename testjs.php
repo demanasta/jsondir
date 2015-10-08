@@ -1,4 +1,28 @@
+<?php
+if (!empty($_GET['sumfile'])) { 
+            $sumfile = $_GET['sumfile']; 
+            $sumfile = basename($sumfile); 
+//             $NETWORK = strtoupper($network);
+       }
+else {
+        echo "<h1>Error.... no summary file selected</h1>";
+}
+// if (!empty($_GET['yeardoy'])) { 
+//             $yeardoy = $_GET['yeardoy']; 
+//             $yeardoy = basename($yeardoy); 
+//        }
+// else {
+//         echo "Error.... select date!!";
+// }
+// if (!empty($_GET['soltype'])) { 
+//             $soltype = $_GET['soltype']; 
+//             $soltype = basename($soltype); 
+//        }
+// else {
+//       	echo "Error.... select solution type!!";
+// }
 
+?>
 <!DOCTYPE html>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
@@ -315,7 +339,7 @@ var transform93=
 var trans93h = {"name":"<b>code</b>","latest":"<b>latest</b>","lonest":"<b>lonest</b>","hgtest":"<b>hgtest</b>","north":"<b>north</b>","east":"<b>east</b>","up":"<b>up</b>","adj":"<b>Adjust</b>"};
 
 	$(document).ready(function(){
-		$.getJSON('koko.json', function(data) {
+		$.getJSON('<?php echo $sumfile ?>', function(data) {
 		var command = data.command;
 		var geninf = data.general_info;
 		var geninfpro = data.general_info.program;
@@ -330,10 +354,19 @@ var trans93h = {"name":"<b>code</b>","latest":"<b>latest</b>","lonest":"<b>lones
 		var saved_products = data.saved_products;
 		var amb_res_summary = data.amb_res_summary;
 		var warnings = data.warnings;
-		var warningsmes = JSON.stringify(data.warnings.warningsmes);
+		var warningsmes = JSON.stringify(data.warnings.message);
 		var addneq_summary = data.addneq_summary;
-
+/*
+		for (var i = 0; i < 5; i++) {
+		var info = data.warnings.info[i],
+			id= data.warnings.id[i],
+			routine = data.warnings.routine[i],
+			message = {
+			for (var j = 0; j < 5; j++) {
+			" + "data.warnings.message[j]" + "
+			};
 		
+		};*/
 		$('#runJSON1').click(function() {
 			$('#command ul').html('');
 			$('#command ul').json2html(trans1h, transform1);
