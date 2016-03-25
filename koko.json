@@ -1,6 +1,6 @@
 {
 "command":[
-{"switch":"--year", "arg": "2015"},
+{"switch":"--year", "arg": "2014"},
 {"switch":"--doy", "arg": "1"},
 {"switch":"--bern-loadgps", "arg": "/home/bpe2/bern52/BERN52/GPS/EXE/LOADGPS.setvar"},
 {"switch":"--campaign", "arg": "greece"},
