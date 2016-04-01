@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
+
 <style>
 
 .graticule {
@@ -19,14 +20,29 @@
   stroke: #fff;
   stroke-width: .5px;
 }
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+   fill: white;
+   font: 10px sans-serif;
+   text-anchor: middle;
+}
+
 <!--http://stackoverflow.com/questions/18165533/how-to-draw-a-line-link-between-two-points-on-a-d3-map-based-on-latitude-lon-->
+
 </style>
+
 </head>
 <body>
+
+<svg class="chart"></svg>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
 <script>
 
 var width  = 960,
@@ -57,14 +73,20 @@ svg.append("path")
    .attr("d", path);
 
 // needed for zoom
-var g = svg.append("g");
-
+var g          = svg.append("g");
 var mapGroup   = g.append('g');
 var imageGroup = g.append('g');
-/*
-var arcGroup   = g.append('g');
-var pointGroup = g.append('g');
-*/
+
+/* bar chart per station */
+var y_scale = d3.scale.linear().range([height/5, 0]).domain([-0.1, 0.1]);
+var x_scale = d3.scale.ordinal().rangeRoundBands([0, width], .1);
+var xAxis = d3.svg.axis().scale(x_scale).orient("bottom");
+var yAxis = d3.svg.axis().scale(y_scale).orient("left").ticks(.005, "m");
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
@@ -83,7 +105,6 @@ d3.json("world-50m.json", function(error, world) {
         if (error) throw error;
         
         pts = [];
-        
         imageGroup.selectAll("image")
                   .data( d3.entries(data["addneq_summary"]) )
                   .enter()
@@ -102,6 +123,27 @@ d3.json("world-50m.json", function(error, world) {
                       return "green"
                   });
 
+        /* per station chart */
+        var barWidth = width / pts.length;
+        var bar = chart.selectAll("g")
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("g")
+            .attr("transform", function(d, i) {
+                return "translate(" + i * barWidth + ",0)";
+            });
+
+        chart.append("g").attr("class", "y axis").call(yAxis);
+
+            bar.append("rect")
+                .attr("y", function(d) {
+                    return y_scale( d.value["loncor"] );
+                })
+                .attr("height", function(d) {
+                    return height - y_scale( d.value["loncor"] );
+                })
+                .attr("width", barWidth - 1)
+            
         for (var p of pts) {
             imageGroup.append("text")
             .text(p.name)
