@@ -21,14 +21,25 @@
   stroke-width: .5px;
 }
 
-.chart rect {
+.bar-lon {
   fill: steelblue;
 }
+.bar-lat {
+  fill: red;
+}
+.axis text {
+  font: 10px sans-serif;
+}
 
-.chart text {
-   fill: white;
-   font: 10px sans-serif;
-   text-anchor: middle;
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
 }
 
 <!--http://stackoverflow.com/questions/18165533/how-to-draw-a-line-link-between-two-points-on-a-d3-map-based-on-latitude-lon-->
@@ -38,7 +49,11 @@
 </head>
 <body>
 
+<h2># Station Differences <i>A-Priori - A-Posteriori</i></h2>
 <svg class="chart"></svg>
+
+<h2># Baselines and Stations</h2>
+<svg class="map"></svg>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
@@ -46,10 +61,14 @@
 <script>
 
 var width  = 960,
-    height = 547,
+    height = 500,
     pt_rad = 2.5, /* radius of points on map */
     bl_wdt = 2,   /* baseline width */
     nm_fnt = 9;   /* point name font size */
+    
+var margin = {top: 20, right: 30, bottom: 30, left: 40};
+width  = width - margin.left - margin.right,
+height = height - margin.top - margin.bottom;
 
 // needed for zoom
 var scale0 = (width - 1) / 2 / Math.PI;
@@ -63,9 +82,10 @@ var path = d3.geo.path().projection(projection);
 
 var graticule = d3.geo.graticule();
 
-var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height);
+var svg = d3.select(".map")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+        .append("svg");
 
 svg.append("path")
    .datum(graticule)
@@ -78,18 +98,19 @@ var mapGroup   = g.append('g');
 var imageGroup = g.append('g');
 
 /* bar chart per station */
-var y_scale = d3.scale.linear().range([height/5, 0]).domain([-0.1, 0.1]);
+var y_scale = d3.scale.linear().range([height, 0]);
 var x_scale = d3.scale.ordinal().rangeRoundBands([0, width], .1);
 var xAxis = d3.svg.axis().scale(x_scale).orient("bottom");
-var yAxis = d3.svg.axis().scale(y_scale).orient("left").ticks(.005, "m");
-var svg = d3.select("body").append("svg")
+var yAxis = d3.svg.axis().scale(y_scale).orient("left")/*.ticks(0.005)*/;
+var chart = d3.select(".chart")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+  .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
+  
     // for non-zoom this should be svg (not g.*)
     mapGroup.insert("path", ".graticule")
             .datum(topojson.feature(world, world.objects.land))
@@ -104,7 +125,10 @@ d3.json("world-50m.json", function(error, world) {
     d3.json("koko.json", function(error, data) {
         if (error) throw error;
         
-        pts = [];
+        pts = []; /* store points here {name, lon, lat} */
+        var max_geo_cor = -500, min_geo_cor = 500;
+        
+        /* Plot stations */
         imageGroup.selectAll("image")
                   .data( d3.entries(data["addneq_summary"]) )
                   .enter()
@@ -112,6 +136,13 @@ d3.json("world-50m.json", function(error, world) {
                   .attr("r", pt_rad)
                   .attr("cx", function(d) {
                         pts.push( {"name":d.value["name"], "lon":d.value["lonest"], "lat":d.value["latest"] } );
+                        /* by the way, get me the min/max geo correction values */
+                        if ( Math.min(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]) < min_geo_cor ) {
+                            min_geo_cor = Math.min(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]);
+                        }
+                        if ( Math.max(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]) > max_geo_cor ) {
+                            max_geo_cor = Math.max(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]);
+                        }                        
                         return projection([d.value["lonest"], d.value["latest"]])[0];
                   })
                   .attr("cy", function(d) {
@@ -122,28 +153,8 @@ d3.json("world-50m.json", function(error, world) {
                       if ( d.value["adj"] === "HELMR" ) return "orange";
                       return "green"
                   });
-
-        /* per station chart */
-        var barWidth = width / pts.length;
-        var bar = chart.selectAll("g")
-            .data( d3.entries(data["addneq_summary"]) )
-            .enter()
-            .append("g")
-            .attr("transform", function(d, i) {
-                return "translate(" + i * barWidth + ",0)";
-            });
-
-        chart.append("g").attr("class", "y axis").call(yAxis);
-
-            bar.append("rect")
-                .attr("y", function(d) {
-                    return y_scale( d.value["loncor"] );
-                })
-                .attr("height", function(d) {
-                    return height - y_scale( d.value["loncor"] );
-                })
-                .attr("width", barWidth - 1)
-            
+                  
+        /* names of stations */
         for (var p of pts) {
             imageGroup.append("text")
             .text(p.name)
@@ -153,6 +164,63 @@ d3.json("world-50m.json", function(error, world) {
             .attr("font-size", nm_fnt);
         }
         
+        /* set the domain for the bar plot x-axis */
+        station_names = [];
+        for (var p of pts) { station_names.push(p["name"]); }
+        x_scale.domain( station_names );
+        y_scale.domain( [min_geo_cor, max_geo_cor] );
+        var x_axis_interval = x_scale( pts[1].name ) - x_scale( pts[0].name );
+        
+        /* per station chart */
+        chart.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        chart.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+        .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Longtitude. Correction");
+
+        chart.selectAll(".bar") /* longtitude correction bars */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-lon")
+            .attr("y", function(d) {
+                return y_scale( /*Math.min(0, d.value["loncor"])*/0 );
+            })
+            .attr("x", function(d) {
+                return x_scale( d.value["name"] );
+            })                
+            .attr("height", function(d) {
+                return Math.abs(y_scale(d.value["loncor"]) - y_scale(0));
+                /*height - y_scale( d.value["loncor"] );*/
+            })
+            .attr("width", x_scale.rangeBand()/3);
+            
+        chart.selectAll(".bar") /* latitude correction bars */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-lat")
+            .attr("y", function(d) {
+                return y_scale( d.value["latcor"] );
+            })
+            .attr("x", function(d) {
+                return x_scale( d.value["name"] ) + x_axis_interval / 3;
+            })                
+            .attr("height", function(d) {
+                return height - y_scale( d.value["latcor"] );
+            })
+            .attr("width", x_scale.rangeBand()/3);
+        
+        /* plot baselines */
         imageGroup.selectAll("image")
             .data( d3.entries(data["amb_res_summary"]) )
             .enter()
