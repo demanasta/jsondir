@@ -27,6 +27,9 @@
 .bar-lat {
   fill: red;
 }
+.bar-hgt {
+  fill: green;
+}
 .axis text {
   font: 10px sans-serif;
 }
@@ -54,6 +57,9 @@
 
 <h2># Baselines and Stations</h2>
 <svg class="map"></svg>
+
+<h2># Rms Values</h2>
+<svg class="rms"></svg>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
@@ -97,12 +103,21 @@ var g          = svg.append("g");
 var mapGroup   = g.append('g');
 var imageGroup = g.append('g');
 
-/* bar chart per station */
-var y_scale = d3.scale.linear().range([height, 0]);
+/* bar chart per station corrections */
+var y_scale = d3.scale.linear().range([height, 0]).nice();
 var x_scale = d3.scale.ordinal().rangeRoundBands([0, width], .1);
 var xAxis = d3.svg.axis().scale(x_scale).orient("bottom");
-var yAxis = d3.svg.axis().scale(y_scale).orient("left")/*.ticks(0.005)*/;
+var yAxis = d3.svg.axis().scale(y_scale).orient("left");
 var chart = d3.select(".chart")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+/* bar chart per station rms */
+var y_scale_rms = d3.scale.linear().range([height, 0]).nice();
+var yAxis_rms = d3.svg.axis().scale(y_scale_rms).orient("left");
+var rms_chart = d3.select(".rms")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -127,6 +142,7 @@ d3.json("world-50m.json", function(error, world) {
         
         pts = []; /* store points here {name, lon, lat} */
         var max_geo_cor = -500, min_geo_cor = 500;
+        var max_geo_rms = -500;
         
         /* Plot stations */
         imageGroup.selectAll("image")
@@ -142,7 +158,10 @@ d3.json("world-50m.json", function(error, world) {
                         }
                         if ( Math.max(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]) > max_geo_cor ) {
                             max_geo_cor = Math.max(d.value["loncor"], d.value["latcor"], d.value["hgtcor"]);
-                        }                        
+                        }
+                        if ( Math.max(d.value["lonrms"], d.value["latrms"], d.value["hgtrms"]) > max_geo_rms ) {
+                            max_geo_rms = Math.max(d.value["lonrms"], d.value["latrms"], d.value["hgtrms"]);
+                        }
                         return projection([d.value["lonest"], d.value["latest"]])[0];
                   })
                   .attr("cy", function(d) {
@@ -169,10 +188,15 @@ d3.json("world-50m.json", function(error, world) {
         for (var p of pts) { station_names.push(p["name"]); }
         x_scale.domain( station_names );
         y_scale.domain( [min_geo_cor, max_geo_cor] );
-        var x_axis_interval = x_scale( pts[1].name ) - x_scale( pts[0].name );
+        y_scale_rms.domain( [0, max_geo_rms] );
+        var x_axis_interval = x_scale(pts[1].name) - x_scale(pts[0].name);
         
         /* per station chart */
         chart.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+        rms_chart.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis);
@@ -185,40 +209,85 @@ d3.json("world-50m.json", function(error, world) {
             .attr("y", 6)
             .attr("dy", ".71em")
             .style("text-anchor", "end")
-            .text("Longtitude. Correction");
+            .text("Coordinate Corrections (m)");
+        rms_chart.append("g")
+            .attr("class", "y axis")
+            .call(yAxis_rms)
+        .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Rms (m)");
 
         chart.selectAll(".bar") /* longtitude correction bars */
             .data( d3.entries(data["addneq_summary"]) )
             .enter()
             .append("rect")
             .attr("class", "bar-lon")
-            .attr("y", function(d) {
-                return y_scale( /*Math.min(0, d.value["loncor"])*/0 );
-            })
+            .attr("y", function(d) { return y_scale(Math.max(0, d.value["loncor"])); })
             .attr("x", function(d) {
-                return x_scale( d.value["name"] );
-            })                
-            .attr("height", function(d) {
-                return Math.abs(y_scale(d.value["loncor"]) - y_scale(0));
-                /*height - y_scale( d.value["loncor"] );*/
+                return x_scale(d.value["name"]);
             })
-            .attr("width", x_scale.rangeBand()/3);
+            .attr("height", function(d) { return Math.abs(y_scale(d.value["loncor"]) - y_scale(0)); })
+            .attr("width", x_scale.rangeBand()/3.5);
+        rms_chart.selectAll(".bar") /* longtitude correction bars rms */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-lon")
+            .attr("y", function(d) { return y_scale_rms(d.value["lonrms"]); })
+            .attr("x", function(d) {
+                return x_scale(d.value["name"]);
+            })
+            .attr("height", function(d) { return height - y_scale_rms(d.value["lonrms"]); })
+            .attr("width", x_scale.rangeBand()/3.5);
             
         chart.selectAll(".bar") /* latitude correction bars */
             .data( d3.entries(data["addneq_summary"]) )
             .enter()
             .append("rect")
             .attr("class", "bar-lat")
-            .attr("y", function(d) {
-                return y_scale( d.value["latcor"] );
-            })
+            .attr("y", function(d) { return y_scale(Math.max(0, d.value["latcor"])); })
             .attr("x", function(d) {
-                return x_scale( d.value["name"] ) + x_axis_interval / 3;
-            })                
-            .attr("height", function(d) {
-                return height - y_scale( d.value["latcor"] );
+                return x_scale(d.value["name"]) + x_axis_interval / 3.5;
             })
-            .attr("width", x_scale.rangeBand()/3);
+            .attr("height", function(d) { return Math.abs(y_scale(d.value["latcor"]) - y_scale(0)); })
+            .attr("width", x_scale.rangeBand()/3.5);
+        rms_chart.selectAll(".bar") /* latitude correction bars rms */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-lat")
+            .attr("y", function(d) { return y_scale_rms(d.value["latrms"]); })
+            .attr("x", function(d) {
+                return x_scale(d.value["name"]) + x_axis_interval / 3.5;
+            })
+            .attr("height", function(d) { return height - y_scale_rms(d.value["latrms"]); })
+            .attr("width", x_scale.rangeBand()/3.5);
+        
+        chart.selectAll(".bar") /* hgt correction bars */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-hgt")
+            .attr("y", function(d) { return y_scale(Math.max(0, d.value["hgtcor"])); })
+            .attr("x", function(d) {
+                return x_scale(d.value["name"]) + (2*x_axis_interval) / 3.5;
+            })
+            .attr("height", function(d) { return Math.abs(y_scale(d.value["hgtcor"]) - y_scale(0)); })
+            .attr("width", x_scale.rangeBand()/3.5);
+        rms_chart.selectAll(".bar") /* height correction bars rms */
+            .data( d3.entries(data["addneq_summary"]) )
+            .enter()
+            .append("rect")
+            .attr("class", "bar-hgt")
+            .attr("y", function(d) { return y_scale_rms(d.value["hgtrms"]); })
+            .attr("x", function(d) {
+                return x_scale(d.value["name"]) + (2*x_axis_interval) / 3.5;
+            })
+            .attr("height", function(d) { return height - y_scale_rms(d.value["hgtrms"]); })
+            .attr("width", x_scale.rangeBand()/3.5);
         
         /* plot baselines */
         imageGroup.selectAll("image")
