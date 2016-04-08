@@ -138,7 +138,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "boundary")
             .attr("d", path); 
 
-    d3.json("koko.json", function(error, data) {
+    d3.json("epndens.json", function(error, data) {
         if (error) throw error;
         
         pts = []; /* store points here {name, lon, lat} */
@@ -197,7 +197,7 @@ d3.json("world-50m.json", function(error, world) {
         /* names of stations */
         for (var p of pts) {
             imageGroup.append("text")
-            .text(p.name)
+            .text(p.name.substring(0,4)) /* fuck the DOMES number */
             .attr("x", projection([p["lon"], p["lat"]])[0])
             .attr("y", projection([p["lon"], p["lat"]])[1])
             .attr("fill", "yellow")
@@ -206,11 +206,11 @@ d3.json("world-50m.json", function(error, world) {
         
         /* set the domain for the bar plot x-axis */
         station_names = [];
-        for (var p of pts) { station_names.push(p["name"]); }
-        x_scale.domain( station_names );
-        y_scale.domain( [min_geo_cor, max_geo_cor] );
-        y_scale_rms.domain( [0, max_geo_rms] );
-        var x_axis_interval = x_scale(pts[1].name) - x_scale(pts[0].name);
+        for (var p of pts) { station_names.push(p["name"].substring(0,4)); }
+        x_scale.domain(station_names);
+        y_scale.domain([min_geo_cor, max_geo_cor]);
+        y_scale_rms.domain([0, max_geo_rms]);
+        var x_axis_interval = x_scale(pts[1].name.substring(0,4)) - x_scale(pts[0].name.substring(0,4));
         
         /* per station chart */
         chart.append("g")
@@ -242,13 +242,13 @@ d3.json("world-50m.json", function(error, world) {
             .text("Rms (m)");
 
         chart.selectAll(".bar") /* longtitude correction bars */
-            .data( d3.entries(data["addneq_summary"]) )
+            .data(d3.entries(data["addneq_summary"]))
             .enter()
             .append("rect")
             .attr("class", "bar-lon")
             .attr("y", function(d) { return y_scale(Math.max(0, d.value["loncor"])); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]);
+                return x_scale(d.value["name"].substring(0,4));
             })
             .attr("height", function(d) { return Math.abs(y_scale(d.value["loncor"]) - y_scale(0)); })
             .attr("width", x_scale.rangeBand()/3.5);
@@ -259,7 +259,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "bar-lon")
             .attr("y", function(d) { return y_scale_rms(d.value["lonrms"]); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]);
+                return x_scale(d.value["name"].substring(0,4));
             })
             .attr("height", function(d) { return height - y_scale_rms(d.value["lonrms"]); })
             .attr("width", x_scale.rangeBand()/3.5);
@@ -271,7 +271,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "bar-lat")
             .attr("y", function(d) { return y_scale(Math.max(0, d.value["latcor"])); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]) + x_axis_interval / 3.5;
+                return x_scale(d.value["name"].substring(0,4)) + x_axis_interval / 3.5;
             })
             .attr("height", function(d) { return Math.abs(y_scale(d.value["latcor"]) - y_scale(0)); })
             .attr("width", x_scale.rangeBand()/3.5);
@@ -282,7 +282,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "bar-lat")
             .attr("y", function(d) { return y_scale_rms(d.value["latrms"]); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]) + x_axis_interval / 3.5;
+                return x_scale(d.value["name"].substring(0,4)) + x_axis_interval / 3.5;
             })
             .attr("height", function(d) { return height - y_scale_rms(d.value["latrms"]); })
             .attr("width", x_scale.rangeBand()/3.5);
@@ -294,7 +294,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "bar-hgt")
             .attr("y", function(d) { return y_scale(Math.max(0, d.value["hgtcor"])); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]) + (2*x_axis_interval) / 3.5;
+                return x_scale(d.value["name"].substring(0,4)) + (2*x_axis_interval) / 3.5;
             })
             .attr("height", function(d) { return Math.abs(y_scale(d.value["hgtcor"]) - y_scale(0)); })
             .attr("width", x_scale.rangeBand()/3.5);
@@ -305,7 +305,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "bar-hgt")
             .attr("y", function(d) { return y_scale_rms(d.value["hgtrms"]); })
             .attr("x", function(d) {
-                return x_scale(d.value["name"]) + (2*x_axis_interval) / 3.5;
+                return x_scale(d.value["name"].substring(0,4)) + (2*x_axis_interval) / 3.5;
             })
             .attr("height", function(d) { return height - y_scale_rms(d.value["hgtrms"]); })
             .attr("width", x_scale.rangeBand()/3.5);
