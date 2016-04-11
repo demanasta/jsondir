@@ -1,0 +1,2286 @@
+{
+    "solution_identifiers": [
+        {
+            "description": "Final Solution", 
+            "id": "DSO"
+        }, 
+        {
+            "description": "Free Network Solution", 
+            "id": "DSN"
+        }, 
+        {
+            "description": "Size-Reduced", 
+            "id": "DSR"
+        }, 
+        {
+            "description": "Preliminary Solution", 
+            "id": "DSP"
+        }
+    ], 
+    "saved_products": [
+        {
+            "sol_type": "DSO", 
+            "extension": "TRO", 
+            "savedas": "DSO18776_test1.TRO.Z", 
+            "filename": "DSO160020.TRO.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "ATM", 
+            "prod_type": "TRO_SNX", 
+            "host_dir": "/1877/"
+        }, 
+        {
+            "sol_type": "DSO", 
+            "extension": "SNX", 
+            "savedas": "DSO18776_test1.SNX.Z", 
+            "filename": "DSO160020.SNX.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "SOL", 
+            "prod_type": "SINEX", 
+            "host_dir": "/1877/"
+        }, 
+        {
+            "sol_type": "DSN", 
+            "extension": "SNX", 
+            "savedas": "DSN18776_test1.SNX.Z", 
+            "filename": "DSN160020.SNX.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "SOL", 
+            "prod_type": "SINEX", 
+            "host_dir": "/1877/"
+        }, 
+        {
+            "sol_type": "DSO", 
+            "extension": "NQ0", 
+            "savedas": "DSO18776_test1.NQ0.Z", 
+            "filename": "DSO160020.NQ0.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "SOL", 
+            "prod_type": "NQ", 
+            "host_dir": "/1877/"
+        }, 
+        {
+            "sol_type": "DSR", 
+            "extension": "NQ0", 
+            "savedas": "DSR18776_test1.NQ0.Z", 
+            "filename": "DSR160020.NQ0.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "SOL", 
+            "prod_type": "NQ", 
+            "host_dir": "/1877/"
+        }, 
+        {
+            "sol_type": "DSO", 
+            "extension": "CRD", 
+            "savedas": "DSO18776_test1.CRD.Z", 
+            "filename": "DSO160020.CRD.Z", 
+            "host": "147.102.106.135", 
+            "local_dir": "STA", 
+            "prod_type": "CRD_FILE", 
+            "host_dir": "/1877/"
+        }
+    ], 
+    "addneq_summary": [
+        {
+            "hgtcor": -0.0011, 
+            "yrms": 0.0005, 
+            "hgtest": 121.0526, 
+            "hgtapr": 121.0537, 
+            "lonest": 21.7868, 
+            "hgtrms": 0.0013, 
+            "loncor": -0.0024, 
+            "zrms": 0.0008, 
+            "lonapr": 21.7868, 
+            "xapr": 4655002.7926, 
+            "latrms": 0.0003, 
+            "east": -0.0023, 
+            "adj": "ESTIM", 
+            "north": -0.0002, 
+            "lonrms": 0.0003, 
+            "zest": 3930281.8244, 
+            "xest": 4655002.7928, 
+            "latapr": 38.2837, 
+            "xcor": 0.0002, 
+            "xrms": 0.0009, 
+            "latcor": -0.0002, 
+            "zapr": 3930281.8253, 
+            "name": "PAT0 12622M001", 
+            "up": -0.0011, 
+            "zcor": -0.0009, 
+            "ycor": -0.0024, 
+            "yest": 1860619.7274, 
+            "yapr": 1860619.7298, 
+            "latest": 38.2837
+        }, 
+        {
+            "hgtcor": -0.0029, 
+            "yrms": 0.0006, 
+            "hgtest": 538.2888, 
+            "hgtapr": 538.2917, 
+            "lonest": 15.4935, 
+            "hgtrms": 0.0016, 
+            "loncor": 0.0034, 
+            "zrms": 0.0011, 
+            "lonapr": 15.4935, 
+            "xapr": 4194423.6312, 
+            "latrms": 0.0004, 
+            "east": 0.0034, 
+            "adj": "HELMR", 
+            "north": -0.0014, 
+            "lonrms": 0.0004, 
+            "zest": 4647245.5304, 
+            "xest": 4194423.6293, 
+            "latapr": 47.0671, 
+            "xcor": -0.0019, 
+            "xrms": 0.0011, 
+            "latcor": -0.0014, 
+            "zapr": 4647245.5335, 
+            "name": "GRAZ 11001M002", 
+            "up": -0.0029, 
+            "zcor": -0.0031, 
+            "ycor": 0.003, 
+            "yest": 1162702.8919, 
+            "yapr": 1162702.889, 
+            "latest": 47.0671
+        }, 
+        {
+            "hgtcor": 0.0015, 
+            "yrms": 0.0005, 
+            "hgtest": 535.6605, 
+            "hgtapr": 535.6589, 
+            "lonest": 16.7045, 
+            "hgtrms": 0.0013, 
+            "loncor": 0.0026, 
+            "zrms": 0.0009, 
+            "lonapr": 16.7045, 
+            "xapr": 4641949.3566, 
+            "latrms": 0.0003, 
+            "east": 0.0026, 
+            "adj": "HELMR", 
+            "north": 0.0021, 
+            "lonrms": 0.0004, 
+            "zest": 4133287.6341, 
+            "xest": 4641949.3556, 
+            "latapr": 40.6491, 
+            "xcor": -0.0009, 
+            "xrms": 0.0009, 
+            "latcor": 0.0021, 
+            "zapr": 4133287.6315, 
+            "name": "MATE 12734M008", 
+            "up": 0.0015, 
+            "zcor": 0.0026, 
+            "ycor": 0.0025, 
+            "yest": 1393045.6338, 
+            "yapr": 1393045.6314, 
+            "latest": 40.6491
+        }, 
+        {
+            "hgtcor": 0.0006, 
+            "yrms": 0.0004, 
+            "hgtest": 69.1984, 
+            "hgtapr": 69.1978, 
+            "lonest": 18.1115, 
+            "hgtrms": 0.001, 
+            "loncor": -0.0008, 
+            "zrms": 0.0007, 
+            "lonapr": 18.1115, 
+            "xapr": 4627541.714, 
+            "latrms": 0.0003, 
+            "east": -0.0008, 
+            "adj": "ESTIM", 
+            "north": 0.0018, 
+            "lonrms": 0.0003, 
+            "zest": 4106448.4342, 
+            "xest": 4627541.7136, 
+            "latapr": 40.3349, 
+            "xcor": -0.0004, 
+            "xrms": 0.0008, 
+            "latcor": 0.0018, 
+            "zapr": 4106448.4324, 
+            "name": "USAL 19527M001", 
+            "up": 0.0006, 
+            "zcor": 0.0018, 
+            "ycor": -0.001, 
+            "yest": 1513541.1822, 
+            "yapr": 1513541.1831, 
+            "latest": 40.3349
+        }, 
+        {
+            "hgtcor": 0.0015, 
+            "yrms": 0.0006, 
+            "hgtest": 291.7335, 
+            "hgtapr": 291.732, 
+            "lonest": 19.2815, 
+            "hgtrms": 0.0017, 
+            "loncor": 0.0025, 
+            "zrms": 0.0012, 
+            "lonapr": 19.2815, 
+            "xapr": 4052449.277, 
+            "latrms": 0.0005, 
+            "east": 0.0025, 
+            "adj": "ESTIM", 
+            "north": -0.0039, 
+            "lonrms": 0.0004, 
+            "zest": 4701407.2182, 
+            "xest": 4052449.2798, 
+            "latapr": 47.7896, 
+            "xcor": 0.0028, 
+            "xrms": 0.0012, 
+            "latcor": -0.0039, 
+            "zapr": 4701407.2196, 
+            "name": "PENC 11206M006", 
+            "up": 0.0015, 
+            "zcor": -0.0015, 
+            "ycor": 0.0037, 
+            "yest": 1417681.318, 
+            "yapr": 1417681.3143, 
+            "latest": 47.7896
+        }, 
+        {
+            "hgtcor": 0.0001, 
+            "yrms": 0.0006, 
+            "hgtest": 93.912, 
+            "hgtapr": 93.9119, 
+            "lonest": 31.9728, 
+            "hgtrms": 0.0012, 
+            "loncor": -0.0001, 
+            "zrms": 0.0009, 
+            "lonapr": 31.9728, 
+            "xapr": 3698553.7672, 
+            "latrms": 0.0004, 
+            "east": -0.0001, 
+            "adj": "ESTIM", 
+            "north": -0.002, 
+            "lonrms": 0.0003, 
+            "zest": 4639769.5853, 
+            "xest": 3698553.7685, 
+            "latapr": 46.9728, 
+            "xcor": 0.0013, 
+            "xrms": 0.0009, 
+            "latcor": -0.0019, 
+            "zapr": 4639769.5866, 
+            "name": "MIKL 12335M001", 
+            "up": 0.0001, 
+            "zcor": -0.0013, 
+            "ycor": 0.0006, 
+            "yest": 2308676.1732, 
+            "yapr": 2308676.1725, 
+            "latest": 46.9728
+        }, 
+        {
+            "hgtcor": -0.0004, 
+            "yrms": 0.0005, 
+            "hgtest": 109.2316, 
+            "hgtapr": 109.232, 
+            "lonest": 24.9168, 
+            "hgtrms": 0.0011, 
+            "loncor": -0.001, 
+            "zrms": 0.0007, 
+            "lonapr": 24.9168, 
+            "xapr": 4362689.5822, 
+            "latrms": 0.0003, 
+            "east": -0.001, 
+            "adj": "ESTIM", 
+            "north": -0.0023, 
+            "lonrms": 0.0003, 
+            "zest": 4174234.3778, 
+            "xest": 4362689.5837, 
+            "latapr": 41.1402, 
+            "xcor": 0.0015, 
+            "xrms": 0.0008, 
+            "latcor": -0.0023, 
+            "zapr": 4174234.3798, 
+            "name": "DUTH 12621M001", 
+            "up": -0.0004, 
+            "zcor": -0.002, 
+            "ycor": -0.0004, 
+            "yest": 2026648.3192, 
+            "yapr": 2026648.3196, 
+            "latest": 41.1402
+        }, 
+        {
+            "hgtcor": -0.0067, 
+            "yrms": 0.0008, 
+            "hgtest": 160.8847, 
+            "hgtapr": 160.8914, 
+            "lonest": 24.0706, 
+            "hgtrms": 0.0021, 
+            "loncor": 0.0004, 
+            "zrms": 0.0013, 
+            "lonapr": 24.0706, 
+            "xapr": 4744543.8069, 
+            "latrms": 0.0005, 
+            "east": 0.0004, 
+            "adj": "ESTIM", 
+            "north": -0.0013, 
+            "lonrms": 0.0005, 
+            "zest": 3686258.7296, 
+            "xest": 4744543.8024, 
+            "latapr": 35.5332, 
+            "xcor": -0.0045, 
+            "xrms": 0.0015, 
+            "latcor": -0.0013, 
+            "zapr": 3686258.7345, 
+            "name": "TUC2 12617M003", 
+            "up": -0.0067, 
+            "zcor": -0.0049, 
+            "ycor": -0.0015, 
+            "yest": 2119412.0035, 
+            "yapr": 2119412.005, 
+            "latest": 35.5332
+        }, 
+        {
+            "hgtcor": -0.0073, 
+            "yrms": 0.0004, 
+            "hgtest": 147.2474, 
+            "hgtapr": 147.2546, 
+            "lonest": 29.0193, 
+            "hgtrms": 0.0009, 
+            "loncor": -0.0066, 
+            "zrms": 0.0006, 
+            "lonapr": 29.0193, 
+            "xapr": 4208830.1117, 
+            "latrms": 0.0003, 
+            "east": -0.0066, 
+            "adj": "HELMR", 
+            "north": 0.0081, 
+            "lonrms": 0.0002, 
+            "zest": 4171267.3488, 
+            "xest": 4208830.1055, 
+            "latapr": 41.1044, 
+            "xcor": -0.0062, 
+            "xrms": 0.0006, 
+            "latcor": 0.0081, 
+            "zapr": 4171267.3475, 
+            "name": "ISTA 20807M001", 
+            "up": -0.0072, 
+            "zcor": 0.0013, 
+            "ycor": -0.011, 
+            "yest": 2334850.4943, 
+            "yapr": 2334850.5054, 
+            "latest": 41.1044
+        }, 
+        {
+            "hgtcor": 0.0032, 
+            "yrms": 0.0005, 
+            "hgtest": 190.0236, 
+            "hgtapr": 190.0203, 
+            "lonest": 33.3964, 
+            "hgtrms": 0.0011, 
+            "loncor": -0.0034, 
+            "zrms": 0.0007, 
+            "lonapr": 33.3964, 
+            "xapr": 4359415.5154, 
+            "latrms": 0.0003, 
+            "east": -0.0034, 
+            "adj": "HELMR", 
+            "north": 0.0043, 
+            "lonrms": 0.0003, 
+            "zest": 3650777.9731, 
+            "xest": 4359415.5175, 
+            "latapr": 35.141, 
+            "xcor": 0.002, 
+            "xrms": 0.0008, 
+            "latcor": 0.0043, 
+            "zapr": 3650777.9677, 
+            "name": "NICO 14302M001", 
+            "up": 0.0032, 
+            "zcor": 0.0054, 
+            "ycor": -0.0028, 
+            "yest": 2874117.1905, 
+            "yapr": 2874117.1933, 
+            "latest": 35.141
+        }, 
+        {
+            "hgtcor": 0.0059, 
+            "yrms": 0.0008, 
+            "hgtest": 1166.3013, 
+            "hgtapr": 1166.2954, 
+            "lonest": 41.5651, 
+            "hgtrms": 0.0018, 
+            "loncor": -0.0025, 
+            "zrms": 0.0013, 
+            "lonapr": 41.5651, 
+            "xapr": 3451174.4598, 
+            "latrms": 0.0005, 
+            "east": -0.0025, 
+            "adj": "HELMR", 
+            "north": -0.0004, 
+            "lonrms": 0.0005, 
+            "zest": 4391955.7563, 
+            "xest": 3451174.4649, 
+            "latapr": 43.7884, 
+            "xcor": 0.0051, 
+            "xrms": 0.0012, 
+            "latcor": -0.0004, 
+            "zapr": 4391955.7526, 
+            "name": "ZECK 12351M001", 
+            "up": 0.0059, 
+            "zcor": 0.0038, 
+            "ycor": 0.0012, 
+            "yest": 3060335.5954, 
+            "yapr": 3060335.5942, 
+            "latest": 43.7884
+        }, 
+        {
+            "hgtcor": -0.0029, 
+            "yrms": 0.0008, 
+            "hgtest": 537.8304, 
+            "hgtapr": 537.8333, 
+            "lonest": 23.864, 
+            "hgtrms": 0.0019, 
+            "loncor": -0.0035, 
+            "zrms": 0.0012, 
+            "lonapr": 23.864, 
+            "xapr": 4599641.9756, 
+            "latrms": 0.0005, 
+            "east": -0.0035, 
+            "adj": "ESTIM", 
+            "north": 0.0002, 
+            "lonrms": 0.0005, 
+            "zest": 3909890.5405, 
+            "xest": 4599641.9748, 
+            "latapr": 38.0471, 
+            "xcor": -0.0008, 
+            "xrms": 0.0015, 
+            "latcor": 0.0002, 
+            "zapr": 3909890.5422, 
+            "name": "NOA1 12620M001", 
+            "up": -0.003, 
+            "zcor": -0.0017, 
+            "ycor": -0.0042, 
+            "yest": 2034827.4288, 
+            "yapr": 2034827.433, 
+            "latest": 38.0471
+        }, 
+        {
+            "hgtcor": 0.0014, 
+            "yrms": 0.0006, 
+            "hgtest": 126.3387, 
+            "hgtapr": 126.3373, 
+            "lonest": 14.9898, 
+            "hgtrms": 0.0018, 
+            "loncor": 0.0017, 
+            "zrms": 0.0011, 
+            "lonapr": 14.9898, 
+            "xapr": 4934546.0368, 
+            "latrms": 0.0004, 
+            "east": 0.0017, 
+            "adj": "HELMR", 
+            "north": 0.0006, 
+            "lonrms": 0.0004, 
+            "zest": 3806456.2953, 
+            "xest": 4934546.0371, 
+            "latapr": 36.8758, 
+            "xcor": 0.0003, 
+            "xrms": 0.0013, 
+            "latcor": 0.0006, 
+            "zapr": 3806456.294, 
+            "name": "NOT1 12717M004", 
+            "up": 0.0014, 
+            "zcor": 0.0013, 
+            "ycor": 0.0019, 
+            "yest": 1321265.2027, 
+            "yapr": 1321265.2009, 
+            "latest": 36.8758
+        }, 
+        {
+            "hgtcor": -0.0002, 
+            "yrms": 0.0004, 
+            "hgtest": 151.3143, 
+            "hgtapr": 151.3145, 
+            "lonest": 22.3879, 
+            "hgtrms": 0.0009, 
+            "loncor": -0.0018, 
+            "zrms": 0.0006, 
+            "lonapr": 22.3879, 
+            "xapr": 4549396.9382, 
+            "latrms": 0.0003, 
+            "east": -0.0018, 
+            "adj": "ESTIM", 
+            "north": 0.0004, 
+            "lonrms": 0.0002, 
+            "zest": 4045167.7295, 
+            "xest": 4549396.9385, 
+            "latapr": 39.6141, 
+            "xcor": 0.0003, 
+            "xrms": 0.0007, 
+            "latcor": 0.0004, 
+            "zapr": 4045167.7294, 
+            "name": "LARM 12610M002", 
+            "up": -0.0002, 
+            "zcor": 0.0001, 
+            "ycor": -0.0018, 
+            "yest": 1874003.4762, 
+            "yapr": 1874003.478, 
+            "latest": 39.6141
+        }, 
+        {
+            "hgtcor": -0.0073, 
+            "yrms": 0.0005, 
+            "hgtest": 143.2303, 
+            "hgtapr": 143.2376, 
+            "lonest": 26.1257, 
+            "hgtrms": 0.0011, 
+            "loncor": -0.0019, 
+            "zrms": 0.0007, 
+            "lonapr": 26.1257, 
+            "xapr": 4093760.6854, 
+            "latrms": 0.0003, 
+            "east": -0.0019, 
+            "adj": "HELMR", 
+            "north": -0.0005, 
+            "lonrms": 0.0003, 
+            "zest": 4445130.0871, 
+            "xest": 4093760.6819, 
+            "latapr": 44.4639, 
+            "xcor": -0.0035, 
+            "xrms": 0.0008, 
+            "latcor": -0.0005, 
+            "zapr": 4445130.0926, 
+            "name": "BUCU 11401M001", 
+            "up": -0.0073, 
+            "zcor": -0.0055, 
+            "ycor": -0.0038, 
+            "yest": 2007794.0016, 
+            "yapr": 2007794.0054, 
+            "latest": 44.4639
+        }, 
+        {
+            "hgtcor": -0.0024, 
+            "yrms": 0.0008, 
+            "hgtest": 886.8438, 
+            "hgtapr": 886.8462, 
+            "lonest": 34.7631, 
+            "hgtrms": 0.0016, 
+            "loncor": 0.0006, 
+            "zrms": 0.001, 
+            "lonapr": 34.7631, 
+            "xapr": 4514721.628, 
+            "latrms": 0.0004, 
+            "east": 0.0006, 
+            "adj": "HELMR", 
+            "north": 0.0038, 
+            "lonrms": 0.0004, 
+            "zest": 3228024.9075, 
+            "xest": 4514721.6244, 
+            "latapr": 30.5976, 
+            "xcor": -0.0037, 
+            "xrms": 0.0011, 
+            "latcor": 0.0038, 
+            "zapr": 3228024.9055, 
+            "name": "RAMO 20703S001", 
+            "up": -0.0024, 
+            "zcor": 0.002, 
+            "ycor": -0.0018, 
+            "yest": 3133507.9931, 
+            "yapr": 3133507.9949, 
+            "latest": 30.5976
+        }, 
+        {
+            "hgtcor": -0.0061, 
+            "yrms": 0.0004, 
+            "hgtest": 1119.5261, 
+            "hgtapr": 1119.5322, 
+            "lonest": 23.3947, 
+            "hgtrms": 0.0009, 
+            "loncor": 0.0026, 
+            "zrms": 0.0006, 
+            "lonapr": 23.3947, 
+            "xapr": 4319371.8982, 
+            "latrms": 0.0003, 
+            "east": 0.0026, 
+            "adj": "HELMR", 
+            "north": -0.0038, 
+            "lonrms": 0.0002, 
+            "zest": 4292064.0292, 
+            "xest": 4319371.8955, 
+            "latapr": 42.5561, 
+            "xcor": -0.0027, 
+            "xrms": 0.0006, 
+            "latcor": -0.0038, 
+            "zapr": 4292064.0361, 
+            "name": "SOFI 11101M002", 
+            "up": -0.0061, 
+            "zcor": -0.0069, 
+            "ycor": 0.0016, 
+            "yest": 1868687.9858, 
+            "yapr": 1868687.9842, 
+            "latest": 42.5561
+        }, 
+        {
+            "hgtcor": 0.0107, 
+            "yrms": 0.0006, 
+            "hgtest": 976.0262, 
+            "hgtapr": 976.0155, 
+            "lonest": 32.7585, 
+            "hgtrms": 0.0012, 
+            "loncor": 0.0016, 
+            "zrms": 0.0008, 
+            "lonapr": 32.7585, 
+            "xapr": 4121948.4383, 
+            "latrms": 0.0003, 
+            "east": 0.0016, 
+            "adj": "HELMR", 
+            "north": -0.0102, 
+            "lonrms": 0.0003, 
+            "zest": 4069023.8514, 
+            "xest": 4121948.4499, 
+            "latapr": 39.8874, 
+            "xcor": 0.0115, 
+            "xrms": 0.0008, 
+            "latcor": -0.0103, 
+            "zapr": 4069023.8525, 
+            "name": "ANKR 20805M002", 
+            "up": 0.0107, 
+            "zcor": -0.001, 
+            "ycor": 0.0093, 
+            "yest": 2652187.8713, 
+            "yapr": 2652187.8619, 
+            "latest": 39.8874
+        }, 
+        {
+            "hgtcor": -0.0051, 
+            "yrms": 0.0005, 
+            "hgtest": 212.5034, 
+            "hgtapr": 212.5085, 
+            "lonest": 17.6755, 
+            "hgtrms": 0.0013, 
+            "loncor": -0.0008, 
+            "zrms": 0.0009, 
+            "lonapr": 17.6755, 
+            "xapr": 4279472.6424, 
+            "latrms": 0.0004, 
+            "east": -0.0008, 
+            "adj": "ESTIM", 
+            "north": 0.0012, 
+            "lonrms": 0.0003, 
+            "zest": 4513578.1605, 
+            "xest": 4279472.6384, 
+            "latapr": 45.3328, 
+            "xcor": -0.004, 
+            "xrms": 0.0009, 
+            "latcor": 0.0012, 
+            "zapr": 4513578.1633, 
+            "name": "POZE 11908M001", 
+            "up": -0.0051, 
+            "zcor": -0.0028, 
+            "ycor": -0.0021, 
+            "yest": 1363735.1182, 
+            "yapr": 1363735.1203, 
+            "latest": 45.3328
+        }
+    ], 
+    "products": {
+        "erp": {
+            "info": "Earth Rotation Parameters", 
+            "ac": "cod", 
+            "format": "erp", 
+            "filename": "ftp.unibe.ch/aiub/CODE/2016/COD18777.ERP.Z", 
+            "satsys": "", 
+            "host": "ftp.unibe.ch", 
+            "type": "final"
+        }, 
+        "sp3": {
+            "info": "GPS/GNSS Orbit and Clock Information", 
+            "ac": "cod", 
+            "format": "sp3", 
+            "filename": "ftp.unibe.ch/aiub/CODE/2016/COD18776.EPH.Z", 
+            "satsys": "gps+glonass", 
+            "host": "ftp.unibe.ch", 
+            "type": "final"
+        }, 
+        "dcb": {
+            "info": "Differential Code Bias", 
+            "ac": "cod", 
+            "format": "DCB", 
+            "filename": "", 
+            "satsys": "", 
+            "host": "ftp.unibe.ch", 
+            "type": "final (c1_rnx)"
+        }, 
+        "vmf1": [
+            {
+                "info": "Vienna Mapping Function 1 Grid", 
+                "ac": "tuwien", 
+                "format": "GRD (ascii grid file)", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2016/VMFG_20160102.H00", 
+                "satsys": "", 
+                "host": "http://ggosatm.hg.tuwien.ac.at", 
+                "type": ""
+            }, 
+            {
+                "info": "Vienna Mapping Function 1 Grid", 
+                "ac": "tuwien", 
+                "format": "GRD (ascii grid file)", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2016/VMFG_20160102.H06", 
+                "satsys": "", 
+                "host": "http://ggosatm.hg.tuwien.ac.at", 
+                "type": ""
+            }, 
+            {
+                "info": "Vienna Mapping Function 1 Grid", 
+                "ac": "tuwien", 
+                "format": "GRD (ascii grid file)", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2016/VMFG_20160102.H12", 
+                "satsys": "", 
+                "host": "http://ggosatm.hg.tuwien.ac.at", 
+                "type": ""
+            }, 
+            {
+                "info": "Vienna Mapping Function 1 Grid", 
+                "ac": "tuwien", 
+                "format": "GRD (ascii grid file)", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2016/VMFG_20160102.H18", 
+                "satsys": "", 
+                "host": "http://ggosatm.hg.tuwien.ac.at", 
+                "type": ""
+            }
+        ], 
+        "ion": {
+            "info": "Ionospheric correction file.", 
+            "ac": "COD", 
+            "format": "ION", 
+            "filename": "ftp.unibe.ch/aiub/CODE/2016/COD18776.ION.Z", 
+            "satsys": "", 
+            "host": "ftp.unibe.ch", 
+            "type": "final"
+        }
+    }, 
+    "amb_res_summary": [
+        {
+            "num_of_ambs": 67, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 50.7, 
+            "satsys": "GPS", 
+            "length": 156.6, 
+            "method": "pbnl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 60.6, 
+            "satsys": "GLONASS", 
+            "length": 156.6, 
+            "method": "pbnl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 138, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 55.8, 
+            "satsys": "MIXED", 
+            "length": 156.6, 
+            "method": "pbnl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 101, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 48.5, 
+            "satsys": "GPS", 
+            "length": 124.3, 
+            "method": "pbnl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 50.7, 
+            "satsys": "GLONASS", 
+            "length": 124.3, 
+            "method": "pbnl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 172, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 49.4, 
+            "satsys": "MIXED", 
+            "length": 124.3, 
+            "method": "pbnl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 82, 
+            "baseline": "NOPA", 
+            "station2": "PAT0", 
+            "percent": 46.3, 
+            "satsys": "GPS", 
+            "length": 183.9, 
+            "method": "pbnl", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 24, 
+            "baseline": "ANIS", 
+            "station2": "ISTA", 
+            "percent": 16.7, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "qif", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 78, 
+            "baseline": "ANNI", 
+            "station2": "NICO", 
+            "percent": 17.9, 
+            "satsys": "GPS", 
+            "length": 529.7, 
+            "method": "qif", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 116, 
+            "baseline": "ANNI", 
+            "station2": "NICO", 
+            "percent": 55.2, 
+            "satsys": "GLONASS", 
+            "length": 529.7, 
+            "method": "qif", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 194, 
+            "baseline": "ANNI", 
+            "station2": "NICO", 
+            "percent": 40.2, 
+            "satsys": "MIXED", 
+            "length": 529.7, 
+            "method": "qif", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 60, 
+            "baseline": "BUMI", 
+            "station2": "MIKL", 
+            "percent": 10.0, 
+            "satsys": "GPS", 
+            "length": 533.5, 
+            "method": "qif", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 120, 
+            "baseline": "BUSO", 
+            "station2": "SOFI", 
+            "percent": 5.0, 
+            "satsys": "GPS", 
+            "length": 306.1, 
+            "method": "qif", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 138, 
+            "baseline": "BUSO", 
+            "station2": "SOFI", 
+            "percent": 49.3, 
+            "satsys": "GLONASS", 
+            "length": 306.1, 
+            "method": "qif", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 258, 
+            "baseline": "BUSO", 
+            "station2": "SOFI", 
+            "percent": 28.7, 
+            "satsys": "MIXED", 
+            "length": 306.1, 
+            "method": "qif", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 58, 
+            "baseline": "DTIS", 
+            "station2": "ISTA", 
+            "percent": 17.2, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 64, 
+            "baseline": "DTLR", 
+            "station2": "LARM", 
+            "percent": 6.2, 
+            "satsys": "GPS", 
+            "length": 273.5, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 94, 
+            "baseline": "DTLR", 
+            "station2": "LARM", 
+            "percent": 66.0, 
+            "satsys": "GLONASS", 
+            "length": 273.5, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 158, 
+            "baseline": "DTLR", 
+            "station2": "LARM", 
+            "percent": 41.8, 
+            "satsys": "MIXED", 
+            "length": 273.5, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 76, 
+            "baseline": "DTSO", 
+            "station2": "SOFI", 
+            "percent": 2.6, 
+            "satsys": "GPS", 
+            "length": 201.8, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 74, 
+            "baseline": "DTSO", 
+            "station2": "SOFI", 
+            "percent": 64.9, 
+            "satsys": "GLONASS", 
+            "length": 201.8, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 150, 
+            "baseline": "DTSO", 
+            "station2": "SOFI", 
+            "percent": 33.3, 
+            "satsys": "MIXED", 
+            "length": 201.8, 
+            "method": "qif", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 102, 
+            "baseline": "GRPE", 
+            "station2": "PENC", 
+            "percent": 2.0, 
+            "satsys": "GPS", 
+            "length": 296.8, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 174, 
+            "baseline": "GRPE", 
+            "station2": "PENC", 
+            "percent": 44.8, 
+            "satsys": "GLONASS", 
+            "length": 296.8, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 276, 
+            "baseline": "GRPE", 
+            "station2": "PENC", 
+            "percent": 29.0, 
+            "satsys": "MIXED", 
+            "length": 296.8, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 70, 
+            "baseline": "GRPZ", 
+            "station2": "POZE", 
+            "percent": 11.4, 
+            "satsys": "GPS", 
+            "length": 256.0, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 174, 
+            "baseline": "GRPZ", 
+            "station2": "POZE", 
+            "percent": 46.0, 
+            "satsys": "GLONASS", 
+            "length": 256.0, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 244, 
+            "baseline": "GRPZ", 
+            "station2": "POZE", 
+            "percent": 36.1, 
+            "satsys": "MIXED", 
+            "length": 256.0, 
+            "method": "qif", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 66, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 0.0, 
+            "satsys": "GPS", 
+            "length": 156.6, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 56, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 0.0, 
+            "satsys": "GLONASS", 
+            "length": 156.6, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 122, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 0.0, 
+            "satsys": "MIXED", 
+            "length": 156.6, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 110, 
+            "baseline": "LRUS", 
+            "station2": "USAL", 
+            "percent": 1.8, 
+            "satsys": "GPS", 
+            "length": 373.9, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 174, 
+            "baseline": "LRUS", 
+            "station2": "USAL", 
+            "percent": 25.3, 
+            "satsys": "GLONASS", 
+            "length": 373.9, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 284, 
+            "baseline": "LRUS", 
+            "station2": "USAL", 
+            "percent": 16.2, 
+            "satsys": "MIXED", 
+            "length": 373.9, 
+            "method": "qif", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 110, 
+            "baseline": "MANT", 
+            "station2": "NOT1", 
+            "percent": 7.3, 
+            "satsys": "GPS", 
+            "length": 444.5, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 116, 
+            "baseline": "MAPZ", 
+            "station2": "POZE", 
+            "percent": 3.4, 
+            "satsys": "GPS", 
+            "length": 526.2, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 128, 
+            "baseline": "MAPZ", 
+            "station2": "POZE", 
+            "percent": 45.3, 
+            "satsys": "GLONASS", 
+            "length": 526.2, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 244, 
+            "baseline": "MAPZ", 
+            "station2": "POZE", 
+            "percent": 25.4, 
+            "satsys": "MIXED", 
+            "length": 526.2, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 104, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 0.0, 
+            "satsys": "GPS", 
+            "length": 124.3, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 70, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 0.0, 
+            "satsys": "GLONASS", 
+            "length": 124.3, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 174, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 0.0, 
+            "satsys": "MIXED", 
+            "length": 124.3, 
+            "method": "qif", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 60, 
+            "baseline": "MIZE", 
+            "station2": "ZECK", 
+            "percent": 13.3, 
+            "satsys": "GPS", 
+            "length": 829.2, 
+            "method": "qif", 
+            "station1": "MIKL"
+        }, 
+        {
+            "num_of_ambs": 56, 
+            "baseline": "NIRA", 
+            "station2": "RAMO", 
+            "percent": 7.1, 
+            "satsys": "GPS", 
+            "length": 519.7, 
+            "method": "qif", 
+            "station1": "NICO"
+        }, 
+        {
+            "num_of_ambs": 88, 
+            "baseline": "NIRA", 
+            "station2": "RAMO", 
+            "percent": 54.5, 
+            "satsys": "GLONASS", 
+            "length": 519.7, 
+            "method": "qif", 
+            "station1": "NICO"
+        }, 
+        {
+            "num_of_ambs": 144, 
+            "baseline": "NIRA", 
+            "station2": "RAMO", 
+            "percent": 36.1, 
+            "satsys": "MIXED", 
+            "length": 519.7, 
+            "method": "qif", 
+            "station1": "NICO"
+        }, 
+        {
+            "num_of_ambs": 88, 
+            "baseline": "NOPA", 
+            "station2": "PAT0", 
+            "percent": 2.3, 
+            "satsys": "GPS", 
+            "length": 183.9, 
+            "method": "qif", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 150, 
+            "baseline": "NOTU", 
+            "station2": "TUC2", 
+            "percent": 14.7, 
+            "satsys": "GPS", 
+            "length": 279.6, 
+            "method": "qif", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 58, 
+            "baseline": "ANIS", 
+            "station2": "ISTA", 
+            "percent": 79.3, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "cbnl", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 65, 
+            "baseline": "ANNI", 
+            "station2": "NICO", 
+            "percent": 40.0, 
+            "satsys": "GPS", 
+            "length": 529.7, 
+            "method": "cbnl", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 65, 
+            "baseline": "BUMI", 
+            "station2": "MIKL", 
+            "percent": 53.8, 
+            "satsys": "GPS", 
+            "length": 533.5, 
+            "method": "cbnl", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 93, 
+            "baseline": "BUSO", 
+            "station2": "SOFI", 
+            "percent": 35.5, 
+            "satsys": "GPS", 
+            "length": 306.1, 
+            "method": "cbnl", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 56, 
+            "baseline": "DTIS", 
+            "station2": "ISTA", 
+            "percent": 48.2, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "cbnl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 62, 
+            "baseline": "DTLR", 
+            "station2": "LARM", 
+            "percent": 48.4, 
+            "satsys": "GPS", 
+            "length": 273.5, 
+            "method": "cbnl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 75, 
+            "baseline": "DTSO", 
+            "station2": "SOFI", 
+            "percent": 49.3, 
+            "satsys": "GPS", 
+            "length": 201.8, 
+            "method": "cbnl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 89, 
+            "baseline": "GRPE", 
+            "station2": "PENC", 
+            "percent": 42.7, 
+            "satsys": "GPS", 
+            "length": 296.8, 
+            "method": "cbnl", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 67, 
+            "baseline": "GRPZ", 
+            "station2": "POZE", 
+            "percent": 47.8, 
+            "satsys": "GPS", 
+            "length": 256.0, 
+            "method": "cbnl", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 85, 
+            "baseline": "LRUS", 
+            "station2": "USAL", 
+            "percent": 37.6, 
+            "satsys": "GPS", 
+            "length": 373.9, 
+            "method": "cbnl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 82, 
+            "baseline": "MANT", 
+            "station2": "NOT1", 
+            "percent": 32.9, 
+            "satsys": "GPS", 
+            "length": 444.5, 
+            "method": "cbnl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 84, 
+            "baseline": "MAPZ", 
+            "station2": "POZE", 
+            "percent": 31.0, 
+            "satsys": "GPS", 
+            "length": 526.2, 
+            "method": "cbnl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 63, 
+            "baseline": "MIZE", 
+            "station2": "ZECK", 
+            "percent": 52.4, 
+            "satsys": "GPS", 
+            "length": 829.2, 
+            "method": "cbnl", 
+            "station1": "MIKL"
+        }, 
+        {
+            "num_of_ambs": 60, 
+            "baseline": "NIRA", 
+            "station2": "RAMO", 
+            "percent": 53.3, 
+            "satsys": "GPS", 
+            "length": 519.7, 
+            "method": "cbnl", 
+            "station1": "NICO"
+        }, 
+        {
+            "num_of_ambs": 82, 
+            "baseline": "NOPA", 
+            "station2": "PAT0", 
+            "percent": 35.4, 
+            "satsys": "GPS", 
+            "length": 183.9, 
+            "method": "cbnl", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 98, 
+            "baseline": "NOTU", 
+            "station2": "TUC2", 
+            "percent": 23.5, 
+            "satsys": "GPS", 
+            "length": 279.6, 
+            "method": "cbnl", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 55, 
+            "baseline": "ANIS", 
+            "station2": "ISTA", 
+            "percent": 89.1, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "cbwl", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 62, 
+            "baseline": "ANNI", 
+            "station2": "NICO", 
+            "percent": 51.6, 
+            "satsys": "GPS", 
+            "length": 529.7, 
+            "method": "cbwl", 
+            "station1": "ANKR"
+        }, 
+        {
+            "num_of_ambs": 61, 
+            "baseline": "BUMI", 
+            "station2": "MIKL", 
+            "percent": 57.4, 
+            "satsys": "GPS", 
+            "length": 533.5, 
+            "method": "cbwl", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 75, 
+            "baseline": "BUSO", 
+            "station2": "SOFI", 
+            "percent": 68.0, 
+            "satsys": "GPS", 
+            "length": 306.1, 
+            "method": "cbwl", 
+            "station1": "BUCU"
+        }, 
+        {
+            "num_of_ambs": 53, 
+            "baseline": "DTIS", 
+            "station2": "ISTA", 
+            "percent": 52.8, 
+            "satsys": "GPS", 
+            "length": 344.5, 
+            "method": "cbwl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 59, 
+            "baseline": "DTLR", 
+            "station2": "LARM", 
+            "percent": 59.3, 
+            "satsys": "GPS", 
+            "length": 273.5, 
+            "method": "cbwl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "DTSO", 
+            "station2": "SOFI", 
+            "percent": 69.0, 
+            "satsys": "GPS", 
+            "length": 201.8, 
+            "method": "cbwl", 
+            "station1": "DUTH"
+        }, 
+        {
+            "num_of_ambs": 76, 
+            "baseline": "GRPE", 
+            "station2": "PENC", 
+            "percent": 67.1, 
+            "satsys": "GPS", 
+            "length": 296.8, 
+            "method": "cbwl", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 65, 
+            "baseline": "GRPZ", 
+            "station2": "POZE", 
+            "percent": 55.4, 
+            "satsys": "GPS", 
+            "length": 256.0, 
+            "method": "cbwl", 
+            "station1": "GRAZ"
+        }, 
+        {
+            "num_of_ambs": 77, 
+            "baseline": "LRUS", 
+            "station2": "USAL", 
+            "percent": 46.8, 
+            "satsys": "GPS", 
+            "length": 373.9, 
+            "method": "cbwl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 56, 
+            "baseline": "MANT", 
+            "station2": "NOT1", 
+            "percent": 55.4, 
+            "satsys": "GPS", 
+            "length": 444.5, 
+            "method": "cbwl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 55, 
+            "baseline": "MAPZ", 
+            "station2": "POZE", 
+            "percent": 58.2, 
+            "satsys": "GPS", 
+            "length": 526.2, 
+            "method": "cbwl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 63, 
+            "baseline": "MIZE", 
+            "station2": "ZECK", 
+            "percent": 58.7, 
+            "satsys": "GPS", 
+            "length": 829.2, 
+            "method": "cbwl", 
+            "station1": "MIKL"
+        }, 
+        {
+            "num_of_ambs": 59, 
+            "baseline": "NIRA", 
+            "station2": "RAMO", 
+            "percent": 62.7, 
+            "satsys": "GPS", 
+            "length": 519.7, 
+            "method": "cbwl", 
+            "station1": "NICO"
+        }, 
+        {
+            "num_of_ambs": 68, 
+            "baseline": "NOPA", 
+            "station2": "PAT0", 
+            "percent": 45.6, 
+            "satsys": "GPS", 
+            "length": 183.9, 
+            "method": "cbwl", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 34, 
+            "baseline": "NOTU", 
+            "station2": "TUC2", 
+            "percent": 73.5, 
+            "satsys": "GPS", 
+            "length": 279.6, 
+            "method": "cbwl", 
+            "station1": "NOA1"
+        }, 
+        {
+            "num_of_ambs": 67, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 59.7, 
+            "satsys": "GPS", 
+            "length": 156.6, 
+            "method": "pbwl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 71.8, 
+            "satsys": "GLONASS", 
+            "length": 156.6, 
+            "method": "pbwl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 138, 
+            "baseline": "LRPA", 
+            "station2": "PAT0", 
+            "percent": 65.9, 
+            "satsys": "MIXED", 
+            "length": 156.6, 
+            "method": "pbwl", 
+            "station1": "LARM"
+        }, 
+        {
+            "num_of_ambs": 101, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 50.5, 
+            "satsys": "GPS", 
+            "length": 124.3, 
+            "method": "pbwl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 57.7, 
+            "satsys": "GLONASS", 
+            "length": 124.3, 
+            "method": "pbwl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 172, 
+            "baseline": "MAUS", 
+            "station2": "USAL", 
+            "percent": 53.5, 
+            "satsys": "MIXED", 
+            "length": 124.3, 
+            "method": "pbwl", 
+            "station1": "MATE"
+        }, 
+        {
+            "num_of_ambs": 82, 
+            "baseline": "NOPA", 
+            "station2": "PAT0", 
+            "percent": 53.7, 
+            "satsys": "GPS", 
+            "length": 183.9, 
+            "method": "pbwl", 
+            "station1": "NOA1"
+        }
+    ], 
+    "command": [
+        {
+            "switch": "--config", 
+            "arg": "config.epndens"
+        }, 
+        {
+            "switch": "--year", 
+            "arg": "2016"
+        }, 
+        {
+            "switch": "--doy", 
+            "arg": "2"
+        }
+    ], 
+    "general_info": {
+        "day_processed": "2016-002", 
+        "campaign": "EPNDENS1", 
+        "interval": {
+            "to": "2016-01-02 23:59:30", 
+            "from": "2016-01-02 00:00:00"
+        }, 
+        "host": "hypatia", 
+        "program": {
+            "version": "52", 
+            "last_upd": "Oct 2015", 
+            "name": "ddprocess", 
+            "revision": "20"
+        }, 
+        "user": "bpe"
+    }, 
+    "pcf_variables": [
+        {
+            "var_name": "A", 
+            "description": "A priori information", 
+            "value": "APR"
+        }, 
+        {
+            "var_name": "B", 
+            "description": "Orbit/ERP, DCB, CLK information", 
+            "value": "COD"
+        }, 
+        {
+            "var_name": "C", 
+            "description": "Preliminary (ambiguity-float) results", 
+            "value": "DSP"
+        }, 
+        {
+            "var_name": "E", 
+            "description": "Final (ambiguity-fixed) results", 
+            "value": "DSO"
+        }, 
+        {
+            "var_name": "F", 
+            "description": "Size-reduced NEQ information", 
+            "value": "DSR"
+        }, 
+        {
+            "var_name": "I", 
+            "description": "NEQ iformation for ION estimation", 
+            "value": "DDI"
+        }, 
+        {
+            "var_name": "N", 
+            "description": "Free network solution", 
+            "value": "DSN"
+        }, 
+        {
+            "var_name": "RNXDIR", 
+            "description": "Directory with the RINEX files", 
+            "value": "RINEX"
+        }, 
+        {
+            "var_name": "OBSSEL", 
+            "description": "Station selection file (blank: all)", 
+            "value": ""
+        }, 
+        {
+            "var_name": "REFDIR", 
+            "description": "Directory with basic Bernese files", 
+            "value": "REF52"
+        }, 
+        {
+            "var_name": "REFINF", 
+            "description": "Master/reference CRD/VEL filename", 
+            "value": "IGB08"
+        }, 
+        {
+            "var_name": "CRDINF", 
+            "description": "Merged CRD/VEL filename", 
+            "value": "EPNDENS1"
+        }, 
+        {
+            "var_name": "CRXINF", 
+            "description": "Accepted station inform. inconsistencies", 
+            "value": ""
+        }, 
+        {
+            "var_name": "BLQINF", 
+            "description": "BLQ FILE NAME, CMC CORRECTIONS", 
+            "value": "EPN"
+        }, 
+        {
+            "var_name": "ATLINF", 
+            "description": "ATL FILE NAME, CMC CORRECTIONS", 
+            "value": "EPNDENS1"
+        }, 
+        {
+            "var_name": "HOIFIL", 
+            "description": "Ionosphere model for higher order iono", 
+            "value": "HOI$YSS+0"
+        }, 
+        {
+            "var_name": "RESULT", 
+            "description": "Directory name for the RNX2SNX results", 
+            "value": "RNX2SNX"
+        }, 
+        {
+            "var_name": "SATSYS", 
+            "description": "Select the GNSS (GPS, GPS/GLO)", 
+            "value": "GPS/GLO"
+        }, 
+        {
+            "var_name": "SAMPL", 
+            "description": "Sampling of the solutions", 
+            "value": "180"
+        }, 
+        {
+            "var_name": "GNSSAR", 
+            "description": "GNSS to be used for ambiguity resolution", 
+            "value": "ALL"
+        }, 
+        {
+            "var_name": "BL_AMB", 
+            "description": "Maximum baseline length for MW/L3 AR", 
+            "value": "6000"
+        }, 
+        {
+            "var_name": "BL_QIF", 
+            "description": "Maximum baseline length for QIF AR", 
+            "value": "2000"
+        }, 
+        {
+            "var_name": "BL_L53", 
+            "description": "Maximum baseline length for L5/L3 AR", 
+            "value": "200"
+        }, 
+        {
+            "var_name": "BL_L12", 
+            "description": "Maximum baseline length for L1&L2 AR", 
+            "value": "10"
+        }, 
+        {
+            "var_name": "HOURLY", 
+            "description": "Number of hourly sessions proc. together", 
+            "value": "8"
+        }, 
+        {
+            "var_name": "MYATX", 
+            "description": "ANTEX file for update (name incl. ext)", 
+            "value": ""
+        }, 
+        {
+            "var_name": "PCV", 
+            "description": "Absolute/relative PCV model", 
+            "value": "I08"
+        }, 
+        {
+            "var_name": "SATINF", 
+            "description": "Satellite information file", 
+            "value": "SATELLIT"
+        }, 
+        {
+            "var_name": "PCVINF", 
+            "description": "PCV information file", 
+            "value": "PCV_EPN"
+        }, 
+        {
+            "var_name": "SATCRX", 
+            "description": "Satellite problem file", 
+            "value": "SAT_$Y+0"
+        }, 
+        {
+            "var_name": "ELANG", 
+            "description": "Elevation angle (mask) in degrees", 
+            "value": "3"
+        }, 
+        {
+            "var_name": "CLU", 
+            "description": "Maximum number of files per cluster", 
+            "value": "5"
+        }, 
+        {
+            "var_name": "CLUEDT", 
+            "description": "Same as V_CLU but for GPSEDT", 
+            "value": "5"
+        }, 
+        {
+            "var_name": "CLUFIN", 
+            "description": "N: to skip clustering in GPSCLU", 
+            "value": "Y"
+        }, 
+        {
+            "var_name": "MINUS", 
+            "description": "Session range begin (for COMPAR)", 
+            "value": "-6"
+        }, 
+        {
+            "var_name": "PLUS", 
+            "description": "Session range end", 
+            "value": "+0"
+        }, 
+        {
+            "var_name": "SAV", 
+            "description": "Save results?", 
+            "value": "N"
+        }, 
+        {
+            "var_name": "DEL", 
+            "description": "Delete results?", 
+            "value": "N"
+        }, 
+        {
+            "var_name": "STAINF", 
+            "description": "None", 
+            "value": "EPN"
+        }, 
+        {
+            "var_name": "FIXINF", 
+            "description": "File with a list of reference stations", 
+            "value": "IGB08"
+        }
+    ], 
+    "stainf": [
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "AJAC 10077M005", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "Yes", 
+            "rinex": "", 
+            "station": "DRAG 20710S001", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "EVPA 12344M001", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "graz0020.16d", 
+            "station": "GRAZ 11001M002", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "igeo0020.16d", 
+            "station": "IGEO 15101M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "mikl0020.16d", 
+            "station": "MIKL 12335M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "ramo0020.16d", 
+            "station": "RAMO 20703S001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "unpg0020.16d", 
+            "station": "UNPG 12752M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "uzhl0020.16d", 
+            "station": "UZHL 12301M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "zeck0020.16d", 
+            "station": "ZECK 12351M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "baia0020.16d", 
+            "station": "BAIA 11406M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "cost0020.16d", 
+            "station": "COST 11407M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "deva0020.16d", 
+            "station": "DEVA 11408M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "dub20020.16d", 
+            "station": "DUB2 11901M002", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "ista0020.16d", 
+            "station": "ISTA 20807M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "mops0020.16d", 
+            "station": "MOPS 12791M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "orid0020.16d", 
+            "station": "ORID 15601M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "poze0020.16d", 
+            "station": "POZE 11908M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "usal0020.16d", 
+            "station": "USAL 19527M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "zada0020.16d", 
+            "station": "ZADA 11905M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "zouf0020.16d", 
+            "station": "ZOUF 12763M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "ankr0020.16d", 
+            "station": "ANKR 20805M002", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "lamp0020.16d", 
+            "station": "LAMP 12706M002", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "larm0020.16d", 
+            "station": "LARM 12610M002", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "m0se0020.16d", 
+            "station": "M0SE 12772M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "nico0020.16d", 
+            "station": "NICO 14302M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "noa10020.16d", 
+            "station": "NOA1 12620M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "not10020.16d", 
+            "station": "NOT1 12717M004", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "pat00020.16d", 
+            "station": "PAT0 12622M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "tuc20020.16d", 
+            "station": "TUC2 12617M003", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "bucu0020.16d", 
+            "station": "BUCU 11401M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "duth0020.16d", 
+            "station": "DUTH 12621M001", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "dyng0020.16d", 
+            "station": "DYNG 12602M006", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "mate0020.16d", 
+            "station": "MATE 12734M008", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "penc0020.16d", 
+            "station": "PENC 11206M006", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "Yes", 
+            "rinex": "sofi0020.16d", 
+            "station": "SOFI 11101M002", 
+            "processed": "Yes", 
+            "exclude": "No", 
+            "used_as_reference": "Yes"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "kasi0020.16d", 
+            "station": "KASI 12627M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "span0020.16d", 
+            "station": "SPAN 12628M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "pont0020.16d", 
+            "station": "PONT 12626M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "KIPO 12631M001", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "klok0020.16d", 
+            "station": "KLOK 12632M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "NVRK ", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "lemn0020.16d", 
+            "station": "LEMN 12633M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "prkv0020.16d", 
+            "station": "PRKV 12636M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "katc0020.16d", 
+            "station": "KATC ", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "VOLI 12641M001", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "EYPA ", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "No", 
+            "reference": "No", 
+            "rinex": "", 
+            "station": "PSAR ", 
+            "processed": "No", 
+            "exclude": "No", 
+            "used_as_reference": "No"
+        }, 
+        {
+            "available": "Yes", 
+            "reference": "No", 
+            "rinex": "rlso0020.16d", 
+            "station": "RLSO 12629M001", 
+            "processed": "No", 
+            "exclude": "Yes", 
+            "used_as_reference": "No"
+        }
+    ]
+}
