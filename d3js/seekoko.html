@@ -151,7 +151,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "boundary")
             .attr("d", path); 
 
-    d3.json("epndens.json", function(error, data) {
+    d3.json("greece.json", function(error, data) {
         if (error) throw error;
 
         /* Lets write the information for the stations */
@@ -163,10 +163,12 @@ d3.json("world-50m.json", function(error, world) {
         var sta_in_net = sta_inf_table.length
         var sta_analyzed = 0;
         for (var p of sta_inf_table) {
-            if ( p["processed"] == "Yes" ) { sta_analyzed++; }
-            if (   p["available"] == "Yes" 
-                && p["processed"] == "No" ) { 
-                available_but_unprocessed.push(p["station"])
+            if (   p["processed"] == "Yes" ) { sta_analyzed++; }
+            if (   p["available"] == "Yes"
+                && p["processed"] == "No" ) {
+                var is_excluded = "No";
+                if ( p["exclude"] == "Yes" ) { is_excluded = "Yes"; }
+                available_but_unprocessed.push( {name: p["station"], excluded: is_excluded} )
             }
             if (   p["available"] == "Yes" 
                 && p["processed"] == "Yes" 
@@ -175,16 +177,39 @@ d3.json("world-50m.json", function(error, world) {
                 reference_but_not_reference.push(p["station"])
             }
         }
-        var available_but_unprocessed_text = ""
+        
+        d3.select(".stainf-info").append("text").text("Number of stations in network: " + sta_in_net + " of which " + sta_analyzed + " were processed" +
+        " (~" + (sta_analyzed*100/sta_in_net).toFixed(1)+"%).\n");
+        
+        /* append a list with all available but unprocessed sites (if any) */
         if ( available_but_unprocessed.length > 0 ) {
+            var available_but_unprocessed_text = ""
             available_but_unprocessed_text = "Available But Unprocessed Sites:<ul>"
             for (var i of available_but_unprocessed) {
+                if ( i['excluded'] == 'Yes' ) {
+                        available_but_unprocessed_text += ("<li>" + i.name + " (<i>excluded</i>) </li>");
+                } else {
+                        available_but_unprocessed_text += ("<li>" + i.name + "</li>");
+                }
+            }
+            available_but_unprocessed_text += "</ul>"
+            
+            var div = document.createElement('div');
+            div.innerHTML = available_but_unprocessed_text;
+            document.getElementsByClassName("stainf-info")[0].appendChild(div);
+        }
+        
+        /* append a list with rejected reference stations */
+        if ( reference_but_not_reference.length > 0 ) {
+            available_but_unprocessed_text = "Rejected Reference Sites:<ul>"
+            for (var i of reference_but_not_reference) {
                 available_but_unprocessed_text += ("<li>" + i + "</li>");
             }
             available_but_unprocessed_text += "</ul>"
+            var div = document.createElement('div');
+            div.innerHTML = available_but_unprocessed_text;
+            document.getElementsByClassName("stainf-info")[0].appendChild(div);
         }
-        d3.select(".stainf-info").append("text").text("Number of stations in network: " + sta_in_net + " of which " + sta_analyzed + " were processed" +
-        " (~" + (sta_analyzed*100/sta_in_net).toFixed(1)+"%).\n" + available_but_unprocessed_text );
         
         pts = []; /* store points here {name, lon, lat} */
         var max_geo_cor = -500, min_geo_cor = 500;
@@ -261,11 +286,21 @@ d3.json("world-50m.json", function(error, world) {
         chart.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
+            .call(xAxis)
+            .selectAll("text")	
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+            .attr("transform", function(d) { return "rotate(-65)" });
         rms_chart.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
+            .call(xAxis)
+        .selectAll("text")	
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+            .attr("transform", function(d) { return "rotate(-65)" });
 
         chart.append("g")
             .attr("class", "y axis")
