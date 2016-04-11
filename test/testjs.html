@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+<script type="text/javascript" src="jquery.json2html/json2html.js"></script>
+<script type="text/javascript" src="jquery.json2html/jquery.json2html.js"></script>
+<script type="text/javascript" src="json-to-table.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/beta2/css/main.css" /> -->
+
+
+<table id="jsonHtmlTable"></table>
+
+<div id="jsonHtmlTable" class="run"></div>
+<script type="text/javascript">
+ //Example data, Object 
+    var objectArray = [{
+        "Total": "34",
+        "Version": "1.0.4",
+        "Office": "New York"
+    }, {
+        "Total": "67",
+        "Version": "1.1.0",
+        "Office": "Paris"
+    }];
+
+    //Example data, Array
+    var stringArray = ["New York", "Berlin", "Paris", "Marrakech", "Moscow"];
+
+    //Example data, nested Object. This data will create nested table also.
+    var nestedTable = [{
+        key1: "val1",
+        key2: "val2",
+        key3: {
+            tableId: "tblIdNested1",
+            tableClassName: "clsNested",
+            linkText: "Download",
+            data: [{
+                subkey1: "subval1",
+                subkey2: "subval2",
+                subkey3: "subval3"
+            }]
+        }
+    }];
+var jsonHtmlTable = ConvertJsonToTable(objectArray, 'jsonTable', null, 'Download');
+document.getElementById('jsonHtmlTable').innerHTML = jsonHtmlTable;
+console.log("jsontable is" , jsonHtmlTable )
+</script>

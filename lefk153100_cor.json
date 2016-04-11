@@ -1,0 +1,207 @@
+{
+"command":[
+{"switch":"-y", "arg": "2015"},
+{"switch":"-d", "arg": "310"},
+{"switch":"--bern-loadgps", "arg": "/home/bpe/bern52/BERN52/GPS/EXE/LOADGPS.setvar"},
+{"switch":"--campaign", "arg": "lefk15"},
+{"switch":"--satellite-system", "arg": "gps"},
+{"switch":"--tables-dir", "arg": "/home/bpe/tables/"},
+{"switch":"--save-dir", "arg": "/home/bpe/data/GPSDATA/SAVEDISK/RNX2SNX"},
+{"switch":"--solution-id", "arg": "DSO"},
+{"switch":"--analysis-center", "arg": "cod"},
+{"switch":"--append-suffix", "arg": "_test"},
+{"switch":"--no-atl"},
+{"switch":"--antex", "arg": "/home/bpe/tables/atx/igs081869.atx"},
+{"switch":"--use-epn-exclude"},
+{"switch":"--json-out", "arg": "lefk153100.json"},
+{"switch":"--debug"}],
+
+"general_info":{
+"campaign": "LEFK15",
+"user": "bpe",
+"host":"hypatia",
+"program": {"name":"ddprocess","version":"52","revision":"-10","last_upd":"Oct 2015"},
+"day_processed": "2015-310",
+"interval": {"from":"2015-11-06 00:00:00", "to":"2015-11-06 23:59:30"}},
+
+"products":{
+"dcb": {"info": "Differential Code Bias", "ac": "cod", "format": "DCB", "filename": "", "satsys": "", "host": "ftp.unibe.ch", "type": "running (c1_rnx)"},
+"sp3": {"info": "GPS/GNSS Orbit and Clock Information", "ac": "cod", "format": "sp3", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18695.EPH.Z", "satsys": "gps+glonass", "host": "ftp.unibe.ch", "type": "final"},
+"erp": {"info": "Earth Rotation Parameters", "ac": "cod", "format": "erp", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18697.ERP.Z", "satsys": "", "host": "ftp.unibe.ch", "type": "final"} ,
+"ion": {"info": "Ionospheric correction file.", "ac": "COD", "format": "ION", "filename": "ftp.unibe.ch/aiub/CODE/2015/COD18695.ION.Z", "satsys": "", "host": "ftp.unibe.ch", "type": "final"}, 
+"vmf1":[
+{"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20151106.H00", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""} , {"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20151106.H06", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""} , {"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20151106.H12", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""} , {"info": "Vienna Mapping Function 1 Grid", "ac": "tuwien", "format": "GRD (ascii grid file)", "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2015/VMFG_20151106.H18", "satsys": "", "host": "http://ggosatm.hg.tuwien.ac.at", "type": ""}]
+},
+
+"solution_identifiers":[
+{"description":"Final Solution", "id":"DSO"},
+{"description":"Size-Reduced", "id":"DSR"},
+{"description":"Preliminary Solution", "id":"DSP"}
+],
+
+"pcf_variables":[
+{"var_name":"A", "description": "A priori information", "value": "APR" },
+{"var_name":"B", "description": "Orbit/ERP, DCB, CLK information", "value": "COD" },
+{"var_name":"C", "description": "Preliminary (ambiguity-float) results", "value": "DSP" },
+{"var_name":"E", "description": "Final (ambiguity-fixed) results", "value": "DSO" },
+{"var_name":"F", "description": "Size-reduced NEQ information", "value": "DSR" },
+{"var_name":"I", "description": "NEQ iformation for ION estimation", "value": "DDI" },
+{"var_name":"N", "description": "Free network solution", "value": "FNS" },
+{"var_name":"RNXDIR", "description": "Directory with the RINEX files", "value": "RINEX" },
+{"var_name":"OBSSEL", "description": "Station selection file (blank: all)", "value": "" },
+{"var_name":"REFDIR", "description": "Directory with basic Bernese files", "value": "REF52" },
+{"var_name":"REFINF", "description": "Master/reference CRD/VEL filename", "value": "IGB08" },
+{"var_name":"CRDINF", "description": "Merged CRD/VEL filename", "value": "LEFK15" },
+{"var_name":"CRXINF", "description": "Accepted station inform. inconsistencies", "value": "" },
+{"var_name":"BLQINF", "description": "BLQ FILE NAME, CMC CORRECTIONS", "value": "LEFK15" },
+{"var_name":"ATLINF", "description": "ATL FILE NAME, CMC CORRECTIONS", "value": "" },
+{"var_name":"HOIFIL", "description": "Ionosphere model for higher order iono", "value": "HOI$YSS+0" },
+{"var_name":"RESULT", "description": "Directory name for the RNX2SNX results", "value": "RNX2SNX" },
+{"var_name":"SATSYS", "description": "Select the GNSS (GPS, GPS/GLO)", "value": "GPS" },
+{"var_name":"SAMPL", "description": "Sampling of the solutions", "value": "180" },
+{"var_name":"GNSSAR", "description": "GNSS to be used for ambiguity resolution", "value": "ALL" },
+{"var_name":"BL_AMB", "description": "Maximum baseline length for MW/L3 AR", "value": "6000" },
+{"var_name":"BL_QIF", "description": "Maximum baseline length for QIF AR", "value": "2000" },
+{"var_name":"BL_L53", "description": "Maximum baseline length for L5/L3 AR", "value": "200" },
+{"var_name":"BL_L12", "description": "Maximum baseline length for L1&L2 AR", "value": "10" },
+{"var_name":"HOURLY", "description": "Number of hourly sessions proc. together", "value": "8" },
+{"var_name":"MYATX", "description": "ANTEX file for update (name incl. ext)", "value": "" },
+{"var_name":"PCV", "description": "Absolute/relative PCV model", "value": "I08" },
+{"var_name":"SATINF", "description": "Satellite information file", "value": "SATELLIT" },
+{"var_name":"PCVINF", "description": "PCV information file", "value": "PCV_LEF" },
+{"var_name":"SATCRX", "description": "Satellite problem file", "value": "SAT_$Y+0" },
+{"var_name":"ELANG", "description": "Elevation angle (mask) in degrees", "value": "3" },
+{"var_name":"CLU", "description": "Maximum number of files per cluster", "value": "7" },
+{"var_name":"CLUEDT", "description": "Same as V_CLU but for GPSEDT", "value": "5" },
+{"var_name":"CLUFIN", "description": "N: to skip clustering in GPSCLU", "value": "Y" },
+{"var_name":"MINUS", "description": "Session range begin (for COMPAR)", "value": "-6" },
+{"var_name":"PLUS", "description": "Session range end", "value": "+0" },
+{"var_name":"SAV", "description": "Save results?", "value": "N" },
+{"var_name":"DEL", "description": "Delete results?", "value": "N" },
+{"var_name":"STAINF", "description": "None", "value": "LEFK15" }],
+
+"saved_products":[{"prod_type":"TRO_SNX","extension":"TRO","local_dir":"ATM","sol_type":"DSO","filename":"DSO153100.TRO","savedas":"DSO153100_test.TRO.Z","host":"147.102.110.69","host_dir":"/2015/310/"},{"prod_type":"SINEX","extension":"SNX","local_dir":"SOL","sol_type":"DSO","filename":"DSO153100.SNX","savedas":"DSO153100_test.SNX.Z","host":"147.102.110.69","host_dir":"/2015/310/"},{"prod_type":"NQ","extension":"NQ0","local_dir":"SOL","sol_type":"DSO","filename":"DSO153100.NQ0","savedas":"DSO153100_test.NQ0.Z","host":"147.102.110.69","host_dir":"/2015/310/"},{"prod_type":"NQ","extension":"NQ0","local_dir":"SOL","sol_type":"DSR","filename":"DSR153100.NQ0","savedas":"DSR153100_test.NQ0.Z","host":"147.102.110.69","host_dir":"/2015/310/"},{"prod_type":"CRD_FILE","extension":"CRD","local_dir":"STA","sol_type":"DSO","filename":"DSO153100.CRD","savedas":"DSO153100_test.CRD.Z","host":"147.102.110.69","host_dir":"/2015/310/"}],
+
+
+"warnings":[
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "ANKR 20805M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NICO 14302M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOA1 12620M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "AUT1 12619M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "LARM 12610M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "MAT1 12734M009", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "ANKR 20805M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NICO 14302M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOA1 12620M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "AUT1 12619M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "LARM 12610M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "MAT1 12734M009", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "LARM 12610M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "PAT0 12622M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "MAT1 12734M009", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOT1 12717M004", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "WTZR 14201M010", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOA1 12620M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "TUC2 12617M003", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "LARM 12610M002", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "PAT0 12622M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "MAT1 12734M009", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOT1 12717M004", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "WTZR 14201M010", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "NOA1 12620M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "TUC2 12617M003", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "PAT0 12622M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ,
+{ "info":"OCEAN LOADING CORRECTION VALUES NOT FOUND", "id":"SR", "routine":"GTOCNL",  "message":{ "STATION NAME": "PAT0 12622M001", "FILE NAME": "${P}/LEFK15/STA/LEFK15.BLQ", "RETURN CODE": "2"
+} } ],
+
+"amb_res_summary":[
+{"baseline":"AULA", "station1":"AUT1", "station2":"LARM", "length":  118.1, "method": "pbnl", "num_of_ambs":    92, "percent": 44.6, "satsys": "GPS" } ,
+{"baseline":"KASP", "station1":"KASI", "station2":"SPAN", "length":  124.7, "method": "pbnl", "num_of_ambs":    46, "percent": 60.9, "satsys": "GPS" } ,
+{"baseline":"LAPA", "station1":"LARM", "station2":"PAT0", "length":  156.6, "method": "pbnl", "num_of_ambs":    61, "percent": 55.7, "satsys": "GPS" } ,
+{"baseline":"NOPA", "station1":"NOA1", "station2":"PAT0", "length":  183.9, "method": "pbnl", "num_of_ambs":    76, "percent": 47.4, "satsys": "GPS" } ,
+{"baseline":"PARL", "station1":"PAT0", "station2":"RLSO", "length":   37.9, "method": "pbnl", "num_of_ambs":    61, "percent": 50.8, "satsys": "GPS" } ,
+{"baseline":"POSP", "station1":"PONT", "station2":"SPAN", "length":   19.6, "method": "pbnl", "num_of_ambs":    34, "percent": 47.1, "satsys": "GPS" } ,
+{"baseline":"POVL", "station1":"PONT", "station2":"VLSM", "length":   49.1, "method": "pbnl", "num_of_ambs":    33, "percent": 48.5, "satsys": "GPS" } ,
+{"baseline":"RLVL", "station1":"RLSO", "station2":"VLSM", "length":   78.0, "method": "pbnl", "num_of_ambs":    51, "percent": 58.8, "satsys": "GPS" } ,
+{"baseline":"ANNI", "station1":"ANKR", "station2":"NICO", "length":  529.7, "method": "qif", "num_of_ambs":    76, "percent": 23.7, "satsys": "GPS" } ,
+{"baseline":"ANNO", "station1":"ANKR", "station2":"NOA1", "length":  796.6, "method": "qif", "num_of_ambs":   118, "percent": 16.9, "satsys": "GPS" } ,
+{"baseline":"AULA", "station1":"AUT1", "station2":"LARM", "length":  118.1, "method": "qif", "num_of_ambs":   102, "percent":  2.0, "satsys": "GPS" } ,
+{"baseline":"KAMA", "station1":"KASI", "station2":"MAT1", "length":  292.8, "method": "qif", "num_of_ambs":    66, "percent":  6.1, "satsys": "GPS" } ,
+{"baseline":"KASP", "station1":"KASI", "station2":"SPAN", "length":  124.7, "method": "qif", "num_of_ambs":    36, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"LAPA", "station1":"LARM", "station2":"PAT0", "length":  156.6, "method": "qif", "num_of_ambs":    54, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"MANT", "station1":"MAT1", "station2":"NOT1", "length":  444.5, "method": "qif", "num_of_ambs":    56, "percent": 10.7, "satsys": "GPS" } ,
+{"baseline":"MAWT", "station1":"MAT1", "station2":"WTZR", "length":  990.0, "method": "qif", "num_of_ambs":   118, "percent": 13.6, "satsys": "GPS" } ,
+{"baseline":"NOPA", "station1":"NOA1", "station2":"PAT0", "length":  183.9, "method": "qif", "num_of_ambs":    80, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"NOTU", "station1":"NOA1", "station2":"TUC2", "length":  279.6, "method": "qif", "num_of_ambs":   152, "percent": 14.5, "satsys": "GPS" } ,
+{"baseline":"PARL", "station1":"PAT0", "station2":"RLSO", "length":   37.9, "method": "qif", "num_of_ambs":    60, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"POSP", "station1":"PONT", "station2":"SPAN", "length":   19.6, "method": "qif", "num_of_ambs":    36, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"POVL", "station1":"PONT", "station2":"VLSM", "length":   49.1, "method": "qif", "num_of_ambs":    34, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"RLVL", "station1":"RLSO", "station2":"VLSM", "length":   78.0, "method": "qif", "num_of_ambs":    42, "percent":  0.0, "satsys": "GPS" } ,
+{"baseline":"ANNI", "station1":"ANKR", "station2":"NICO", "length":  529.7, "method": "cbnl", "num_of_ambs":    59, "percent": 35.6, "satsys": "GPS" } ,
+{"baseline":"ANNO", "station1":"ANKR", "station2":"NOA1", "length":  796.6, "method": "cbnl", "num_of_ambs":    76, "percent": 22.4, "satsys": "GPS" } ,
+{"baseline":"KAMA", "station1":"KASI", "station2":"MAT1", "length":  292.8, "method": "cbnl", "num_of_ambs":    61, "percent": 45.9, "satsys": "GPS" } ,
+{"baseline":"MANT", "station1":"MAT1", "station2":"NOT1", "length":  444.5, "method": "cbnl", "num_of_ambs":    73, "percent": 61.6, "satsys": "GPS" } ,
+{"baseline":"MAWT", "station1":"MAT1", "station2":"WTZR", "length":  990.0, "method": "cbnl", "num_of_ambs":    79, "percent": 25.3, "satsys": "GPS" } ,
+{"baseline":"NOPA", "station1":"NOA1", "station2":"PAT0", "length":  183.9, "method": "cbnl", "num_of_ambs":    76, "percent": 26.3, "satsys": "GPS" } ,
+{"baseline":"NOTU", "station1":"NOA1", "station2":"TUC2", "length":  279.6, "method": "cbnl", "num_of_ambs":    92, "percent": 17.4, "satsys": "GPS" } ,
+{"baseline":"ANNI", "station1":"ANKR", "station2":"NICO", "length":  529.7, "method": "cbwl", "num_of_ambs":    59, "percent": 39.0, "satsys": "GPS" } ,
+{"baseline":"ANNO", "station1":"ANKR", "station2":"NOA1", "length":  796.6, "method": "cbwl", "num_of_ambs":    76, "percent": 25.0, "satsys": "GPS" } ,
+{"baseline":"KAMA", "station1":"KASI", "station2":"MAT1", "length":  292.8, "method": "cbwl", "num_of_ambs":    61, "percent": 45.9, "satsys": "GPS" } ,
+{"baseline":"MANT", "station1":"MAT1", "station2":"NOT1", "length":  444.5, "method": "cbwl", "num_of_ambs":    73, "percent": 65.8, "satsys": "GPS" } ,
+{"baseline":"MAWT", "station1":"MAT1", "station2":"WTZR", "length":  990.0, "method": "cbwl", "num_of_ambs":    79, "percent": 26.6, "satsys": "GPS" } ,
+{"baseline":"NOPA", "station1":"NOA1", "station2":"PAT0", "length":  183.9, "method": "cbwl", "num_of_ambs":    76, "percent": 28.9, "satsys": "GPS" } ,
+{"baseline":"NOTU", "station1":"NOA1", "station2":"TUC2", "length":  279.6, "method": "cbwl", "num_of_ambs":    46, "percent": 37.0, "satsys": "GPS" } ,
+{"baseline":"AULA", "station1":"AUT1", "station2":"LARM", "length":  118.1, "method": "pbwl", "num_of_ambs":    92, "percent": 50.0, "satsys": "GPS" } ,
+{"baseline":"KASP", "station1":"KASI", "station2":"SPAN", "length":  124.7, "method": "pbwl", "num_of_ambs":    46, "percent": 60.9, "satsys": "GPS" } ,
+{"baseline":"LAPA", "station1":"LARM", "station2":"PAT0", "length":  156.6, "method": "pbwl", "num_of_ambs":    61, "percent": 60.7, "satsys": "GPS" } ,
+{"baseline":"NOPA", "station1":"NOA1", "station2":"PAT0", "length":  183.9, "method": "pbwl", "num_of_ambs":    76, "percent": 52.6, "satsys": "GPS" } ,
+{"baseline":"PARL", "station1":"PAT0", "station2":"RLSO", "length":   37.9, "method": "pbwl", "num_of_ambs":    61, "percent": 68.9, "satsys": "GPS" } ,
+{"baseline":"POSP", "station1":"PONT", "station2":"SPAN", "length":   19.6, "method": "pbwl", "num_of_ambs":    34, "percent": 52.9, "satsys": "GPS" } ,
+{"baseline":"POVL", "station1":"PONT", "station2":"VLSM", "length":   49.1, "method": "pbwl", "num_of_ambs":    33, "percent": 51.5, "satsys": "GPS" } ,
+{"baseline":"RLVL", "station1":"RLSO", "station2":"VLSM", "length":   78.0, "method": "pbwl", "num_of_ambs":    51, "percent": 62.7, "satsys": "GPS" } ],
+
+"addneq_summary":[
+{ "name":"TUC2 12617M003", "xest":   4744543.8385, "yest":   2119412.0129,"zest":   3686258.7535,"xapr":   4744543.7870,"yapr":   2119411.9923,"zapr":   3686258.7210,"xcor":         0.0515,"ycor":         0.0206,"zcor":         0.0325,"xrms":         0.0023,"yrms":         0.0012,"zrms":         0.0020,"latest":        35.5332,"lonest":        24.0706,"hgtest":       160.9286,"latapr":        35.5332,"lonapr":        24.0706,"hgtapr":       160.8646,"latcor":        -0.0058,"loncor":        -0.0022,"hgtcor":         0.0640,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0031,"north":        -0.0058,"east":        -0.0022,"up":         0.0640,"adj":"ESTIM" } ,
+{ "name":"VLSM", "xest":   4699991.5723, "yest":   1765547.7710,"zest":   3921162.2092,"xapr":   4699991.5673,"yapr":   1765547.7604,"zapr":   3921162.1978,"xcor":         0.0050,"ycor":         0.0106,"zcor":         0.0114,"xrms":         0.0022,"yrms":         0.0011,"zrms":         0.0017,"latest":        38.1768,"lonest":        20.5886,"hgtest":       437.2025,"latapr":        38.1768,"lonapr":        20.5886,"hgtapr":       437.1888,"latcor":         0.0038,"loncor":         0.0082,"hgtcor":         0.0137,"latrms":         0.0007,"lonrms":         0.0007,"hgtrms":         0.0028,"north":         0.0038,"east":         0.0082,"up":         0.0137,"adj":"ESTIM" } ,
+{ "name":"SPAN", "xest":   4658312.1718, "yest":   1757780.7816,"zest":   3973702.6067,"xapr":   4658312.1677,"yapr":   1757780.7756,"zapr":   3973702.6004,"xcor":         0.0041,"ycor":         0.0060,"zcor":         0.0063,"xrms":         0.0015,"yrms":         0.0008,"zrms":         0.0013,"latest":        38.7813,"lonest":        20.6736,"hgtest":       451.3357,"latapr":        38.7813,"lonapr":        20.6736,"hgtapr":       451.3271,"latcor":         0.0012,"loncor":         0.0042,"hgtcor":         0.0086,"latrms":         0.0005,"lonrms":         0.0005,"hgtrms":         0.0020,"north":         0.0012,"east":         0.0042,"up":         0.0086,"adj":"ESTIM" } ,
+{ "name":"PAT0 12622M001", "xest":   4655002.7966, "yest":   1860619.7256,"zest":   3930281.8264,"xapr":   4655002.7769,"yapr":   1860619.7195,"zapr":   3930281.8104,"xcor":         0.0197,"ycor":         0.0060,"zcor":         0.0160,"xrms":         0.0023,"yrms":         0.0012,"zrms":         0.0020,"latest":        38.2837,"lonest":        21.7868,"hgtest":       121.0561,"latapr":        38.2837,"lonapr":        21.7868,"hgtapr":       121.0300,"latcor":        -0.0002,"loncor":        -0.0017,"hgtcor":         0.0261,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0031,"north":        -0.0002,"east":        -0.0017,"up":         0.0261,"adj":"ESTIM" } ,
+{ "name":"PONT", "xest":   4671272.5788, "yest":   1754437.1784,"zest":   3959389.4390,"xapr":   4671272.5773,"yapr":   1754437.1678,"zapr":   3959389.4277,"xcor":         0.0015,"ycor":         0.0106,"zcor":         0.0113,"xrms":         0.0024,"yrms":         0.0013,"zrms":         0.0019,"latest":        38.6190,"lonest":        20.5852,"hgtest":        48.8501,"latapr":        38.6190,"lonapr":        20.5852,"hgtapr":        48.8391,"latcor":         0.0056,"loncor":         0.0094,"hgtcor":         0.0110,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0032,"north":         0.0056,"east":         0.0094,"up":         0.0110,"adj":"ESTIM" } ,
+{ "name":"WTZR 14201M010", "xest":   4075580.3762, "yest":    931853.9847,"zest":   4801568.2392,"xapr":   4075580.3732,"yapr":    931853.9833,"zapr":   4801568.2396,"xcor":         0.0029,"ycor":         0.0013,"zcor":        -0.0004,"xrms":         0.0012,"yrms":         0.0006,"zrms":         0.0012,"latest":        49.1442,"lonest":        12.8789,"hgtest":       666.0206,"latapr":        49.1442,"lonapr":        12.8789,"hgtapr":       666.0189,"latcor":        -0.0026,"loncor":         0.0006,"hgtcor":         0.0017,"latrms":         0.0005,"lonrms":         0.0004,"hgtrms":         0.0017,"north":        -0.0026,"east":         0.0006,"up":         0.0017,"adj":"HELMR" } ,
+{ "name":"NICO 14302M001", "xest":   4359415.5297, "yest":   2874117.1899,"zest":   3650777.9747,"xapr":   4359415.5182,"yapr":   2874117.1915,"zapr":   3650777.9657,"xcor":         0.0114,"ycor":        -0.0015,"zcor":         0.0090,"xrms":         0.0022,"yrms":         0.0012,"zrms":         0.0020,"latest":        35.1410,"lonest":        33.3964,"hgtest":       190.0326,"latapr":        35.1410,"lonapr":        33.3964,"hgtapr":       190.0203,"latcor":         0.0024,"loncor":        -0.0076,"hgtcor":         0.0123,"latrms":         0.0008,"lonrms":         0.0009,"hgtrms":         0.0029,"north":         0.0024,"east":        -0.0076,"up":         0.0123,"adj":"HELMR" } ,
+{ "name":"KASI", "xest":   4616572.4873, "yest":   1674415.6561,"zest":   4056441.3637,"xapr":   4616572.4796,"yapr":   1674415.6441,"zapr":   4056441.3481,"xcor":         0.0077,"ycor":         0.0120,"zcor":         0.0156,"xrms":         0.0016,"yrms":         0.0008,"zrms":         0.0014,"latest":        39.7464,"lonest":        19.9355,"hgtest":       108.8765,"latapr":        39.7464,"lonapr":        19.9355,"hgtapr":       108.8578,"latcor":         0.0047,"loncor":         0.0086,"hgtcor":         0.0187,"latrms":         0.0006,"lonrms":         0.0005,"hgtrms":         0.0022,"north":         0.0047,"east":         0.0087,"up":         0.0187,"adj":"ESTIM" } ,
+{ "name":"NOT1 12717M004", "xest":   4934546.0322, "yest":   1321265.1961,"zest":   3806456.2870,"xapr":   4934546.0396,"yapr":   1321265.1982,"zapr":   3806456.2916,"xcor":        -0.0074,"ycor":        -0.0021,"zcor":        -0.0046,"xrms":         0.0013,"yrms":         0.0006,"zrms":         0.0011,"latest":        36.8758,"lonest":        14.9898,"hgtest":       126.3285,"latapr":        36.8758,"lonapr":        14.9898,"hgtapr":       126.3374,"latcor":         0.0009,"loncor":        -0.0001,"hgtcor":        -0.0089,"latrms":         0.0004,"lonrms":         0.0004,"hgtrms":         0.0017,"north":         0.0009,"east":        -0.0001,"up":        -0.0089,"adj":"HELMR" } ,
+{ "name":"MAT1 12734M009", "xest":   4641951.2484, "yest":   1393053.8650,"zest":   4133281.0212,"xapr":   4641951.2554,"yapr":   1393053.8627,"zapr":   4133281.0252,"xcor":        -0.0070,"ycor":         0.0023,"zcor":        -0.0040,"xrms":         0.0009,"yrms":         0.0005,"zrms":         0.0008,"latest":        40.6491,"lonest":        16.7045,"hgtest":       534.5232,"latapr":        40.6491,"lonapr":        16.7045,"hgtapr":       534.5304,"latcor":         0.0009,"loncor":         0.0042,"hgtcor":        -0.0072,"latrms":         0.0003,"lonrms":         0.0003,"hgtrms":         0.0012,"north":         0.0009,"east":         0.0042,"up":        -0.0072,"adj":"HELMR" } ,
+{ "name":"LARM 12610M002", "xest":   4549396.9464, "yest":   1874003.4744,"zest":   4045167.7319,"xapr":   4549396.9415,"yapr":   1874003.4634,"zapr":   4045167.7209,"xcor":         0.0048,"ycor":         0.0110,"zcor":         0.0110,"xrms":         0.0024,"yrms":         0.0012,"zrms":         0.0020,"latest":        39.6141,"lonest":        22.3879,"hgtest":       151.3209,"latapr":        39.6141,"lonapr":        22.3879,"hgtapr":       151.3072,"latcor":         0.0029,"loncor":         0.0083,"hgtcor":         0.0137,"latrms":         0.0008,"lonrms":         0.0008,"hgtrms":         0.0032,"north":         0.0029,"east":         0.0083,"up":         0.0137,"adj":"ESTIM" } ,
+{ "name":"NOA1 12620M001", "xest":   4599641.9858, "yest":   2034827.4305,"zest":   3909890.5464,"xapr":   4599641.9733,"yapr":   2034827.4219,"zapr":   3909890.5430,"xcor":         0.0125,"ycor":         0.0086,"zcor":         0.0034,"xrms":         0.0022,"yrms":         0.0011,"zrms":         0.0019,"latest":        38.0471,"lonest":        23.8640,"hgtest":       537.8425,"latapr":        38.0471,"lonapr":        23.8640,"hgtapr":       537.8287,"latcor":        -0.0065,"loncor":         0.0028,"hgtcor":         0.0139,"latrms":         0.0007,"lonrms":         0.0007,"hgtrms":         0.0029,"north":        -0.0065,"east":         0.0028,"up":         0.0139,"adj":"ESTIM" } ,
+{ "name":"RLSO", "xest":   4679938.9962, "yest":   1840151.2295,"zest":   3910407.6715,"xapr":   4679938.9807,"yapr":   1840151.2207,"zapr":   3910407.6579,"xcor":         0.0155,"ycor":         0.0088,"zcor":         0.0137,"xrms":         0.0021,"yrms":         0.0011,"zrms":         0.0018,"latest":        38.0558,"lonest":        21.4647,"hgtest":       132.9174,"latapr":        38.0558,"lonapr":        21.4647,"hgtapr":       132.8951,"latcor":        -0.0001,"loncor":         0.0025,"hgtcor":         0.0223,"latrms":         0.0007,"lonrms":         0.0007,"hgtrms":         0.0029,"north":        -0.0001,"east":         0.0025,"up":         0.0223,"adj":"ESTIM" } ,
+{ "name":"ANKR 20805M002", "xest":   4121948.4594, "yest":   2652187.8711,"zest":   4069023.8529,"xapr":   4121948.4396,"yapr":   2652187.8625,"zapr":   4069023.8511,"xcor":         0.0198,"ycor":         0.0086,"zcor":         0.0018,"xrms":         0.0023,"yrms":         0.0012,"zrms":         0.0020,"latest":        39.8874,"lonest":        32.7585,"hgtest":       976.0332,"latapr":        39.8874,"lonapr":        32.7585,"hgtapr":       976.0157,"latcor":        -0.0123,"loncor":        -0.0035,"hgtcor":         0.0175,"latrms":         0.0008,"lonrms":         0.0009,"hgtrms":         0.0030,"north":        -0.0123,"east":        -0.0035,"up":         0.0175,"adj":"ESTIM" } ,
+{ "name":"AUT1 12619M002", "xest":   4466283.2750, "yest":   1896167.1069,"zest":   4126096.8396,"xapr":   4466283.2752,"yapr":   1896167.1018,"zapr":   4126096.8366,"xcor":        -0.0002,"ycor":         0.0051,"zcor":         0.0030,"xrms":         0.0027,"yrms":         0.0014,"zrms":         0.0023,"latest":        40.5668,"lonest":        23.0037,"hgtest":       150.0856,"latapr":        40.5668,"lonapr":        23.0037,"hgtapr":       150.0823,"latcor":         0.0011,"loncor":         0.0048,"hgtcor":         0.0033,"latrms":         0.0009,"lonrms":         0.0008,"hgtrms":         0.0036,"north":         0.0011,"east":         0.0048,"up":         0.0033,"adj":"ESTIM" } 
+]
+}
