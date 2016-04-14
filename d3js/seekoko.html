@@ -72,6 +72,9 @@
 <p class="rms-info"></p>
 <svg class="rms"></svg>
 
+<h2># Products</h2>
+<p class="saved-products"></p>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -210,6 +213,20 @@ d3.json("world-50m.json", function(error, world) {
             div.innerHTML = available_but_unprocessed_text;
             document.getElementsByClassName("stainf-info")[0].appendChild(div);
         }
+        
+        /* Lets write the information for the saved products */
+        var saved_prods_div = document.createElement('div');
+        save_products_list = '<ul>'
+        saved_products_data = data["saved_products"];
+        for (var i of saved_products_data) {
+            target = i.host + i.host_dir + i.savedas;
+            source = i.local_dir + '/' + i.filename;
+            save_products_list += '<li><a href=\"'+target+'\">'+target+'</a> from <code>'+source+'</code></li>'
+        }
+        save_products_list += '</ul>'
+        saved_prods_div.innerHTML = save_products_list;
+        document.getElementsByClassName("saved-products")[0].appendChild(saved_prods_div);
+        
         
         pts = []; /* store points here {name, lon, lat} */
         var max_geo_cor = -500, min_geo_cor = 500;
