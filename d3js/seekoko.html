@@ -75,6 +75,9 @@
 <h2># Products</h2>
 <p class="saved-products"></p>
 
+<h2># PCF Variables</h2>
+<table id="pcf-variables"></table>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -227,6 +230,10 @@ d3.json("world-50m.json", function(error, world) {
         saved_prods_div.innerHTML = save_products_list;
         document.getElementsByClassName("saved-products")[0].appendChild(saved_prods_div);
         
+        /* table of pcf variables */
+        pcf_variables_data = data["pcf_variables"];
+        var PcfInfTable = ConvertJsonToTable(pcf_variables_data, 'jsonTable-pcf');
+        document.getElementById("pcf-variables").innerHTML = PcfInfTable;
         
         pts = []; /* store points here {name, lon, lat} */
         var max_geo_cor = -500, min_geo_cor = 500;
