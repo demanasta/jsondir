@@ -73,10 +73,17 @@
 <svg class="rms"></svg>
 
 <h2># Products</h2>
+<h3>Used Products</h3>
+<p class="used-products"></p>
+<table id="used-prods-table"></table>
+<h3>Solution-Derived Products</h3>
 <p class="saved-products"></p>
 
 <h2># PCF Variables</h2>
 <table id="pcf-variables"></table>
+
+<h2># Warnings</h2>
+<p class="warnings"></p>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
@@ -230,6 +237,36 @@ d3.json("world-50m.json", function(error, world) {
         saved_prods_div.innerHTML = save_products_list;
         document.getElementsByClassName("saved-products")[0].appendChild(saved_prods_div);
         
+        /* Used products table */
+        /* TODO
+        used_prods_data = data["products"];
+        console.log(used_prods_data);
+        for (var i of used_prods_data) {
+            console.log(i);
+        }
+        var UsedProdsTable = ConvertJsonToTable(used_prods_data, 'Used-Prods-Table');
+        document.getElementById("used-prods-table").innerHTML = UsedProdsTable;
+        */
+        
+        /* warning messages */
+        warnings_data = data["warnings"];
+        var warnings_div = document.createElement('div');
+        warnings_list = '<ol>'
+        for (var i of warnings_data) {
+            info_string = i.info + ' (id: ' + i.id + ', routine: ' + i.routine + ')'
+            var details = '<code>';
+            for (var j in i.message) {
+                if (i.message.hasOwnProperty(j)) {
+                    details += ( j + ' : ' + i.message[j] + '<br>' );
+                }
+            }
+            details += '</code>';
+            warnings_list += '<li><code>' + info_string + '</code><br>' +details + '</li>';
+        }
+        warnings_list += '</ol>'
+        warnings_div.innerHTML = warnings_list;
+        document.getElementsByClassName("warnings")[0].appendChild(warnings_div);        
+        
         /* table of pcf variables */
         pcf_variables_data = data["pcf_variables"];
         var PcfInfTable = ConvertJsonToTable(pcf_variables_data, 'jsonTable-pcf');
@@ -241,6 +278,7 @@ d3.json("world-50m.json", function(error, world) {
         var max_sta_rms_3d = {"name":"", "val":-500},
             max_sta_rms_2d = {"name":"", "val":-500},
             mean_sta_rms   = {"lon":0, "lat":0, "hgt":0};
+
         
         /* Plot stations */
         imageGroup.selectAll("image")
@@ -281,7 +319,8 @@ d3.json("world-50m.json", function(error, world) {
                       if ( d.value["adj"] === "ESTIM" ) return "red";
                       if ( d.value["adj"] === "HELMR" ) return "orange";
                       return "green"
-                  });
+                  })
+                  .on('click', function(d,i) {console.log('d=', d, 'i=', i); });
         
         /* scale the mean rms values */
         mean_sta_rms.lon /= pts.length;
@@ -477,7 +516,8 @@ d3.json("world-50m.json", function(error, world) {
                 return projection([p["lon"], p["lat"]])[1];
             })
             .attr("stroke", "rgb(255,0,0)")
-            .attr("stroke-width", bl_wdt);
+            .attr("stroke-width", bl_wdt)
+            .on('click', function(d,i) {console.log('d=', d, 'i=', i); });
     });
 
 });
