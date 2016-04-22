@@ -55,7 +55,7 @@ div.tooltip {
     position: absolute;
     text-align: center;
     width: 200px;
-    height: 100px;
+    height: 200px;
     padding: 2px;
     font: 12px sans-serif;
     background: lightsteelblue;
@@ -527,11 +527,11 @@ d3.json("world-50m.json", function(error, world) {
             baseline = i.baseline;
             var b = bsl_info.find(x=> x.baseline === baseline);
             if (typeof b == "undefined") {
-                bsl_info.push( {"baseline": baseline, "station1": i.station1, "station2": i.station2, "length":i.length, "bias_info":[ {"method":i.method, "resolved":i.percent, "satsys":i.satsys} ] } );
+                bsl_info.push( {"baseline": baseline, "station1": i.station1, "station2": i.station2, "length":i.length, "bias_info":[ {"method": i.method, "resolved": i.percent, "satsys": i.satsys} ] } );
                 // console.log('adding baseline', baseline);
             } else {
                 b.bias_info.push({"method":i.method, "resolved":i.percent, "satsys":i.satsys});
-                // console.log('baseline', baseline, 'already exists');
+                // console.log(i.percent);
             }
         }
         bsl_info_strings = [];
@@ -542,9 +542,9 @@ d3.json("world-50m.json", function(error, world) {
             str    += 'Length:   ' + i.length + ' (km)<br>';
             str    += '<hr>'
             for (var j of i.bias_info) {
-                str += 'Method: ' + j.method + ' Satellite Sys.: ' + j.satsys + ' Resolved Amb.: ' + i.percent + '%';
+                str += 'Method: ' + j.method + ' Satellite Sys.: ' + j.satsys + ' Resolved Amb.: ' + j.resolved + '%<hr>';
             }
-            bsl_info_strings.push( {"name":i.baseline, "string":string} );
+            bsl_info_strings.push( {"name":i.baseline, "string":str} );
         }
         
         /* plot baselines */
@@ -572,23 +572,23 @@ d3.json("world-50m.json", function(error, world) {
                 var p = pts.filter(function(obj) {return obj.name.substring(0,4) === base; })[0];
                 return projection([p["lon"], p["lat"]])[1];
             })
-            /*
             .attr("stroke", "rgb(255,0,0)")
             .attr("stroke-width", bl_wdt)
             .on("mouseover", function(d) {
-                        tooltip_div.transition()
-                        .duration(200)
-                        .style("opacity", .9);
-                    tooltip_div.html('Baseline: ' + d.value["baseline"] + ' (from ' + d.value["station1"] + ' to ' + d.value["station2"] + ')<br>Length: '+ d.value["length"] + '<br>')
+                var str = bsl_info_strings.find(x=> x.name === d.value["baseline"]).string;
+                tooltip_div.transition()
+                           .duration(200)
+                           .style("opacity", .9);
+                tooltip_div.html(''+str)
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
-                    })
+                // console.log(str);
+            })
             .on("mouseout", function(d) {
-                        tooltip_div.transition()
-                            .duration(500)
-                            .style("opacity", 0);
-                    });
-            */
+                tooltip_div.transition()
+                           .duration(500)
+                           .style("opacity", 0);
+            });
     });
 
 });
