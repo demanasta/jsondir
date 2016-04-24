@@ -71,6 +71,10 @@ div.tooltip {
 </head>
 <body>
 
+<h1 id="h1-title"></h1>
+<h2 id="h2-title"></h2>
+<p id="general-info"></p>
+
 <h2># Station Information</h2>
 <p class="stainf-info"></p>
 <table id="sta-inf-table"></table>
@@ -79,6 +83,7 @@ div.tooltip {
 <svg class="chart"></svg>
 
 <h2># Baselines and Stations</h2>
+<p><i>Move the mouse over the baselines to see further info.</i></p>
 <svg class="map"></svg>
 
 <h2># Rms Values</h2>
@@ -182,7 +187,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "boundary")
             .attr("d", path); 
 
-    d3.json("greece.json", function(error, data) {
+    d3.json("DSO08450.json", function(error, data) {
         if (error) throw error;
 
         /* Lets write the information for the stations */
@@ -265,6 +270,15 @@ d3.json("world-50m.json", function(error, world) {
         var UsedProdsTable = ConvertJsonToTable(used_prods_data, 'Used-Prods-Table');
         document.getElementById("used-prods-table").innerHTML = UsedProdsTable;
         */
+        
+        /* general info */
+        general_info = data["general_info"];
+        var h1_title = 'Processing Summary Report';
+        document.getElementById("h1-title").innerHTML = h1_title;
+        var h2_title = 'Network ' + general_info.campaign + ' for doy ' + general_info.day_processed.split('-')[1] + ' of year ' + general_info.day_processed.split('-')[0]
+        document.getElementById("h2-title").innerHTML = h2_title;
+        var parag = 'Epoch interval from ' + general_info.interval.from + ' to ' + general_info.interval.to + '<br>Host <code>' + general_info.host + '</code>, User <code>' + general_info.user +'</code>';
+        document.getElementById("general-info").innerHTML = parag;
         
         /* warning messages */
         warnings_data = data["warnings"];
