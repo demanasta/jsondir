@@ -92,8 +92,7 @@ div.tooltip {
 
 <h2># Products</h2>
 <h3>Used Products</h3>
-<p class="used-products"></p>
-<table id="used-prods-table"></table>
+<p id="used-products"></p>
 <h3>Solution-Derived Products</h3>
 <p class="saved-products"></p>
 
@@ -187,7 +186,7 @@ d3.json("world-50m.json", function(error, world) {
             .attr("class", "boundary")
             .attr("d", path); 
 
-    d3.json("DSO08450.json", function(error, data) {
+    d3.json("greece.json", function(error, data) {
         if (error) throw error;
 
         /* Lets write the information for the stations */
@@ -261,15 +260,33 @@ d3.json("world-50m.json", function(error, world) {
         document.getElementsByClassName("saved-products")[0].appendChild(saved_prods_div);
         
         /* Used products table */
-        /* TODO
         used_prods_data = data["products"];
-        console.log(used_prods_data);
-        for (var i of used_prods_data) {
-            console.log(i);
+        var used_prods_list = '<ul>';
+        // console.log(used_prods_data);
+        for (var k in used_prods_data) {
+            /*
+            if (used_prods_data.hasOwnProperty(k)) {
+                // console.log('key is ' + k + ', value is ' + used_prods_data[k]);
+                for (var j in used_prods_data[k]) {
+                    // console.log('key is ' + j + ', value is ' + used_prods_data[k][j]);
+                }
+            }*/
+            if (k === 'vmf1') {
+                used_prods_list += '<em>' + used_prods_data[k][0]["info"] + '</em><ol>'
+                for (var i=0; i<k.length; i++) {
+                    if (used_prods_data[k][i]["info"] != "Vienna Mapping Function 1 Grid") {
+                        console.log("ERROR at resolving VMF1 grid files")
+                    } else {
+                        used_prods_list += '<li><code>' + used_prods_data[k][i]["filename"] + '</code></li>'
+                    }
+                }
+                used_prods_list += '</ol>';
+            } else {
+                used_prods_list += '<li><em>' + used_prods_data[k]["info"] + '</em>: <code>' + used_prods_data[k]["filename"] + '</code>, (AC: ' + used_prods_data[k]["ac"].toUpperCase() + ')</li>';
+            }
         }
-        var UsedProdsTable = ConvertJsonToTable(used_prods_data, 'Used-Prods-Table');
-        document.getElementById("used-prods-table").innerHTML = UsedProdsTable;
-        */
+        used_prods_list += '</ul>';
+        document.getElementById("used-products").innerHTML = used_prods_list;
         
         /* general info */
         general_info = data["general_info"];
@@ -283,19 +300,23 @@ d3.json("world-50m.json", function(error, world) {
         /* warning messages */
         warnings_data = data["warnings"];
         var warnings_div = document.createElement('div');
-        warnings_list = '<ol>'
-        for (var i of warnings_data) {
-            info_string = i.info + ' (id: ' + i.id + ', routine: ' + i.routine + ')'
-            var details = '<code>';
-            for (var j in i.message) {
-                if (i.message.hasOwnProperty(j)) {
-                    details += ( j + ' : ' + i.message[j] + '<br>' );
+        if ( warnings_data === undefined ) {
+            var warnings_list = 'No warnings found!';
+        } else {
+            var warnings_list = '<ol>'
+            for (var i of warnings_data) {
+                info_string = i.info + ' (id: ' + i.id + ', routine: ' + i.routine + ')'
+                var details = '<code>';
+                for (var j in i.message) {
+                    if (i.message.hasOwnProperty(j)) {
+                        details += ( j + ' : ' + i.message[j] + '<br>' );
+                    }
                 }
+                details += '</code>';
+                warnings_list += '<li><code>' + info_string + '</code><br>' +details + '</li>';
             }
-            details += '</code>';
-            warnings_list += '<li><code>' + info_string + '</code><br>' +details + '</li>';
+            warnings_list += '</ol>'
         }
-        warnings_list += '</ol>'
         warnings_div.innerHTML = warnings_list;
         document.getElementsByClassName("warnings")[0].appendChild(warnings_div);        
         
