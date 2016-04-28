@@ -61,12 +61,29 @@ else {
   display: none;
 }
 
+div.tooltip {	
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
 <!--http://stackoverflow.com/questions/18165533/how-to-draw-a-line-link-between-two-points-on-a-d3-map-based-on-latitude-lon-->
 
 </style>
 
 </head>
 <body>
+
+<h1 id="h1-title"></h1>
+<h2 id="h2-title"></h2>
+<p id="general-info"></p>
 
 <h2># Station Information</h2>
 <p class="stainf-info"></p>
@@ -76,11 +93,25 @@ else {
 <svg class="chart"></svg>
 
 <h2># Baselines and Stations</h2>
+<p><i>Move the mouse over the baselines to see further info.</i></p>
 <svg class="map"></svg>
 
 <h2># Rms Values</h2>
 <p class="rms-info"></p>
 <svg class="rms"></svg>
+
+<h2># Products</h2>
+<h3>Used Products</h3>
+<p class="used-products"></p>
+<table id="used-prods-table"></table>
+<h3>Solution-Derived Products</h3>
+<p class="saved-products"></p>
+
+<h2># PCF Variables</h2>
+<table id="pcf-variables"></table>
+
+<h2># Warnings</h2>
+<p class="warnings"></p>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/d3.geo.projection.v0.min.js" charset="utf-8"></script>
@@ -121,6 +152,11 @@ svg.append("path")
    .datum(graticule)
    .attr("class", "graticule")
    .attr("d", path);
+   
+// Define the div for the tooltip, see http://bl.ocks.org/d3noob/a22c42db65eb00d4e369
+var tooltip_div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
 
 // needed for zoom
 var g          = svg.append("g");
@@ -221,13 +257,70 @@ d3.json("world-50m.json", function(error, world) {
             document.getElementsByClassName("stainf-info")[0].appendChild(div);
         }
         
+        /* Lets write the information for the saved products */
+        var saved_prods_div = document.createElement('div');
+        save_products_list = '<ul>'
+        saved_products_data = data["saved_products"];
+        for (var i of saved_products_data) {
+            target = i.host + i.host_dir + i.savedas;
+            source = i.local_dir + '/' + i.filename;
+            save_products_list += '<li><a href=\"'+target+'\">'+target+'</a> from <code>'+source+'</code></li>'
+        }
+        save_products_list += '</ul>'
+        saved_prods_div.innerHTML = save_products_list;
+        document.getElementsByClassName("saved-products")[0].appendChild(saved_prods_div);
+        
+        /* Used products table */
+        /* TODO
+        used_prods_data = data["products"];
+        console.log(used_prods_data);
+        for (var i of used_prods_data) {
+            console.log(i);
+        }
+        var UsedProdsTable = ConvertJsonToTable(used_prods_data, 'Used-Prods-Table');
+        document.getElementById("used-prods-table").innerHTML = UsedProdsTable;
+        */
+        
+        /* general info */
+        general_info = data["general_info"];
+        var h1_title = 'Processing Summary Report';
+        document.getElementById("h1-title").innerHTML = h1_title;
+        var h2_title = 'Network ' + general_info.campaign + ' for doy ' + general_info.day_processed.split('-')[1] + ' of year ' + general_info.day_processed.split('-')[0]
+        document.getElementById("h2-title").innerHTML = h2_title;
+        var parag = 'Epoch interval from ' + general_info.interval.from + ' to ' + general_info.interval.to + '<br>Host <code>' + general_info.host + '</code>, User <code>' + general_info.user +'</code>';
+        document.getElementById("general-info").innerHTML = parag;
+        
+        /* warning messages */
+        warnings_data = data["warnings"];
+        var warnings_div = document.createElement('div');
+        warnings_list = '<ol>'
+        for (var i of warnings_data) {
+            info_string = i.info + ' (id: ' + i.id + ', routine: ' + i.routine + ')'
+            var details = '<code>';
+            for (var j in i.message) {
+                if (i.message.hasOwnProperty(j)) {
+                    details += ( j + ' : ' + i.message[j] + '<br>' );
+                }
+            }
+            details += '</code>';
+            warnings_list += '<li><code>' + info_string + '</code><br>' +details + '</li>';
+        }
+        warnings_list += '</ol>'
+        warnings_div.innerHTML = warnings_list;
+        document.getElementsByClassName("warnings")[0].appendChild(warnings_div);        
+        
+        /* table of pcf variables */
+        pcf_variables_data = data["pcf_variables"];
+        var PcfInfTable = ConvertJsonToTable(pcf_variables_data, 'jsonTable-pcf');
+        document.getElementById("pcf-variables").innerHTML = PcfInfTable;
+        
         pts = []; /* store points here {name, lon, lat} */
         var max_geo_cor = -500, min_geo_cor = 500;
         var max_geo_rms = -500;
         var max_sta_rms_3d = {"name":"", "val":-500},
             max_sta_rms_2d = {"name":"", "val":-500},
             mean_sta_rms   = {"lon":0, "lat":0, "hgt":0};
-        
+
         /* Plot stations */
         imageGroup.selectAll("image")
                   .data( d3.entries(data["addneq_summary"]) )
@@ -267,7 +360,21 @@ d3.json("world-50m.json", function(error, world) {
                       if ( d.value["adj"] === "ESTIM" ) return "red";
                       if ( d.value["adj"] === "HELMR" ) return "orange";
                       return "green"
-                  });
+                  })
+                  /*.on('click', function(d,i) {console.log('d=', d, 'i=', i); });*/
+                  .on("mouseover", function(d) {
+                        tooltip_div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    tooltip_div.html('Station: '  + d.value["name"] + '<br>')
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                    .on("mouseout", function(d) {
+                        tooltip_div.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    });
         
         /* scale the mean rms values */
         mean_sta_rms.lon /= pts.length;
@@ -437,6 +544,33 @@ d3.json("world-50m.json", function(error, world) {
         "Max 2d Rms : "+(max_sta_rms_2d.val*1000.0).toFixed(1)+"(mm) at station "+max_sta_rms_2d.name+"\n" +
         "Mean Rms : longtitude "+(mean_sta_rms.lon*1000.0).toFixed(1)+", latitude "+(mean_sta_rms.lat*1000.0).toFixed(1)+", height "+(mean_sta_rms.lat*1000.0).toFixed(1)+" (mm).");
         
+        /* Fuck, now i need to make one object per baseline, collecting all methods and satellite systems */
+        bsl_data = data["amb_res_summary"];
+        bsl_info = [];
+        for (var i of bsl_data) {
+            baseline = i.baseline;
+            var b = bsl_info.find(x=> x.baseline === baseline);
+            if (typeof b == "undefined") {
+                bsl_info.push( {"baseline": baseline, "station1": i.station1, "station2": i.station2, "length":i.length, "bias_info":[ {"method": i.method, "resolved": i.percent, "satsys": i.satsys} ] } );
+                // console.log('adding baseline', baseline);
+            } else {
+                b.bias_info.push({"method":i.method, "resolved":i.percent, "satsys":i.satsys});
+                // console.log(i.percent);
+            }
+        }
+        bsl_info_strings = [];
+        for (var i of bsl_info) {
+            var str = 'Baseline: ' + i.baseline + '<br>';
+            str    += 'From:     ' + i.station1 + '<br>';
+            str    += 'To:       ' + i.station2 + '<br>';
+            str    += 'Length:   ' + i.length + ' (km)<br>';
+            str    += '<hr>'
+            for (var j of i.bias_info) {
+                str += 'Method: ' + j.method + ' Satellite Sys.: ' + j.satsys + ' Resolved Amb.: ' + j.resolved + '%<hr>';
+            }
+            bsl_info_strings.push( {"name":i.baseline, "string":str} );
+        }
+        
         /* plot baselines */
         imageGroup.selectAll("image")
             .data( d3.entries(data["amb_res_summary"]) )
@@ -463,7 +597,22 @@ d3.json("world-50m.json", function(error, world) {
                 return projection([p["lon"], p["lat"]])[1];
             })
             .attr("stroke", "rgb(255,0,0)")
-            .attr("stroke-width", bl_wdt);
+            .attr("stroke-width", bl_wdt)
+            .on("mouseover", function(d) {
+                var str = bsl_info_strings.find(x=> x.name === d.value["baseline"]).string;
+                tooltip_div.transition()
+                           .duration(200)
+                           .style("opacity", .9);
+                tooltip_div.html(''+str)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                // console.log(str);
+            })
+            .on("mouseout", function(d) {
+                tooltip_div.transition()
+                           .duration(500)
+                           .style("opacity", 0);
+            });
     });
 
 });
