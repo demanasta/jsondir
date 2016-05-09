@@ -19,256 +19,6 @@
     ], 
     "warnings": [
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ANKR 20805M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ANKR 20805M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NOT1 12717M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NOT1 12717M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ARTU 12362M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ARTU 12362M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ANKR 20805M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ANKR 20805M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NOT1 12717M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NOT1 12717M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ARTU 12362M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ARTU 12362M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "BOR1 12205M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "BOR1 12205M002", 
@@ -279,16 +29,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WTZR 14201M010", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WTZR 14201M010", 
@@ -297,56 +37,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "GLSV 12356M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "GLSV 12356M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HERS 13212M007", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -359,16 +49,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WSRT 13506M005", 
@@ -377,76 +57,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HOFN 10204M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HOFN 10204M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -459,14 +69,54 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
+            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
-                "STATION NAME": "BOR1 12205M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
+                "STATION NAME": "ONSA 10402M004", 
+                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
                 "RETURN CODE": "2"
             }, 
             "id": "SR", 
-            "routine": "GTOCNL"
+            "routine": "GTATML"
+        }, 
+        {
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
+            "message": {
+                "REQUEST NUMBER": "14", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
+            }, 
+            "id": "SR", 
+            "routine": "TRPVEC"
+        }, 
+        {
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
+            "message": {
+                "REQUEST NUMBER": "53", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
+            }, 
+            "id": "SR", 
+            "routine": "TRPVEC"
+        }, 
+        {
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
+            "message": {
+                "REQUEST NUMBER": "14", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
+            }, 
+            "id": "SR", 
+            "routine": "TRPVEC"
+        }, 
+        {
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
+            "message": {
+                "REQUEST NUMBER": "53", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
+            }, 
+            "id": "SR", 
+            "routine": "TRPVEC"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -479,16 +129,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WTZR 14201M010", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WTZR 14201M010", 
@@ -497,56 +137,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "GLSV 12356M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "GLSV 12356M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HERS 13212M007", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -559,16 +149,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WSRT 13506M005", 
@@ -579,76 +159,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HOFN 10204M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "HOFN 10204M002", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "METS 10503S011", 
@@ -657,76 +167,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ONSA 10402M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -739,134 +179,44 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
             "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
+                "REQUEST NUMBER": "14", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
             }, 
             "id": "SR", 
-            "routine": "GTOCNL"
+            "routine": "TRPVEC"
         }, 
         {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
             "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
+                "REQUEST NUMBER": "53", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
             }, 
             "id": "SR", 
-            "routine": "GTATML"
+            "routine": "TRPVEC"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
             "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
+                "REQUEST NUMBER": "14", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
             }, 
             "id": "SR", 
-            "routine": "GTOCNL"
+            "routine": "TRPVEC"
         }, 
         {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
+            "info": "TILTING ANGLE AND ITS RMS ERROR NOT COMPUTED", 
             "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
+                "REQUEST NUMBER": "53", 
+                "ZENITH DELAY": "0.8 M", 
+                "MINIMUM ZENITH DELAY TOLERATED": "1.0 M"
             }, 
             "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "MDVJ 12309M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "METS 10503S011", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ONSA 10402M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
+            "routine": "TRPVEC"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -879,56 +229,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "TRO1 10302M006", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "NICO 14302M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WSRT 13506M005", 
@@ -937,116 +237,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "PDEL 31906M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "PDEL 31906M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "YEBE 13420M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "YEBE 13420M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WTZR 14201M010", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -1057,16 +247,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZIMM 14001M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -1079,94 +259,14 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "PDEL 31906M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
-                "STATION NAME": "PDEL 31906M004", 
+                "STATION NAME": "ONSA 10402M004", 
                 "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
                 "RETURN CODE": "2"
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "YEBE 13420M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "YEBE 13420M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "POLV 12336M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
-            "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZECK 12351M001", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.ATL", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WSRT 13506M005", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -1179,16 +279,6 @@
             "routine": "GTATML"
         }, 
         {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "WTZR 14201M010", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
-        }, 
-        {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
             "message": {
                 "STATION NAME": "WTZR 14201M010", 
@@ -1197,16 +287,6 @@
             }, 
             "id": "SR", 
             "routine": "GTATML"
-        }, 
-        {
-            "info": "OCEAN LOADING CORRECTION VALUES NOT FOUND", 
-            "message": {
-                "STATION NAME": "ZIMM 14001M004", 
-                "FILE NAME": "${P}/GREECE/STA/GREECE.BLQ", 
-                "RETURN CODE": "2"
-            }, 
-            "id": "SR", 
-            "routine": "GTOCNL"
         }, 
         {
             "info": "ATMOSPHERIC TIDAL LOADING CORRECTION VALUES NOT FOUND", 
@@ -1223,715 +303,281 @@
         {
             "sol_type": "DSO", 
             "extension": "TRO", 
-            "savedas": "DSO11755_test1.TRO.Z", 
-            "filename": "DSO022000.TRO.Z", 
+            "savedas": "DSO09116.TRO.Z", 
+            "filename": "DSO971790.TRO.Z", 
             "host": "147.102.106.135", 
             "local_dir": "ATM", 
             "prod_type": "TRO_SNX", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }, 
         {
             "sol_type": "DSO", 
             "extension": "SNX", 
-            "savedas": "DSO11755_test1.SNX.Z", 
-            "filename": "DSO022000.SNX.Z", 
+            "savedas": "DSO09116.SNX.Z", 
+            "filename": "DSO971790.SNX.Z", 
             "host": "147.102.106.135", 
             "local_dir": "SOL", 
             "prod_type": "SINEX", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }, 
         {
             "sol_type": "DSN", 
             "extension": "SNX", 
-            "savedas": "DSN11755_test1.SNX.Z", 
-            "filename": "DSN022000.SNX.Z", 
+            "savedas": "DSN09116.SNX.Z", 
+            "filename": "DSN971790.SNX.Z", 
             "host": "147.102.106.135", 
             "local_dir": "SOL", 
             "prod_type": "SINEX", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }, 
         {
             "sol_type": "DSO", 
             "extension": "NQ0", 
-            "savedas": "DSO11755_test1.NQ0.Z", 
-            "filename": "DSO022000.NQ0.Z", 
+            "savedas": "DSO09116.NQ0.Z", 
+            "filename": "DSO971790.NQ0.Z", 
             "host": "147.102.106.135", 
             "local_dir": "SOL", 
             "prod_type": "NQ", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }, 
         {
             "sol_type": "DSR", 
             "extension": "NQ0", 
-            "savedas": "DSR11755_test1.NQ0.Z", 
-            "filename": "DSR022000.NQ0.Z", 
+            "savedas": "DSR09116.NQ0.Z", 
+            "filename": "DSR971790.NQ0.Z", 
             "host": "147.102.106.135", 
             "local_dir": "SOL", 
             "prod_type": "NQ", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }, 
         {
             "sol_type": "DSO", 
             "extension": "CRD", 
-            "savedas": "DSO11755_test1.CRD.Z", 
-            "filename": "DSO022000.CRD.Z", 
+            "savedas": "DSO09116.CRD.Z", 
+            "filename": "DSO971790.CRD.Z", 
             "host": "147.102.106.135", 
             "local_dir": "STA", 
             "prod_type": "CRD_FILE", 
-            "host_dir": "/1175/"
+            "host_dir": "/0911/"
         }
     ], 
     "addneq_summary": [
         {
-            "hgtcor": 0.016, 
-            "yrms": 0.001, 
-            "hgtest": 247.5825, 
-            "hgtapr": 247.5665, 
-            "lonest": 58.5605, 
-            "hgtrms": 0.0022, 
-            "loncor": -0.001, 
-            "zrms": 0.0019, 
-            "lonapr": 58.5605, 
-            "xapr": 1843956.7779, 
-            "latrms": 0.0007, 
-            "east": -0.001, 
-            "adj": "HELMR", 
-            "north": 0.0004, 
-            "lonrms": 0.0006, 
-            "zest": 5291261.738, 
-            "xest": 1843956.7831, 
-            "latapr": 56.4298, 
-            "xcor": 0.0053, 
-            "xrms": 0.001, 
-            "latcor": 0.0004, 
-            "zapr": 5291261.7245, 
-            "name": "ARTU 12362M001", 
-            "up": 0.016, 
-            "zcor": 0.0135, 
-            "ycor": 0.0067, 
-            "yest": 3016203.0965, 
-            "yapr": 3016203.0898, 
-            "latest": 56.4298
-        }, 
-        {
-            "hgtcor": -0.0066, 
-            "yrms": 0.0005, 
-            "hgtest": 956.3237, 
-            "hgtapr": 956.3303, 
-            "lonest": 7.4653, 
-            "hgtrms": 0.0015, 
-            "loncor": -0.0005, 
-            "zrms": 0.0012, 
-            "lonapr": 7.4653, 
-            "xapr": 4331297.0975, 
-            "latrms": 0.0006, 
-            "east": -0.0005, 
-            "adj": "HELMR", 
-            "north": -0.0006, 
-            "lonrms": 0.0005, 
-            "zest": 4633133.9013, 
-            "xest": 4331297.0936, 
-            "latapr": 46.8771, 
-            "xcor": -0.004, 
-            "xrms": 0.0011, 
-            "latcor": -0.0006, 
-            "zapr": 4633133.9065, 
-            "name": "ZIMM 14001M004", 
-            "up": -0.0066, 
-            "zcor": -0.0053, 
-            "ycor": -0.001, 
-            "yest": 567555.8325, 
-            "yapr": 567555.8335, 
-            "latest": 46.8771
-        }, 
-        {
-            "hgtcor": -0.0024, 
-            "yrms": 0.0003, 
-            "hgtest": 94.6016, 
-            "hgtapr": 94.604, 
-            "lonest": 24.3953, 
-            "hgtrms": 0.001, 
-            "loncor": -0.0011, 
-            "zrms": 0.0009, 
-            "lonapr": 24.3953, 
-            "xapr": 2892570.828, 
-            "latrms": 0.0004, 
-            "east": -0.0011, 
-            "adj": "HELMR", 
-            "north": 0.0003, 
-            "lonrms": 0.0003, 
-            "zest": 5512634.1094, 
-            "xest": 2892570.8272, 
-            "latapr": 60.2175, 
-            "xcor": -0.0009, 
-            "xrms": 0.0006, 
-            "latcor": 0.0003, 
-            "zapr": 5512634.1113, 
-            "name": "METS 10503S011", 
-            "up": -0.0024, 
-            "zcor": -0.0019, 
-            "ycor": -0.0016, 
-            "yest": 1311843.408, 
-            "yapr": 1311843.4096, 
-            "latest": 60.2175
-        }, 
-        {
-            "hgtcor": -0.0069, 
+            "hgtcor": -0.0133, 
             "yrms": 0.0004, 
-            "hgtest": 82.2753, 
-            "hgtapr": 82.2822, 
+            "hgtest": 82.2711, 
+            "hgtapr": 82.2844, 
             "lonest": 6.6045, 
-            "hgtrms": 0.0012, 
-            "loncor": -0.0007, 
-            "zrms": 0.001, 
+            "hgtrms": 0.0018, 
+            "loncor": -0.003, 
+            "zrms": 0.0014, 
             "lonapr": 6.6045, 
-            "xapr": 3828735.9009, 
-            "latrms": 0.0004, 
-            "east": -0.0007, 
+            "xapr": 3828735.9784, 
+            "latrms": 0.0006, 
+            "east": -0.003, 
             "adj": "HELMR", 
-            "north": -0.0011, 
-            "lonrms": 0.0003, 
-            "zest": 5064884.6827, 
-            "xest": 3828735.8977, 
+            "north": 0.0037, 
+            "lonrms": 0.0004, 
+            "zest": 5064884.6321, 
+            "xest": 3828735.9678, 
             "latapr": 52.9146, 
-            "xcor": -0.0032, 
-            "xrms": 0.0008, 
-            "latcor": -0.0011, 
-            "zapr": 5064884.6889, 
+            "xcor": -0.0106, 
+            "xrms": 0.0012, 
+            "latcor": 0.0037, 
+            "zapr": 5064884.6405, 
             "name": "WSRT 13506M005", 
-            "up": -0.0069, 
-            "zcor": -0.0062, 
-            "ycor": -0.0011, 
-            "yest": 443304.9167, 
-            "yapr": 443304.9178, 
+            "up": -0.0133, 
+            "zcor": -0.0084, 
+            "ycor": -0.0042, 
+            "yest": 443304.8327, 
+            "yapr": 443304.8369, 
             "latest": 52.9146
         }, 
         {
-            "hgtcor": 0.0146, 
-            "yrms": 0.0011, 
-            "hgtest": 42.5205, 
-            "hgtapr": 42.5058, 
-            "lonest": 23.0336, 
-            "hgtrms": 0.0027, 
-            "loncor": 0.0035, 
-            "zrms": 0.0017, 
-            "lonapr": 23.0336, 
-            "xapr": 4583365.5686, 
-            "latrms": 0.0008, 
-            "east": 0.0035, 
-            "adj": "ESTIM", 
-            "north": 0.0003, 
-            "lonrms": 0.0006, 
-            "zest": 3971175.0468, 
-            "xest": 4583365.5776, 
-            "latapr": 38.7551, 
-            "xcor": 0.009, 
-            "xrms": 0.002, 
-            "latcor": 0.0003, 
-            "zapr": 3971175.0375, 
-            "name": "ARKI", 
-            "up": 0.0146, 
-            "zcor": 0.0094, 
-            "ycor": 0.0076, 
-            "yest": 1948697.0043, 
-            "yapr": 1948696.9967, 
-            "latest": 38.7551
-        }, 
-        {
-            "hgtcor": -0.0004, 
-            "yrms": 0.0006, 
-            "hgtest": 972.7571, 
-            "hgtapr": 972.7575, 
-            "lonest": -3.0886, 
-            "hgtrms": 0.0017, 
-            "loncor": -0.0013, 
-            "zrms": 0.0013, 
-            "lonapr": -3.0886, 
-            "xapr": 4848724.7282, 
-            "latrms": 0.0007, 
-            "east": -0.0013, 
+            "hgtcor": -0.0151, 
+            "yrms": 0.0007, 
+            "hgtest": 94.5657, 
+            "hgtapr": 94.5808, 
+            "lonest": 24.3953, 
+            "hgtrms": 0.0026, 
+            "loncor": -0.0015, 
+            "zrms": 0.0022, 
+            "lonapr": 24.3953, 
+            "xapr": 2892570.9104, 
+            "latrms": 0.001, 
+            "east": -0.0015, 
             "adj": "HELMR", 
-            "north": -0.0047, 
-            "lonrms": 0.0006, 
-            "zest": 4123094.1184, 
-            "xest": 4848724.7308, 
-            "latapr": 40.5249, 
-            "xcor": 0.0026, 
-            "xrms": 0.0013, 
-            "latcor": -0.0047, 
-            "zapr": 4123094.1222, 
-            "name": "YEBE 13420M001", 
-            "up": -0.0005, 
-            "zcor": -0.0039, 
-            "ycor": -0.0014, 
-            "yest": -261632.2589, 
-            "yapr": -261632.2575, 
-            "latest": 40.5249
+            "north": 0.0064, 
+            "lonrms": 0.0007, 
+            "zest": 5512634.0491, 
+            "xest": 2892570.8991, 
+            "latapr": 60.2175, 
+            "xcor": -0.0113, 
+            "xrms": 0.0018, 
+            "latcor": 0.0063, 
+            "zapr": 5512634.0591, 
+            "name": "METS 10503S011", 
+            "up": -0.0151, 
+            "zcor": -0.01, 
+            "ycor": -0.0067, 
+            "yest": 1311843.3296, 
+            "yapr": 1311843.3363, 
+            "latest": 60.2175
         }, 
         {
-            "hgtcor": 0.0142, 
-            "yrms": 0.0006, 
-            "hgtest": 226.3266, 
-            "hgtapr": 226.3124, 
-            "lonest": 30.4967, 
-            "hgtrms": 0.0014, 
-            "loncor": -0.0081, 
-            "zrms": 0.0012, 
-            "lonapr": 30.4967, 
-            "xapr": 3512889.0025, 
-            "latrms": 0.0005, 
-            "east": -0.0081, 
-            "adj": "HELMR", 
-            "north": 0.0075, 
-            "lonrms": 0.0004, 
-            "zest": 4888903.1963, 
-            "xest": 3512889.0094, 
-            "latapr": 50.3642, 
-            "xcor": 0.0069, 
-            "xrms": 0.0009, 
-            "latcor": 0.0075, 
-            "zapr": 4888903.1806, 
-            "name": "GLSV 12356M001", 
-            "up": 0.0142, 
-            "zcor": 0.0157, 
-            "ycor": -0.0053, 
-            "yest": 2068979.8412, 
-            "yapr": 2068979.8466, 
-            "latest": 50.3642
-        }, 
-        {
-            "hgtcor": 0.0065, 
-            "yrms": 0.0006, 
-            "hgtest": 178.3733, 
-            "hgtapr": 178.3669, 
-            "lonest": 34.5429, 
-            "hgtrms": 0.0013, 
-            "loncor": -0.0017, 
-            "zrms": 0.0011, 
-            "lonapr": 34.5429, 
-            "xapr": 3411557.4003, 
-            "latrms": 0.0005, 
-            "east": -0.0017, 
-            "adj": "HELMR", 
-            "north": -0.0012, 
-            "lonrms": 0.0004, 
-            "zest": 4834396.8725, 
-            "xest": 3411557.4055, 
-            "latapr": 49.6026, 
-            "xcor": 0.0052, 
-            "xrms": 0.0008, 
-            "latcor": -0.0012, 
-            "zapr": 4834396.8684, 
-            "name": "POLV 12336M001", 
-            "up": 0.0064, 
-            "zcor": 0.0041, 
-            "ycor": 0.0015, 
-            "yest": 2348463.9558, 
-            "yapr": 2348463.9543, 
-            "latest": 49.6026
-        }, 
-        {
-            "hgtcor": -0.0093, 
+            "hgtcor": 0.0103, 
             "yrms": 0.0004, 
-            "hgtest": 138.0773, 
-            "hgtapr": 138.0866, 
-            "lonest": 18.9396, 
-            "hgtrms": 0.0015, 
-            "loncor": 0.0099, 
-            "zrms": 0.0014, 
-            "lonapr": 18.9396, 
-            "xapr": 2102928.5238, 
-            "latrms": 0.0006, 
-            "east": 0.01, 
-            "adj": "HELMR", 
-            "north": 0.0, 
-            "lonrms": 0.0003, 
-            "zest": 5958196.235, 
-            "xest": 2102928.5175, 
-            "latapr": 69.6627, 
-            "xcor": -0.0063, 
-            "xrms": 0.0008, 
-            "latcor": 0.0, 
-            "zapr": 5958196.2437, 
-            "name": "TRO1 10302M006", 
-            "up": -0.0093, 
-            "zcor": -0.0087, 
-            "ycor": 0.0084, 
-            "yest": 721619.4414, 
-            "yapr": 721619.433, 
-            "latest": 69.6627
-        }, 
-        {
-            "hgtcor": 0.0032, 
-            "yrms": 0.0004, 
-            "hgtest": 666.0235, 
-            "hgtapr": 666.0203, 
+            "hgtest": 666.0312, 
+            "hgtapr": 666.0208, 
             "lonest": 12.8789, 
-            "hgtrms": 0.0014, 
-            "loncor": -0.0023, 
-            "zrms": 0.0011, 
+            "hgtrms": 0.0019, 
+            "loncor": -0.0037, 
+            "zrms": 0.0015, 
             "lonapr": 12.8789, 
-            "xapr": 4075580.5867, 
-            "latrms": 0.0005, 
-            "east": -0.0023, 
+            "xapr": 4075580.6679, 
+            "latrms": 0.0006, 
+            "east": -0.0037, 
             "adj": "HELMR", 
-            "north": -0.0014, 
+            "north": 0.0028, 
             "lonrms": 0.0004, 
-            "zest": 4801568.107, 
-            "xest": 4075580.5903, 
+            "zest": 4801568.064, 
+            "xest": 4075580.6732, 
             "latapr": 49.1442, 
-            "xcor": 0.0036, 
-            "xrms": 0.0009, 
-            "latcor": -0.0014, 
-            "zapr": 4801568.1054, 
+            "xcor": 0.0053, 
+            "xrms": 0.0013, 
+            "latcor": 0.0028, 
+            "zapr": 4801568.0544, 
             "name": "WTZR 14201M010", 
-            "up": 0.0032, 
-            "zcor": 0.0016, 
-            "ycor": -0.0015, 
-            "yest": 931853.754, 
-            "yapr": 931853.7555, 
+            "up": 0.0103, 
+            "zcor": 0.0096, 
+            "ycor": -0.0025, 
+            "yest": 931853.6663, 
+            "yapr": 931853.6689, 
             "latest": 49.1442
         }, 
         {
-            "hgtcor": 0.0066, 
-            "yrms": 0.0011, 
-            "hgtest": 318.0957, 
-            "hgtapr": 318.0891, 
-            "lonest": 25.6104, 
-            "hgtrms": 0.0025, 
-            "loncor": -0.0021, 
-            "zrms": 0.0016, 
-            "lonapr": 25.6104, 
-            "xapr": 4701748.0979, 
+            "hgtcor": 0.0002, 
+            "yrms": 0.0006, 
+            "hgtest": 956.3243, 
+            "hgtapr": 956.3241, 
+            "lonest": 7.4653, 
+            "hgtrms": 0.0027, 
+            "loncor": -0.0022, 
+            "zrms": 0.0021, 
+            "lonapr": 7.4653, 
+            "xapr": 4331297.1659, 
             "latrms": 0.0008, 
-            "east": -0.0021, 
-            "adj": "ESTIM", 
-            "north": 0.0028, 
+            "east": -0.0023, 
+            "adj": "HELMR", 
+            "north": 0.0002, 
             "lonrms": 0.0006, 
-            "zest": 3661764.3469, 
-            "xest": 4701748.1022, 
-            "latapr": 35.2614, 
-            "xcor": 0.0043, 
+            "zest": 4633133.8459, 
+            "xest": 4331297.1662, 
+            "latapr": 46.8771, 
+            "xcor": 0.0003, 
             "xrms": 0.0019, 
-            "latcor": 0.0028, 
-            "zapr": 3661764.3408, 
-            "name": "NEAP", 
-            "up": 0.0066, 
-            "zcor": 0.0061, 
-            "ycor": -0.0002, 
-            "yest": 2253746.6425, 
-            "yapr": 2253746.6427, 
-            "latest": 35.2614
+            "latcor": 0.0002, 
+            "zapr": 4633133.8456, 
+            "name": "ZIMM 14001M004", 
+            "up": 0.0002, 
+            "zcor": 0.0003, 
+            "ycor": -0.0022, 
+            "yest": 567555.7399, 
+            "yapr": 567555.7421, 
+            "latest": 46.8771
         }, 
         {
-            "hgtcor": -0.0104, 
-            "yrms": 0.0009, 
-            "hgtest": 190.007, 
-            "hgtapr": 190.0174, 
-            "lonest": 33.3964, 
-            "hgtrms": 0.0018, 
-            "loncor": -0.0016, 
-            "zrms": 0.0013, 
-            "lonapr": 33.3964, 
-            "xapr": 4359415.7567, 
-            "latrms": 0.0007, 
-            "east": -0.0016, 
-            "adj": "HELMR", 
-            "north": -0.0051, 
-            "lonrms": 0.0005, 
-            "zest": 3650777.7883, 
-            "xest": 4359415.7529, 
-            "latapr": 35.141, 
-            "xcor": -0.0038, 
-            "xrms": 0.0013, 
-            "latcor": -0.0051, 
-            "zapr": 3650777.7985, 
-            "name": "NICO 14302M001", 
-            "up": -0.0104, 
-            "zcor": -0.0102, 
-            "ycor": -0.0044, 
-            "yest": 2874117.0328, 
-            "yapr": 2874117.0372, 
-            "latest": 35.141
-        }, 
-        {
-            "hgtcor": 0.0003, 
-            "yrms": 0.0007, 
-            "hgtest": 1166.2782, 
-            "hgtapr": 1166.2778, 
-            "lonest": 41.5651, 
-            "hgtrms": 0.0013, 
-            "loncor": -0.0014, 
-            "zrms": 0.001, 
-            "lonapr": 41.5651, 
-            "xapr": 3451174.7584, 
-            "latrms": 0.0005, 
-            "east": -0.0014, 
-            "adj": "HELMR", 
-            "north": 0.0004, 
-            "lonrms": 0.0004, 
-            "zest": 4391955.6286, 
-            "xest": 3451174.7594, 
-            "latapr": 43.7884, 
-            "xcor": 0.0009, 
-            "xrms": 0.0008, 
-            "latcor": 0.0004, 
-            "zapr": 4391955.6281, 
-            "name": "ZECK 12351M001", 
-            "up": 0.0004, 
-            "zcor": 0.0005, 
-            "ycor": -0.001, 
-            "yest": 3060335.3996, 
-            "yapr": 3060335.4007, 
-            "latest": 43.7884
-        }, 
-        {
-            "hgtcor": 0.0147, 
-            "yrms": 0.0005, 
-            "hgtest": 76.489, 
+            "hgtcor": 0.0212, 
+            "yrms": 0.0018, 
+            "hgtest": 76.4956, 
             "hgtapr": 76.4744, 
             "lonest": 0.3363, 
-            "hgtrms": 0.0019, 
-            "loncor": 0.002, 
-            "zrms": 0.0016, 
+            "hgtrms": 0.0082, 
+            "loncor": 0.0223, 
+            "zrms": 0.0064, 
             "lonapr": 0.3363, 
-            "xapr": 4033470.1277, 
-            "latrms": 0.0006, 
-            "east": 0.002, 
+            "xapr": 4033470.1932, 
+            "latrms": 0.0031, 
+            "east": 0.0224, 
             "adj": "HELMR", 
-            "north": -0.0048, 
-            "lonrms": 0.0005, 
-            "zest": 4924301.2882, 
-            "xest": 4033470.1407, 
+            "north": -0.0137, 
+            "lonrms": 0.0018, 
+            "zest": 4924301.2348, 
+            "xest": 4033470.2171, 
             "latapr": 50.8673, 
-            "xcor": 0.013, 
-            "xrms": 0.0013, 
-            "latcor": -0.0048, 
-            "zapr": 4924301.2798, 
+            "xcor": 0.0239, 
+            "xrms": 0.006, 
+            "latcor": -0.0137, 
+            "zapr": 4924301.227, 
             "name": "HERS 13212M007", 
-            "up": 0.0147, 
-            "zcor": 0.0083, 
-            "ycor": 0.0021, 
-            "yest": 23672.8484, 
-            "yapr": 23672.8463, 
+            "up": 0.0212, 
+            "zcor": 0.0078, 
+            "ycor": 0.0226, 
+            "yest": 23672.7843, 
+            "yapr": 23672.7617, 
             "latest": 50.8673
         }, 
         {
-            "hgtcor": -0.0046, 
-            "yrms": 0.0006, 
-            "hgtest": 124.3597, 
-            "hgtapr": 124.3643, 
+            "hgtcor": 0.0019, 
+            "yrms": 0.0007, 
+            "hgtest": 124.3678, 
+            "hgtapr": 124.3659, 
             "lonest": 17.0735, 
-            "hgtrms": 0.0022, 
-            "loncor": -0.0011, 
-            "zrms": 0.0017, 
+            "hgtrms": 0.0026, 
+            "loncor": -0.0041, 
+            "zrms": 0.002, 
             "lonapr": 17.0735, 
-            "xapr": 3738358.4961, 
-            "latrms": 0.0007, 
-            "east": -0.0011, 
+            "xapr": 3738358.5835, 
+            "latrms": 0.0008, 
+            "east": -0.0041, 
             "adj": "HELMR", 
-            "north": -0.0001, 
-            "lonrms": 0.0005, 
-            "zest": 5021815.7477, 
-            "xest": 3738358.4938, 
+            "north": 0.0023, 
+            "lonrms": 0.0006, 
+            "zest": 5021815.7096, 
+            "xest": 3738358.5841, 
             "latapr": 52.277, 
-            "xcor": -0.0023, 
-            "xrms": 0.0015, 
-            "latcor": -0.0001, 
-            "zapr": 5021815.7514, 
+            "xcor": 0.0006, 
+            "xrms": 0.0019, 
+            "latcor": 0.0023, 
+            "zapr": 5021815.7067, 
             "name": "BOR1 12205M002", 
-            "up": -0.0046, 
-            "zcor": -0.0037, 
-            "ycor": -0.0018, 
-            "yest": 1148173.6694, 
-            "yapr": 1148173.6712, 
+            "up": 0.0019, 
+            "zcor": 0.0029, 
+            "ycor": -0.0041, 
+            "yest": 1148173.588, 
+            "yapr": 1148173.5921, 
             "latest": 52.277
         }, 
         {
-            "hgtcor": 0.0041, 
+            "hgtcor": -0.0065, 
             "yrms": 0.0005, 
-            "hgtest": 257.1021, 
-            "hgtapr": 257.098, 
-            "lonest": 37.2145, 
-            "hgtrms": 0.0013, 
-            "loncor": 0.0, 
-            "zrms": 0.0011, 
-            "lonapr": 37.2145, 
-            "xapr": 2845456.1266, 
-            "latrms": 0.0005, 
-            "east": 0.0, 
-            "adj": "HELMR", 
-            "north": 0.0014, 
-            "lonrms": 0.0004, 
-            "zest": 5265993.1988, 
-            "xest": 2845456.1275, 
-            "latapr": 56.0215, 
-            "xcor": 0.0009, 
-            "xrms": 0.0007, 
-            "latcor": 0.0014, 
-            "zapr": 5265993.1946, 
-            "name": "MDVJ 12309M005", 
-            "up": 0.0041, 
-            "zcor": 0.0042, 
-            "ycor": 0.0007, 
-            "yest": 2160954.2096, 
-            "yapr": 2160954.2089, 
-            "latest": 56.0215
-        }, 
-        {
-            "hgtcor": 0.0144, 
-            "yrms": 0.0005, 
-            "hgtest": 82.6862, 
-            "hgtapr": 82.6719, 
-            "lonest": -15.1979, 
-            "hgtrms": 0.0025, 
-            "loncor": -0.0083, 
-            "zrms": 0.0024, 
-            "lonapr": -15.1979, 
-            "xapr": 2679689.9901, 
-            "latrms": 0.0007, 
-            "east": -0.0084, 
-            "adj": "HELMR", 
-            "north": 0.0066, 
-            "lonrms": 0.0006, 
-            "zest": 5722789.2769, 
-            "xest": 2679689.9882, 
-            "latapr": 64.2673, 
-            "xcor": -0.0019, 
-            "xrms": 0.0011, 
-            "latcor": 0.0066, 
-            "zapr": 5722789.2611, 
-            "name": "HOFN 10204M002", 
-            "up": 0.0144, 
-            "zcor": 0.0158, 
-            "ycor": -0.0082, 
-            "yest": -727951.2655, 
-            "yapr": -727951.2573, 
-            "latest": 64.2673
-        }, 
-        {
-            "hgtcor": -0.0006, 
-            "yrms": 0.0004, 
-            "hgtest": 45.5703, 
-            "hgtapr": 45.571, 
+            "hgtest": 45.55, 
+            "hgtapr": 45.5565, 
             "lonest": 11.9255, 
-            "hgtrms": 0.0012, 
-            "loncor": -0.0004, 
-            "zrms": 0.001, 
+            "hgtrms": 0.0021, 
+            "loncor": -0.0009, 
+            "zrms": 0.0016, 
             "lonapr": 11.9255, 
-            "xapr": 3370658.5764, 
-            "latrms": 0.0004, 
-            "east": -0.0004, 
-            "adj": "HELMR", 
-            "north": -0.0004, 
-            "lonrms": 0.0003, 
-            "zest": 5349786.9263, 
-            "xest": 3370658.5764, 
-            "latapr": 57.3953, 
-            "xcor": 0.0001, 
-            "xrms": 0.0007, 
-            "latcor": -0.0004, 
-            "zapr": 5349786.9271, 
-            "name": "ONSA 10402M004", 
-            "up": -0.0006, 
-            "zcor": -0.0007, 
-            "ycor": -0.0004, 
-            "yest": 711877.1024, 
-            "yapr": 711877.1028, 
-            "latest": 57.3953
-        }, 
-        {
-            "hgtcor": -0.0411, 
-            "yrms": 0.0009, 
-            "hgtest": 110.5962, 
-            "hgtapr": 110.6373, 
-            "lonest": -25.6628, 
-            "hgtrms": 0.0028, 
-            "loncor": -0.0052, 
-            "zrms": 0.0019, 
-            "lonapr": -25.6628, 
-            "xapr": 4551595.9706, 
-            "latrms": 0.0009, 
-            "east": -0.0052, 
-            "adj": "HELMR", 
-            "north": -0.0078, 
-            "lonrms": 0.0009, 
-            "zest": 3883410.7898, 
-            "xest": 4551595.9434, 
-            "latapr": 37.7477, 
-            "xcor": -0.0272, 
-            "xrms": 0.0022, 
-            "latcor": -0.0078, 
-            "zapr": 3883410.8211, 
-            "name": "PDEL 31906M004", 
-            "up": -0.0411, 
-            "zcor": -0.0313, 
-            "ycor": 0.0073, 
-            "yest": -2186893.1478, 
-            "yapr": -2186893.1551, 
-            "latest": 37.7477
-        }, 
-        {
-            "hgtcor": 0.0168, 
-            "yrms": 0.0009, 
-            "hgtest": 976.0467, 
-            "hgtapr": 976.03, 
-            "lonest": 32.7585, 
-            "hgtrms": 0.0018, 
-            "loncor": -0.0047, 
-            "zrms": 0.0013, 
-            "lonapr": 32.7585, 
-            "xapr": 4121948.5432, 
-            "latrms": 0.0006, 
-            "east": -0.0047, 
-            "adj": "HELMR", 
-            "north": 0.0, 
-            "lonrms": 0.0005, 
-            "zest": 4069023.7485, 
-            "xest": 4121948.5565, 
-            "latapr": 39.8874, 
-            "xcor": 0.0133, 
-            "xrms": 0.0011, 
-            "latcor": 0.0001, 
-            "zapr": 4069023.7377, 
-            "name": "ANKR 20805M002", 
-            "up": 0.0168, 
-            "zcor": 0.0108, 
-            "ycor": 0.003, 
-            "yest": 2652187.9141, 
-            "yapr": 2652187.9111, 
-            "latest": 39.8874
-        }, 
-        {
-            "hgtcor": -0.0037, 
-            "yrms": 0.0012, 
-            "hgtest": 126.3422, 
-            "hgtapr": 126.3458, 
-            "lonest": 14.9898, 
-            "hgtrms": 0.0032, 
-            "loncor": -0.0012, 
-            "zrms": 0.0021, 
-            "lonapr": 14.9898, 
-            "xapr": 4934546.2727, 
+            "xapr": 3370658.648, 
             "latrms": 0.0008, 
-            "east": -0.0012, 
+            "east": -0.0009, 
             "adj": "HELMR", 
-            "north": -0.0007, 
-            "lonrms": 0.0007, 
-            "zest": 3806456.0828, 
-            "xest": 4934546.2706, 
-            "latapr": 36.8758, 
-            "xcor": -0.0021, 
-            "xrms": 0.0024, 
-            "latcor": -0.0007, 
-            "zapr": 3806456.0856, 
-            "name": "NOT1 12717M004", 
-            "up": -0.0036, 
-            "zcor": -0.0027, 
-            "ycor": -0.0018, 
-            "yest": 1321264.964, 
-            "yapr": 1321264.9658, 
-            "latest": 36.8758
+            "north": 0.0061, 
+            "lonrms": 0.0004, 
+            "zest": 5349786.8725, 
+            "xest": 3370658.6398, 
+            "latapr": 57.3953, 
+            "xcor": -0.0082, 
+            "xrms": 0.0015, 
+            "latcor": 0.006, 
+            "zapr": 5349786.8748, 
+            "name": "ONSA 10402M004", 
+            "up": -0.0065, 
+            "zcor": -0.0022, 
+            "ycor": -0.0027, 
+            "yest": 711877.0268, 
+            "yapr": 711877.0295, 
+            "latest": 57.3953
         }
     ], 
     "products": {
@@ -1939,19 +585,19 @@
             "info": "Earth Rotation Parameters", 
             "ac": "cod", 
             "format": "erp", 
-            "filename": "ftp.unibe.ch/aiub/CODE/2002/COD11757.ERP.Z", 
+            "filename": "ftp.unibe.ch/aiub/REPRO_2013/CODE/1997/COD09116.ERP.Z", 
             "satsys": "", 
             "host": "ftp.unibe.ch", 
-            "type": "final"
+            "type": "final (2013 re-processing)"
         }, 
         "sp3": {
             "info": "GPS/GNSS Orbit and Clock Information", 
             "ac": "cod", 
             "format": "sp3", 
-            "filename": "ftp.unibe.ch/aiub/CODE/2002/COD11755.EPH.Z", 
+            "filename": "ftp.unibe.ch/aiub/REPRO_2013/CODE/1997/COD09116.EPH.Z", 
             "satsys": "gps+glonass", 
             "host": "ftp.unibe.ch", 
-            "type": "final"
+            "type": "final (repro 2013)"
         }, 
         "dcb": {
             "info": "Differential Code Bias", 
@@ -1967,7 +613,7 @@
                 "info": "Vienna Mapping Function 1 Grid", 
                 "ac": "tuwien", 
                 "format": "GRD (ascii grid file)", 
-                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2002/VMFG_20020719.H00.gz", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/1997/VMFG_19970628.H00.gz", 
                 "satsys": "", 
                 "host": "http://ggosatm.hg.tuwien.ac.at", 
                 "type": ""
@@ -1976,7 +622,7 @@
                 "info": "Vienna Mapping Function 1 Grid", 
                 "ac": "tuwien", 
                 "format": "GRD (ascii grid file)", 
-                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2002/VMFG_20020719.H06.gz", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/1997/VMFG_19970628.H06.gz", 
                 "satsys": "", 
                 "host": "http://ggosatm.hg.tuwien.ac.at", 
                 "type": ""
@@ -1985,7 +631,7 @@
                 "info": "Vienna Mapping Function 1 Grid", 
                 "ac": "tuwien", 
                 "format": "GRD (ascii grid file)", 
-                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2002/VMFG_20020719.H12.gz", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/1997/VMFG_19970628.H12.gz", 
                 "satsys": "", 
                 "host": "http://ggosatm.hg.tuwien.ac.at", 
                 "type": ""
@@ -1994,7 +640,7 @@
                 "info": "Vienna Mapping Function 1 Grid", 
                 "ac": "tuwien", 
                 "format": "GRD (ascii grid file)", 
-                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/2002/VMFG_20020719.H18.gz", 
+                "filename": "http://ggosatm.hg.tuwien.ac.at/DELAY/GRID/VMFG/1997/VMFG_19970628.H18.gz", 
                 "satsys": "", 
                 "host": "http://ggosatm.hg.tuwien.ac.at", 
                 "type": ""
@@ -2004,7 +650,7 @@
             "info": "Ionospheric correction file.", 
             "ac": "COD", 
             "format": "ION", 
-            "filename": "ftp.unibe.ch/aiub/CODE/2002/COD11755.ION.Z", 
+            "filename": "ftp.unibe.ch/aiub/CODE/1997/COD09116.ION.Z", 
             "satsys": "", 
             "host": "ftp.unibe.ch", 
             "type": "final"
@@ -2012,604 +658,184 @@
     }, 
     "amb_res_summary": [
         {
-            "num_of_ambs": 42, 
-            "baseline": "ANNI", 
-            "station2": "NICO", 
-            "percent": 0.0, 
-            "satsys": "GPS", 
-            "length": 529.7, 
-            "method": "qif", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 24, 
-            "baseline": "ANZE", 
-            "station2": "ZECK", 
-            "percent": 0.0, 
-            "satsys": "GPS", 
-            "length": 849.0, 
-            "method": "qif", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 16, 
-            "baseline": "ARNA", 
-            "station2": "NEAP", 
-            "percent": 50.0, 
-            "satsys": "GPS", 
-            "length": 450.3, 
-            "method": "qif", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 32, 
-            "baseline": "ARNT", 
-            "station2": "NOT1", 
-            "percent": 37.5, 
-            "satsys": "GPS", 
-            "length": 737.7, 
-            "method": "qif", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 52, 
-            "baseline": "ATMD", 
-            "station2": "MDVJ", 
-            "percent": 19.2, 
-            "satsys": "GPS", 
-            "length": 1317.2, 
-            "method": "qif", 
-            "station1": "ARTU"
-        }, 
-        {
-            "num_of_ambs": 24, 
+            "num_of_ambs": 20, 
             "baseline": "BOWT", 
             "station2": "WTZR", 
-            "percent": 25.0, 
+            "percent": 10.0, 
             "satsys": "GPS", 
             "length": 457.2, 
             "method": "qif", 
             "station1": "BOR1"
         }, 
         {
-            "num_of_ambs": 24, 
-            "baseline": "GLPO", 
-            "station2": "POLV", 
-            "percent": 16.7, 
+            "num_of_ambs": 188, 
+            "baseline": "HEWS", 
+            "station2": "WSRT", 
+            "percent": 19.1, 
             "satsys": "GPS", 
-            "length": 302.2, 
+            "length": 487.6, 
             "method": "qif", 
-            "station1": "GLSV"
+            "station1": "HERS"
+        }, 
+        {
+            "num_of_ambs": 58, 
+            "baseline": "MEON", 
+            "station2": "ONSA", 
+            "percent": 0.0, 
+            "satsys": "GPS", 
+            "length": 784.2, 
+            "method": "qif", 
+            "station1": "METS"
         }, 
         {
             "num_of_ambs": 26, 
-            "baseline": "HEWS", 
-            "station2": "WSRT", 
-            "percent": 30.8, 
-            "satsys": "GPS", 
-            "length": 487.6, 
-            "method": "qif", 
-            "station1": "HERS"
-        }, 
-        {
-            "num_of_ambs": 68, 
-            "baseline": "HOTR", 
-            "station2": "TRO1", 
-            "percent": 20.6, 
-            "satsys": "GPS", 
-            "length": 1577.8, 
-            "method": "qif", 
-            "station1": "HOFN"
-        }, 
-        {
-            "num_of_ambs": 64, 
-            "baseline": "MDME", 
-            "station2": "METS", 
-            "percent": 18.8, 
-            "satsys": "GPS", 
-            "length": 885.5, 
-            "method": "qif", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 30, 
-            "baseline": "MDPO", 
-            "station2": "POLV", 
-            "percent": 26.7, 
-            "satsys": "GPS", 
-            "length": 736.1, 
-            "method": "qif", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 28, 
-            "baseline": "MEON", 
-            "station2": "ONSA", 
-            "percent": 14.3, 
-            "satsys": "GPS", 
-            "length": 784.2, 
-            "method": "qif", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 50, 
-            "baseline": "METR", 
-            "station2": "TRO1", 
-            "percent": 20.0, 
-            "satsys": "GPS", 
-            "length": 1081.9, 
-            "method": "qif", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 28, 
-            "baseline": "NANI", 
-            "station2": "NICO", 
-            "percent": 7.1, 
-            "satsys": "GPS", 
-            "length": 708.6, 
-            "method": "qif", 
-            "station1": "NEAP"
-        }, 
-        {
-            "num_of_ambs": 28, 
             "baseline": "ONWS", 
             "station2": "WSRT", 
-            "percent": 0.0, 
+            "percent": 15.4, 
             "satsys": "GPS", 
             "length": 602.6, 
             "method": "qif", 
             "station1": "ONSA"
         }, 
         {
-            "num_of_ambs": 50, 
-            "baseline": "PDYE", 
-            "station2": "YEBE", 
-            "percent": 8.0, 
-            "satsys": "GPS", 
-            "length": 1962.7, 
-            "method": "qif", 
-            "station1": "PDEL"
-        }, 
-        {
-            "num_of_ambs": 30, 
-            "baseline": "POZE", 
-            "station2": "ZECK", 
-            "percent": 6.7, 
-            "satsys": "GPS", 
-            "length": 839.1, 
-            "method": "qif", 
-            "station1": "POLV"
-        }, 
-        {
-            "num_of_ambs": 10, 
+            "num_of_ambs": 32, 
             "baseline": "WSWT", 
             "station2": "WTZR", 
-            "percent": 20.0, 
+            "percent": 37.5, 
             "satsys": "GPS", 
             "length": 607.4, 
             "method": "qif", 
-            "station1": "WSRT"
-        }, 
-        {
-            "num_of_ambs": 22, 
-            "baseline": "WTZI", 
-            "station2": "ZIMM", 
-            "percent": 27.3, 
-            "satsys": "GPS", 
-            "length": 475.9, 
-            "method": "qif", 
-            "station1": "WTZR"
-        }, 
-        {
-            "num_of_ambs": 52, 
-            "baseline": "YEZI", 
-            "station2": "ZIMM", 
-            "percent": 19.2, 
-            "satsys": "GPS", 
-            "length": 1102.5, 
-            "method": "qif", 
-            "station1": "YEBE"
-        }, 
-        {
-            "num_of_ambs": 63, 
-            "baseline": "ANNI", 
-            "station2": "NICO", 
-            "percent": 66.7, 
-            "satsys": "GPS", 
-            "length": 529.7, 
-            "method": "cbnl", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 55, 
-            "baseline": "ANZE", 
-            "station2": "ZECK", 
-            "percent": 78.2, 
-            "satsys": "GPS", 
-            "length": 849.0, 
-            "method": "cbnl", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 47, 
-            "baseline": "ARNA", 
-            "station2": "NEAP", 
-            "percent": 83.0, 
-            "satsys": "GPS", 
-            "length": 450.3, 
-            "method": "cbnl", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 49, 
-            "baseline": "ARNT", 
-            "station2": "NOT1", 
-            "percent": 67.3, 
-            "satsys": "GPS", 
-            "length": 737.7, 
-            "method": "cbnl", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 77, 
-            "baseline": "ATMD", 
-            "station2": "MDVJ", 
-            "percent": 66.2, 
-            "satsys": "GPS", 
-            "length": 1317.2, 
-            "method": "cbnl", 
-            "station1": "ARTU"
-        }, 
-        {
-            "num_of_ambs": 61, 
-            "baseline": "BOWT", 
-            "station2": "WTZR", 
-            "percent": 80.3, 
-            "satsys": "GPS", 
-            "length": 457.2, 
-            "method": "cbnl", 
-            "station1": "BOR1"
-        }, 
-        {
-            "num_of_ambs": 57, 
-            "baseline": "GLPO", 
-            "station2": "POLV", 
-            "percent": 78.9, 
-            "satsys": "GPS", 
-            "length": 302.2, 
-            "method": "cbnl", 
-            "station1": "GLSV"
-        }, 
-        {
-            "num_of_ambs": 58, 
-            "baseline": "HEWS", 
-            "station2": "WSRT", 
-            "percent": 77.6, 
-            "satsys": "GPS", 
-            "length": 487.6, 
-            "method": "cbnl", 
-            "station1": "HERS"
-        }, 
-        {
-            "num_of_ambs": 91, 
-            "baseline": "HOTR", 
-            "station2": "TRO1", 
-            "percent": 62.6, 
-            "satsys": "GPS", 
-            "length": 1577.8, 
-            "method": "cbnl", 
-            "station1": "HOFN"
-        }, 
-        {
-            "num_of_ambs": 80, 
-            "baseline": "MDME", 
-            "station2": "METS", 
-            "percent": 60.0, 
-            "satsys": "GPS", 
-            "length": 885.5, 
-            "method": "cbnl", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 63, 
-            "baseline": "MDPO", 
-            "station2": "POLV", 
-            "percent": 76.2, 
-            "satsys": "GPS", 
-            "length": 736.1, 
-            "method": "cbnl", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 70, 
-            "baseline": "MEON", 
-            "station2": "ONSA", 
-            "percent": 80.0, 
-            "satsys": "GPS", 
-            "length": 784.2, 
-            "method": "cbnl", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 81, 
-            "baseline": "METR", 
-            "station2": "TRO1", 
-            "percent": 69.1, 
-            "satsys": "GPS", 
-            "length": 1081.9, 
-            "method": "cbnl", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 52, 
-            "baseline": "NANI", 
-            "station2": "NICO", 
-            "percent": 73.1, 
-            "satsys": "GPS", 
-            "length": 708.6, 
-            "method": "cbnl", 
-            "station1": "NEAP"
-        }, 
-        {
-            "num_of_ambs": 69, 
-            "baseline": "ONWS", 
-            "station2": "WSRT", 
-            "percent": 79.7, 
-            "satsys": "GPS", 
-            "length": 602.6, 
-            "method": "cbnl", 
-            "station1": "ONSA"
-        }, 
-        {
-            "num_of_ambs": 62, 
-            "baseline": "PDYE", 
-            "station2": "YEBE", 
-            "percent": 59.7, 
-            "satsys": "GPS", 
-            "length": 1962.7, 
-            "method": "cbnl", 
-            "station1": "PDEL"
-        }, 
-        {
-            "num_of_ambs": 55, 
-            "baseline": "POZE", 
-            "station2": "ZECK", 
-            "percent": 72.7, 
-            "satsys": "GPS", 
-            "length": 839.1, 
-            "method": "cbnl", 
-            "station1": "POLV"
-        }, 
-        {
-            "num_of_ambs": 55, 
-            "baseline": "WSWT", 
-            "station2": "WTZR", 
-            "percent": 90.9, 
-            "satsys": "GPS", 
-            "length": 607.4, 
-            "method": "cbnl", 
-            "station1": "WSRT"
-        }, 
-        {
-            "num_of_ambs": 53, 
-            "baseline": "WTZI", 
-            "station2": "ZIMM", 
-            "percent": 79.2, 
-            "satsys": "GPS", 
-            "length": 475.9, 
-            "method": "cbnl", 
-            "station1": "WTZR"
-        }, 
-        {
-            "num_of_ambs": 63, 
-            "baseline": "YEZI", 
-            "station2": "ZIMM", 
-            "percent": 58.7, 
-            "satsys": "GPS", 
-            "length": 1102.5, 
-            "method": "cbnl", 
-            "station1": "YEBE"
-        }, 
-        {
-            "num_of_ambs": 48, 
-            "baseline": "ANNI", 
-            "station2": "NICO", 
-            "percent": 95.8, 
-            "satsys": "GPS", 
-            "length": 529.7, 
-            "method": "cbwl", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 47, 
-            "baseline": "ANZE", 
-            "station2": "ZECK", 
-            "percent": 95.7, 
-            "satsys": "GPS", 
-            "length": 849.0, 
-            "method": "cbwl", 
-            "station1": "ANKR"
-        }, 
-        {
-            "num_of_ambs": 41, 
-            "baseline": "ARNA", 
-            "station2": "NEAP", 
-            "percent": 95.1, 
-            "satsys": "GPS", 
-            "length": 450.3, 
-            "method": "cbwl", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 46, 
-            "baseline": "ARNT", 
-            "station2": "NOT1", 
-            "percent": 80.4, 
-            "satsys": "GPS", 
-            "length": 737.7, 
-            "method": "cbwl", 
-            "station1": "ARKI"
-        }, 
-        {
-            "num_of_ambs": 57, 
-            "baseline": "ATMD", 
-            "station2": "MDVJ", 
-            "percent": 93.0, 
-            "satsys": "GPS", 
-            "length": 1317.2, 
-            "method": "cbwl", 
-            "station1": "ARTU"
-        }, 
-        {
-            "num_of_ambs": 58, 
-            "baseline": "BOWT", 
-            "station2": "WTZR", 
-            "percent": 89.7, 
-            "satsys": "GPS", 
-            "length": 457.2, 
-            "method": "cbwl", 
-            "station1": "BOR1"
-        }, 
-        {
-            "num_of_ambs": 49, 
-            "baseline": "GLPO", 
-            "station2": "POLV", 
-            "percent": 91.8, 
-            "satsys": "GPS", 
-            "length": 302.2, 
-            "method": "cbwl", 
-            "station1": "GLSV"
-        }, 
-        {
-            "num_of_ambs": 58, 
-            "baseline": "HEWS", 
-            "station2": "WSRT", 
-            "percent": 84.5, 
-            "satsys": "GPS", 
-            "length": 487.6, 
-            "method": "cbwl", 
-            "station1": "HERS"
-        }, 
-        {
-            "num_of_ambs": 69, 
-            "baseline": "HOTR", 
-            "station2": "TRO1", 
-            "percent": 89.9, 
-            "satsys": "GPS", 
-            "length": 1577.8, 
-            "method": "cbwl", 
-            "station1": "HOFN"
-        }, 
-        {
-            "num_of_ambs": 58, 
-            "baseline": "MDME", 
-            "station2": "METS", 
-            "percent": 87.9, 
-            "satsys": "GPS", 
-            "length": 885.5, 
-            "method": "cbwl", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 54, 
-            "baseline": "MDPO", 
-            "station2": "POLV", 
-            "percent": 92.6, 
-            "satsys": "GPS", 
-            "length": 736.1, 
-            "method": "cbwl", 
-            "station1": "MDVJ"
-        }, 
-        {
-            "num_of_ambs": 62, 
-            "baseline": "MEON", 
-            "station2": "ONSA", 
-            "percent": 95.2, 
-            "satsys": "GPS", 
-            "length": 784.2, 
-            "method": "cbwl", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 73, 
-            "baseline": "METR", 
-            "station2": "TRO1", 
-            "percent": 86.3, 
-            "satsys": "GPS", 
-            "length": 1081.9, 
-            "method": "cbwl", 
-            "station1": "METS"
-        }, 
-        {
-            "num_of_ambs": 41, 
-            "baseline": "NANI", 
-            "station2": "NICO", 
-            "percent": 97.6, 
-            "satsys": "GPS", 
-            "length": 708.6, 
-            "method": "cbwl", 
-            "station1": "NEAP"
-        }, 
-        {
-            "num_of_ambs": 61, 
-            "baseline": "ONWS", 
-            "station2": "WSRT", 
-            "percent": 96.7, 
-            "satsys": "GPS", 
-            "length": 602.6, 
-            "method": "cbwl", 
-            "station1": "ONSA"
-        }, 
-        {
-            "num_of_ambs": 51, 
-            "baseline": "PDYE", 
-            "station2": "YEBE", 
-            "percent": 84.3, 
-            "satsys": "GPS", 
-            "length": 1962.7, 
-            "method": "cbwl", 
-            "station1": "PDEL"
-        }, 
-        {
-            "num_of_ambs": 47, 
-            "baseline": "POZE", 
-            "station2": "ZECK", 
-            "percent": 91.5, 
-            "satsys": "GPS", 
-            "length": 839.1, 
-            "method": "cbwl", 
-            "station1": "POLV"
-        }, 
-        {
-            "num_of_ambs": 54, 
-            "baseline": "WSWT", 
-            "station2": "WTZR", 
-            "percent": 98.1, 
-            "satsys": "GPS", 
-            "length": 607.4, 
-            "method": "cbwl", 
             "station1": "WSRT"
         }, 
         {
             "num_of_ambs": 48, 
             "baseline": "WTZI", 
             "station2": "ZIMM", 
-            "percent": 89.6, 
+            "percent": 29.2, 
+            "satsys": "GPS", 
+            "length": 475.9, 
+            "method": "qif", 
+            "station1": "WTZR"
+        }, 
+        {
+            "num_of_ambs": 55, 
+            "baseline": "BOWT", 
+            "station2": "WTZR", 
+            "percent": 81.8, 
+            "satsys": "GPS", 
+            "length": 457.2, 
+            "method": "cbnl", 
+            "station1": "BOR1"
+        }, 
+        {
+            "num_of_ambs": 109, 
+            "baseline": "HEWS", 
+            "station2": "WSRT", 
+            "percent": 13.8, 
+            "satsys": "GPS", 
+            "length": 487.6, 
+            "method": "cbnl", 
+            "station1": "HERS"
+        }, 
+        {
+            "num_of_ambs": 58, 
+            "baseline": "MEON", 
+            "station2": "ONSA", 
+            "percent": 50.0, 
+            "satsys": "GPS", 
+            "length": 784.2, 
+            "method": "cbnl", 
+            "station1": "METS"
+        }, 
+        {
+            "num_of_ambs": 61, 
+            "baseline": "ONWS", 
+            "station2": "WSRT", 
+            "percent": 78.7, 
+            "satsys": "GPS", 
+            "length": 602.6, 
+            "method": "cbnl", 
+            "station1": "ONSA"
+        }, 
+        {
+            "num_of_ambs": 61, 
+            "baseline": "WSWT", 
+            "station2": "WTZR", 
+            "percent": 73.8, 
+            "satsys": "GPS", 
+            "length": 607.4, 
+            "method": "cbnl", 
+            "station1": "WSRT"
+        }, 
+        {
+            "num_of_ambs": 61, 
+            "baseline": "WTZI", 
+            "station2": "ZIMM", 
+            "percent": 60.7, 
+            "satsys": "GPS", 
+            "length": 475.9, 
+            "method": "cbnl", 
+            "station1": "WTZR"
+        }, 
+        {
+            "num_of_ambs": 50, 
+            "baseline": "BOWT", 
+            "station2": "WTZR", 
+            "percent": 96.0, 
+            "satsys": "GPS", 
+            "length": 457.2, 
+            "method": "cbwl", 
+            "station1": "BOR1"
+        }, 
+        {
+            "num_of_ambs": 71, 
+            "baseline": "HEWS", 
+            "station2": "WSRT", 
+            "percent": 36.6, 
+            "satsys": "GPS", 
+            "length": 487.6, 
+            "method": "cbwl", 
+            "station1": "HERS"
+        }, 
+        {
+            "num_of_ambs": 44, 
+            "baseline": "MEON", 
+            "station2": "ONSA", 
+            "percent": 79.5, 
+            "satsys": "GPS", 
+            "length": 784.2, 
+            "method": "cbwl", 
+            "station1": "METS"
+        }, 
+        {
+            "num_of_ambs": 60, 
+            "baseline": "ONWS", 
+            "station2": "WSRT", 
+            "percent": 86.7, 
+            "satsys": "GPS", 
+            "length": 602.6, 
+            "method": "cbwl", 
+            "station1": "ONSA"
+        }, 
+        {
+            "num_of_ambs": 54, 
+            "baseline": "WSWT", 
+            "station2": "WTZR", 
+            "percent": 90.7, 
+            "satsys": "GPS", 
+            "length": 607.4, 
+            "method": "cbwl", 
+            "station1": "WSRT"
+        }, 
+        {
+            "num_of_ambs": 50, 
+            "baseline": "WTZI", 
+            "station2": "ZIMM", 
+            "percent": 78.0, 
             "satsys": "GPS", 
             "length": 475.9, 
             "method": "cbwl", 
             "station1": "WTZR"
-        }, 
-        {
-            "num_of_ambs": 52, 
-            "baseline": "YEZI", 
-            "station2": "ZIMM", 
-            "percent": 78.8, 
-            "satsys": "GPS", 
-            "length": 1102.5, 
-            "method": "cbwl", 
-            "station1": "YEBE"
         }
     ], 
     "command": [
@@ -2619,28 +845,28 @@
         }, 
         {
             "switch": "--year", 
-            "arg": "2002"
+            "arg": "1997"
         }, 
         {
             "switch": "--doy", 
-            "arg": "200"
+            "arg": "179"
         }
     ], 
     "general_info": {
-        "day_processed": "2002-200", 
+        "day_processed": "1997-179", 
         "campaign": "GREECE", 
         "interval": {
-            "to": "2002-07-19 23:59:30", 
-            "from": "2002-07-19 00:00:00"
+            "to": "1997-06-28 23:59:30", 
+            "from": "1997-06-28 00:00:00"
         }, 
-        "host": "hypatia", 
+        "host": "paraskevas-m", 
         "program": {
             "version": "52", 
             "last_upd": "Oct 2015", 
             "name": "ddprocess", 
             "revision": "20"
         }, 
-        "user": "bpe"
+        "user": ""
     }, 
     "pcf_variables": [
         {
@@ -2711,7 +937,7 @@
         {
             "var_name": "BLQINF", 
             "description": "BLQ FILE NAME, CMC CORRECTIONS", 
-            "value": "GREECE"
+            "value": "NTUA"
         }, 
         {
             "var_name": "ATLINF", 
@@ -2846,45 +1072,45 @@
     ], 
     "stainf": [
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "pdel2000.02d", 
+            "rinex": "", 
             "station": "PDEL 31906M004", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "hofn2000.02d", 
+            "rinex": "", 
             "station": "HOFN 10204M002", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "artu2000.02d", 
+            "rinex": "", 
             "station": "ARTU 12362M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "yebe2000.02d", 
+            "rinex": "", 
             "station": "YEBE 13420M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "wsrt2000.02d", 
+            "rinex": "wsrt1790.97d", 
             "station": "WSRT 13506M005", 
             "processed": "Yes", 
             "exclude": "No", 
@@ -2893,34 +1119,34 @@
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "zimm2000.02d", 
+            "rinex": "zimm1790.97d", 
             "station": "ZIMM 14001M004", 
             "processed": "Yes", 
             "exclude": "No", 
             "used_as_reference": "Yes"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "not12000.02d", 
+            "rinex": "", 
             "station": "NOT1 12717M004", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "mat12000.02d", 
+            "rinex": "", 
             "station": "MAT1 12734M009", 
             "processed": "No", 
-            "exclude": "Yes", 
+            "exclude": "No", 
             "used_as_reference": "No"
         }, 
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "wtzr2000.02d", 
+            "rinex": "wtzr1790.97d", 
             "station": "WTZR 14201M010", 
             "processed": "Yes", 
             "exclude": "No", 
@@ -2929,7 +1155,7 @@
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "onsa2000.02d", 
+            "rinex": "onsa1790.97d", 
             "station": "ONSA 10402M004", 
             "processed": "Yes", 
             "exclude": "No", 
@@ -2938,79 +1164,79 @@
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "bor12000.02d", 
+            "rinex": "bor11790.97d", 
             "station": "BOR1 12205M002", 
             "processed": "Yes", 
             "exclude": "No", 
             "used_as_reference": "Yes"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "tro12000.02d", 
+            "rinex": "", 
             "station": "TRO1 10302M006", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "mets2000.02d", 
+            "rinex": "mets1790.97d", 
             "station": "METS 10503S011", 
             "processed": "Yes", 
             "exclude": "No", 
             "used_as_reference": "Yes"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "glsv2000.02d", 
+            "rinex": "", 
             "station": "GLSV 12356M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "polv2000.02d", 
+            "rinex": "", 
             "station": "POLV 12336M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "mdvj2000.02d", 
+            "rinex": "", 
             "station": "MDVJ 12309M005", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "nico2000.02d", 
+            "rinex": "", 
             "station": "NICO 14302M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "ankr2000.02d", 
+            "rinex": "", 
             "station": "ANKR 20805M002", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
             "available": "Yes", 
             "reference": "Yes", 
-            "rinex": "hers2000.02d", 
+            "rinex": "hers1790.97d", 
             "station": "HERS 13212M007", 
             "processed": "Yes", 
             "exclude": "No", 
@@ -3107,11 +1333,11 @@
             "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "No", 
-            "rinex": "arki2000.02d", 
+            "rinex": "", 
             "station": "ARKI", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
             "used_as_reference": "No"
         }, 
@@ -3206,11 +1432,11 @@
             "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "No", 
-            "rinex": "neap2000.02d", 
+            "rinex": "", 
             "station": "NEAP", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
             "used_as_reference": "No"
         }, 
@@ -3418,7 +1644,7 @@
             "rinex": "", 
             "station": "STEF 12639M001", 
             "processed": "No", 
-            "exclude": "Yes", 
+            "exclude": "No", 
             "used_as_reference": "No"
         }, 
         {
@@ -3427,7 +1653,7 @@
             "rinex": "", 
             "station": "ATAL 12630M001", 
             "processed": "No", 
-            "exclude": "Yes", 
+            "exclude": "No", 
             "used_as_reference": "No"
         }, 
         {
@@ -3512,13 +1738,13 @@
             "used_as_reference": "No"
         }, 
         {
-            "available": "Yes", 
+            "available": "No", 
             "reference": "Yes", 
-            "rinex": "zeck2000.02d", 
+            "rinex": "", 
             "station": "ZECK 12351M001", 
-            "processed": "Yes", 
+            "processed": "No", 
             "exclude": "No", 
-            "used_as_reference": "Yes"
+            "used_as_reference": "No"
         }, 
         {
             "available": "No", 
